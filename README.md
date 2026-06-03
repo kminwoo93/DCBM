@@ -211,17 +211,6 @@ Android App
 
 ---
 
-## Future Development
-
-- Multi-channel electrochemical sensing
-- Cloud synchronization
-- Data logging database
-- Real-time analytics
-- Advanced sensor calibration
-- OTA firmware update
-
----
-
 ## License
 
 This project is released under the MIT License.
