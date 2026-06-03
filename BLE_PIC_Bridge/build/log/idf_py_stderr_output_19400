@@ -1,0 +1,8 @@
+Command: C:\Users\MinwooKim\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Users\MinwooKim\esp\v5.5.1\esp-idf\tools/idf_monitor.py -p com29 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32h2 --revision 0 --decode-panic backtrace C:\Multiplexer_coding\wm-potentiostat-pic16f15256.X\BLE_PIC_Bridge\build\BLE_PIC_Bridge.elf C:\Multiplexer_coding\wm-potentiostat-pic16f15256.X\BLE_PIC_Bridge\build\bootloader\bootloader.elf --force-color -m 'C:\Users\MinwooKim\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Users\MinwooKim\esp\v5.5.1\esp-idf\tools\idf.py'
+[0;33m--- esp-idf-monitor 1.8.0 on com29 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- Connection to com29 failed. Available ports:
+--- COM4
+--- COM12
+--- COM3[0m
+[0m

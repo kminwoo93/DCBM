@@ -1,0 +1,437 @@
+<Page
+    x:Class="SmartOrganApp.CalibrationPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SmartOrganApp"
+    xmlns:utu="using:Uno.Toolkit.UI"
+    xmlns:ScottPlot="using:ScottPlot.WinUI"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.Resources>
+        <x:String x:Key="Icon_Size_48">F1 M 10.208333015441895 20.41666603088379 L 0 10.208333015441895 L 10.208333015441895 0 M 20.41666603088379 10.208333015441895 L 0 10.208333015441895</x:String>
+    </Page.Resources>
+
+    <ScrollViewer VerticalScrollMode="Auto" VerticalScrollBarVisibility="Auto">
+        <utu:AutoLayout Orientation="Vertical" Spacing="12"
+                        Margin="12,22,12,12" CounterAxisAlignment="Stretch">
+
+            <!-- TOP BAR -->
+            <utu:AutoLayout Height="40" Orientation="Horizontal"
+                            CounterAxisAlignment="Center" Justify="SpaceBetween">
+                <Button Background="Transparent" BorderThickness="0"
+                        Click="BackButton_Click">
+                    <PathIcon Data="{StaticResource Icon_Size_48}" Foreground="Black"/>
+                </Button>
+                <TextBlock Text="Calibration" FontSize="20" FontWeight="SemiBold"/>
+                <!-- Google Drive sign-in button -->
+                <Button x:Name="DriveSignInButton"
+                        Background="#4285F4" CornerRadius="8" Padding="10,6"
+                        Click="DriveSignIn_Click">
+                    <utu:AutoLayout Orientation="Horizontal" Spacing="6"
+                                    CounterAxisAlignment="Center">
+                        <TextBlock x:Name="DriveButtonIcon" Text="☁"
+                                   FontSize="14" Foreground="White"/>
+                        <TextBlock x:Name="DriveButtonText" Text="Sign in to Drive"
+                                   FontSize="13" Foreground="White"/>
+                    </utu:AutoLayout>
+                </Button>
+            </utu:AutoLayout>
+
+            <!-- Drive connection status banner -->
+            <Border x:Name="DriveStatusBanner" CornerRadius="8" Padding="10,6"
+                    Background="#E8F5E9" Visibility="Collapsed">
+                <TextBlock x:Name="DriveStatusText" TextWrapping="Wrap"
+                           FontSize="13" Foreground="#2E7D32"/>
+            </Border>
+
+            <utu:Divider Foreground="#42ABC2"/>
+
+            <!-- ══ STEP 1 — PBS RINSE ══════════════════════════════════════ -->
+            <Border Background="#F0F0F0" CornerRadius="10" Padding="12">
+                <utu:AutoLayout Orientation="Vertical" Spacing="8"
+                                CounterAxisAlignment="Center">
+                    <TextBlock Text="Step 1 — PBS Rinse"
+                               FontSize="16" FontWeight="SemiBold"
+                               TextAlignment="Center"/>
+                    <TextBlock Text="Clean the sensors before recording. The pump runs automatically during Steps 2–5. Use PBS Fast to flush old solution out between steps. Use PBS Slow for gentle cleaning before recording."
+                               TextWrapping="Wrap" FontSize="13" Foreground="Gray"
+                               TextAlignment="Center"/>
+
+                    <!-- PBS Fast — 0x20 — 500 uL/min, flush between steps only -->
+                    <Button x:Name="PbsFastButton"
+                            Background="#C0D0D4"
+                            CornerRadius="0"
+                            HorizontalAlignment="Stretch"
+                            Click="PbsFast_Click">
+                        <utu:AutoLayout Orientation="Horizontal" Spacing="6"
+                                        CounterAxisAlignment="Center"
+                                        Justify="SpaceBetween">
+                            <TextBlock Text="PBS Fast" FontSize="16" Foreground="Black"/>
+                            <TextBlock Text="0x20 — 500 uL/min" FontSize="12"
+                                       Foreground="#555" VerticalAlignment="Center"/>
+                        </utu:AutoLayout>
+                    </Button>
+
+                    <!-- PBS Slow — 0x24 — 20 uL/min, gentle rinse -->
+                    <Button x:Name="PbsSlowButton"
+                            Background="#C0D0D4"
+                            CornerRadius="0"
+                            HorizontalAlignment="Stretch"
+                            Click="PbsSlow_Click">
+                        <utu:AutoLayout Orientation="Horizontal" Spacing="6"
+                                        CounterAxisAlignment="Center"
+                                        Justify="SpaceBetween">
+                            <TextBlock Text="PBS Slow" FontSize="16" Foreground="Black"/>
+                            <TextBlock Text="0x24 — 20 uL/min" FontSize="12"
+                                       Foreground="#555" VerticalAlignment="Center"/>
+                        </utu:AutoLayout>
+                    </Button>
+
+                    <!-- Stop Pump — 0x21 -->
+                    <Button x:Name="PbsStopButton"
+                            Background="#C0D0D4"
+                            CornerRadius="0"
+                            HorizontalAlignment="Stretch"
+                            Click="PbsStop_Click">
+                        <utu:AutoLayout Orientation="Horizontal" Spacing="6"
+                                        CounterAxisAlignment="Center"
+                                        Justify="SpaceBetween">
+                            <TextBlock Text="Stop Pump" FontSize="16" Foreground="Black"/>
+                            <TextBlock Text="0x21" FontSize="12"
+                                       Foreground="#555" VerticalAlignment="Center"/>
+                        </utu:AutoLayout>
+                    </Button>
+
+                    <TextBlock x:Name="Step1StatusText"
+                               Text="Ready."
+                               TextWrapping="Wrap" FontSize="13" Foreground="Gray"
+                               TextAlignment="Center"/>
+                </utu:AutoLayout>
+            </Border>
+
+            <!-- ══ STEP 2 — PBS BACKGROUND (baseline, C=0) ════════════════ -->
+            <Border Background="#F0F0F0" CornerRadius="10" Padding="12">
+                <utu:AutoLayout Orientation="Vertical" Spacing="8">
+                    <TextBlock Text="Step 2 — PBS Background (baseline check)"
+                               FontSize="16" FontWeight="SemiBold"/>
+                    <TextBlock Text="Records 60s from each of the 6 channels with PBS. Concentration = 0 mM. This is Standard 0 and the I_final here is the PBS baseline current."
+                               TextWrapping="Wrap" FontSize="13" Foreground="Gray"/>
+                    <utu:AutoLayout Orientation="Horizontal" Spacing="10"
+                                    CounterAxisAlignment="Center">
+                        <Button x:Name="Step2StartButton" Background="#42ABC2"
+                                CornerRadius="8" Click="Step2Start_Click">
+                            <TextBlock Text="Start" Foreground="White" FontSize="14"/>
+                        </Button>
+                        <Button x:Name="Step2StopButton" Background="#CC4444"
+                                CornerRadius="8" Click="Step2Stop_Click" IsEnabled="False">
+                            <TextBlock Text="Stop Early" Foreground="White" FontSize="14"/>
+                        </Button>
+                        <TextBlock x:Name="Step2TimerText" Text="0s / 60s"
+                                   FontSize="14" Foreground="#444" VerticalAlignment="Center"/>
+                    </utu:AutoLayout>
+                    <TextBlock x:Name="Step2StatusText"
+                               Text="Ready. Press Start when PBS is flowing."
+                               TextWrapping="Wrap" FontSize="13" Foreground="Gray"/>
+                    <TextBlock Text="Live Current (nA) — PBS Baseline"
+                               FontSize="13" FontWeight="SemiBold" Margin="0,4,0,0"/>
+                    <Border Height="160" Background="White" CornerRadius="8" Padding="4">
+                        <ScottPlot:WinUIPlot x:Name="PbsPlot"/>
+                    </Border>
+                </utu:AutoLayout>
+            </Border>
+
+            <!-- ══ STEP 3 — STANDARD 1 ════════════════════════════════════ -->
+            <Border Background="#F0F0F0" CornerRadius="10" Padding="12">
+                <utu:AutoLayout Orientation="Vertical" Spacing="8">
+                    <TextBlock Text="Step 3 — Standard Addition 1"
+                               FontSize="16" FontWeight="SemiBold"/>
+                    <TextBlock Text="Swap to Standard 1 solution. Enter the known concentration for each analyte. Records 60s from all 6 channels. I_final = average of last 1 second (steady-state)."
+                               TextWrapping="Wrap" FontSize="13" Foreground="Gray"/>
+                    <utu:AutoLayout Orientation="Horizontal" Spacing="12">
+                        <utu:AutoLayout Orientation="Vertical" Spacing="4">
+                            <TextBlock Text="Glucose (mM)" FontSize="13"/>
+                            <TextBox x:Name="T1GlucBox" PlaceholderText="e.g. 2"
+                                     Width="90" FontSize="14"/>
+                        </utu:AutoLayout>
+                        <utu:AutoLayout Orientation="Vertical" Spacing="4">
+                            <TextBlock Text="Lactate (mM)" FontSize="13"/>
+                            <TextBox x:Name="T1LactBox" PlaceholderText="e.g. 2"
+                                     Width="90" FontSize="14"/>
+                        </utu:AutoLayout>
+                        <utu:AutoLayout Orientation="Vertical" Spacing="4">
+                            <TextBlock Text="pH" FontSize="13"/>
+                            <TextBox x:Name="T1PhBox" PlaceholderText="e.g. 7.4"
+                                     Width="90" FontSize="14"/>
+                        </utu:AutoLayout>
+                    </utu:AutoLayout>
+                    <utu:AutoLayout Orientation="Horizontal" Spacing="10"
+                                    CounterAxisAlignment="Center">
+                        <Button x:Name="Step3StartButton" Background="#45B3CB"
+                                CornerRadius="8" Click="Step3Start_Click">
+                            <TextBlock Text="Start" Foreground="White" FontSize="14"/>
+                        </Button>
+                        <Button x:Name="Step3StopButton" Background="#CC4444"
+                                CornerRadius="8" Click="Step3Stop_Click" IsEnabled="False">
+                            <TextBlock Text="Stop Early" Foreground="White" FontSize="14"/>
+                        </Button>
+                        <TextBlock x:Name="Step3TimerText" Text="0s / 60s"
+                                   FontSize="14" Foreground="#444" VerticalAlignment="Center"/>
+                    </utu:AutoLayout>
+                    <TextBlock x:Name="Step3StatusText"
+                               Text="Swap to Standard 1 then press Start."
+                               TextWrapping="Wrap" FontSize="13" Foreground="Gray"/>
+                    <TextBlock Text="Live Current (nA) — Standard 1"
+                               FontSize="13" FontWeight="SemiBold" Margin="0,4,0,0"/>
+                    <Border Height="160" Background="White" CornerRadius="8" Padding="4">
+                        <ScottPlot:WinUIPlot x:Name="Trial1Plot"/>
+                    </Border>
+                </utu:AutoLayout>
+            </Border>
+
+            <!-- ══ STEP 4 — STANDARD 2 ════════════════════════════════════ -->
+            <Border Background="#F0F0F0" CornerRadius="10" Padding="12">
+                <utu:AutoLayout Orientation="Vertical" Spacing="8">
+                    <TextBlock Text="Step 4 — Standard Addition 2"
+                               FontSize="16" FontWeight="SemiBold"/>
+                    <TextBlock Text="Swap to Standard 2 solution. Enter concentrations then press Start."
+                               TextWrapping="Wrap" FontSize="13" Foreground="Gray"/>
+                    <utu:AutoLayout Orientation="Horizontal" Spacing="12">
+                        <utu:AutoLayout Orientation="Vertical" Spacing="4">
+                            <TextBlock Text="Glucose (mM)" FontSize="13"/>
+                            <TextBox x:Name="T2GlucBox" PlaceholderText="e.g. 5"
+                                     Width="90" FontSize="14"/>
+                        </utu:AutoLayout>
+                        <utu:AutoLayout Orientation="Vertical" Spacing="4">
+                            <TextBlock Text="Lactate (mM)" FontSize="13"/>
+                            <TextBox x:Name="T2LactBox" PlaceholderText="e.g. 5"
+                                     Width="90" FontSize="14"/>
+                        </utu:AutoLayout>
+                        <utu:AutoLayout Orientation="Vertical" Spacing="4">
+                            <TextBlock Text="pH" FontSize="13"/>
+                            <TextBox x:Name="T2PhBox" PlaceholderText="e.g. 7.4"
+                                     Width="90" FontSize="14"/>
+                        </utu:AutoLayout>
+                    </utu:AutoLayout>
+                    <utu:AutoLayout Orientation="Horizontal" Spacing="10"
+                                    CounterAxisAlignment="Center">
+                        <Button x:Name="Step4StartButton" Background="#45B3CB"
+                                CornerRadius="8" Click="Step4Start_Click">
+                            <TextBlock Text="Start" Foreground="White" FontSize="14"/>
+                        </Button>
+                        <Button x:Name="Step4StopButton" Background="#CC4444"
+                                CornerRadius="8" Click="Step4Stop_Click" IsEnabled="False">
+                            <TextBlock Text="Stop Early" Foreground="White" FontSize="14"/>
+                        </Button>
+                        <TextBlock x:Name="Step4TimerText" Text="0s / 60s"
+                                   FontSize="14" Foreground="#444" VerticalAlignment="Center"/>
+                    </utu:AutoLayout>
+                    <TextBlock x:Name="Step4StatusText"
+                               Text="Swap to Standard 2 then press Start."
+                               TextWrapping="Wrap" FontSize="13" Foreground="Gray"/>
+                    <TextBlock Text="Live Current (nA) — Standard 2"
+                               FontSize="13" FontWeight="SemiBold" Margin="0,4,0,0"/>
+                    <Border Height="160" Background="White" CornerRadius="8" Padding="4">
+                        <ScottPlot:WinUIPlot x:Name="Trial2Plot"/>
+                    </Border>
+                </utu:AutoLayout>
+            </Border>
+
+            <!-- ══ STEP 5 — STANDARD 3 ════════════════════════════════════ -->
+            <Border Background="#F0F0F0" CornerRadius="10" Padding="12">
+                <utu:AutoLayout Orientation="Vertical" Spacing="8">
+                    <TextBlock Text="Step 5 — Standard Addition 3"
+                               FontSize="16" FontWeight="SemiBold"/>
+                    <TextBlock Text="Swap to Standard 3 solution. Enter concentrations then press Start."
+                               TextWrapping="Wrap" FontSize="13" Foreground="Gray"/>
+                    <utu:AutoLayout Orientation="Horizontal" Spacing="12">
+                        <utu:AutoLayout Orientation="Vertical" Spacing="4">
+                            <TextBlock Text="Glucose (mM)" FontSize="13"/>
+                            <TextBox x:Name="T3GlucBox" PlaceholderText="e.g. 10"
+                                     Width="90" FontSize="14"/>
+                        </utu:AutoLayout>
+                        <utu:AutoLayout Orientation="Vertical" Spacing="4">
+                            <TextBlock Text="Lactate (mM)" FontSize="13"/>
+                            <TextBox x:Name="T3LactBox" PlaceholderText="e.g. 10"
+                                     Width="90" FontSize="14"/>
+                        </utu:AutoLayout>
+                        <utu:AutoLayout Orientation="Vertical" Spacing="4">
+                            <TextBlock Text="pH" FontSize="13"/>
+                            <TextBox x:Name="T3PhBox" PlaceholderText="e.g. 7.4"
+                                     Width="90" FontSize="14"/>
+                        </utu:AutoLayout>
+                    </utu:AutoLayout>
+                    <utu:AutoLayout Orientation="Horizontal" Spacing="10"
+                                    CounterAxisAlignment="Center">
+                        <Button x:Name="Step5StartButton" Background="#45B3CB"
+                                CornerRadius="8" Click="Step5Start_Click">
+                            <TextBlock Text="Start" Foreground="White" FontSize="14"/>
+                        </Button>
+                        <Button x:Name="Step5StopButton" Background="#CC4444"
+                                CornerRadius="8" Click="Step5Stop_Click" IsEnabled="False">
+                            <TextBlock Text="Stop Early" Foreground="White" FontSize="14"/>
+                        </Button>
+                        <TextBlock x:Name="Step5TimerText" Text="0s / 60s"
+                                   FontSize="14" Foreground="#444" VerticalAlignment="Center"/>
+                    </utu:AutoLayout>
+                    <TextBlock x:Name="Step5StatusText"
+                               Text="Swap to Standard 3 then press Start."
+                               TextWrapping="Wrap" FontSize="13" Foreground="Gray"/>
+                    <TextBlock Text="Live Current (nA) — Standard 3"
+                               FontSize="13" FontWeight="SemiBold" Margin="0,4,0,0"/>
+                    <Border Height="160" Background="White" CornerRadius="8" Padding="4">
+                        <ScottPlot:WinUIPlot x:Name="Trial3Plot"/>
+                    </Border>
+                </utu:AutoLayout>
+            </Border>
+
+            <!-- ══ STEP 6 — REGRESSION + MATRIX CORRECTION ════════════════ -->
+            <Border Background="#F0F0F0" CornerRadius="10" Padding="12">
+                <utu:AutoLayout Orientation="Vertical" Spacing="8">
+                    <TextBlock Text="Step 6 — Linear Regression + Matrix Correction"
+                               FontSize="16" FontWeight="SemiBold"/>
+                    <TextBlock Text="Fits y = a·x + b using PBS + 3 standards (4 points). If you have a sample measurement at a known concentration, enter it below for matrix correction: b₂ = Ss - a·Cs. Leave blank to skip correction."
+                               TextWrapping="Wrap" FontSize="13" Foreground="Gray"/>
+
+                    <!-- Matrix correction inputs -->
+                    <Border Background="#E8F4F8" CornerRadius="8" Padding="10">
+                        <utu:AutoLayout Orientation="Vertical" Spacing="6">
+                            <TextBlock Text="Matrix Correction (optional)"
+                                       FontSize="14" FontWeight="SemiBold"/>
+                            <TextBlock Text="Ss = measured current of sample (nA).  Cs = known concentration of sample (mM)."
+                                       TextWrapping="Wrap" FontSize="12" Foreground="Gray"/>
+                            <utu:AutoLayout Orientation="Horizontal" Spacing="12">
+                                <utu:AutoLayout Orientation="Vertical" Spacing="4">
+                                    <TextBlock Text="Cs (mM)" FontSize="13"/>
+                                    <TextBox x:Name="SampleCsBox"
+                                             PlaceholderText="known conc"
+                                             Width="110" FontSize="14"/>
+                                </utu:AutoLayout>
+                                <utu:AutoLayout Orientation="Vertical" Spacing="4">
+                                    <TextBlock Text="Ss (nA)" FontSize="13"/>
+                                    <TextBox x:Name="SampleSsBox"
+                                             PlaceholderText="measured current"
+                                             Width="130" FontSize="14"/>
+                                </utu:AutoLayout>
+                            </utu:AutoLayout>
+                        </utu:AutoLayout>
+                    </Border>
+
+                    <Button x:Name="RunRegressionButton"
+                            Background="#222222" CornerRadius="8"
+                            HorizontalAlignment="Left"
+                            Click="RunRegression_Click">
+                        <TextBlock Text="Run Regression + Matrix Correction"
+                                   Foreground="White" FontSize="14"/>
+                    </Button>
+
+                    <!-- Results table -->
+                    <TextBlock x:Name="RegressionResultsText"
+                               Text="Results will appear here after regression."
+                               TextWrapping="Wrap" FontSize="12"
+                               FontFamily="Courier New" Foreground="#333"/>
+
+                    <!-- Glucose calibration curve -->
+                    <TextBlock Text="Glucose — Current (nA) vs Concentration (mM)"
+                               FontSize="14" FontWeight="SemiBold" Margin="0,8,0,0"/>
+                    <Border Height="220" Background="White" CornerRadius="8" Padding="4">
+                        <ScottPlot:WinUIPlot x:Name="GlucosePlot"/>
+                    </Border>
+
+                    <!-- Lactate calibration curve -->
+                    <TextBlock Text="Lactate — Current (nA) vs Concentration (mM)"
+                               FontSize="14" FontWeight="SemiBold" Margin="0,8,0,0"/>
+                    <Border Height="220" Background="White" CornerRadius="8" Padding="4">
+                        <ScottPlot:WinUIPlot x:Name="LactatePlot"/>
+                    </Border>
+
+                    <!-- pH calibration curve -->
+                    <TextBlock Text="pH — Current (nA) vs Concentration"
+                               FontSize="14" FontWeight="SemiBold" Margin="0,8,0,0"/>
+                    <Border Height="220" Background="White" CornerRadius="8" Padding="4">
+                        <ScottPlot:WinUIPlot x:Name="PhPlot"/>
+                    </Border>
+                </utu:AutoLayout>
+            </Border>
+
+            <!-- ══ STEP 7 — SAMPLE MEASUREMENT ══════════════════════════════ -->
+            <!-- Measures the actual organ sample (liver perfusate).            -->
+            <!-- Command 0x30. Records all 6 channels at 60s each.             -->
+            <!-- I_final from this step = Ss used in matrix correction.        -->
+            <!-- User enters the known spike concentration Cs (mM).            -->
+            <Border Background="#F0F0F0" CornerRadius="10" Padding="12">
+                <utu:AutoLayout Orientation="Vertical" Spacing="8">
+                    <TextBlock Text="Step 7 — Sample Measurement"
+                               FontSize="16" FontWeight="SemiBold"/>
+                    <TextBlock Text="Measure the actual organ sample. Enter the known spike concentration for each analyte (Cs). Records 60s from all 6 channels. I_final from this step is used as Ss for matrix correction in Step 6."
+                               TextWrapping="Wrap" FontSize="13" Foreground="Gray"/>
+
+                    <!-- Spike concentration inputs -->
+                    <Border Background="#FFF3E0" CornerRadius="8" Padding="10">
+                        <utu:AutoLayout Orientation="Vertical" Spacing="6">
+                            <TextBlock Text="Known Spike Concentration Cs (mM)"
+                                       FontSize="14" FontWeight="SemiBold"/>
+                            <TextBlock Text="Enter the known concentration you spiked into the sample for each analyte."
+                                       TextWrapping="Wrap" FontSize="12" Foreground="Gray"/>
+                            <utu:AutoLayout Orientation="Horizontal" Spacing="12">
+                                <utu:AutoLayout Orientation="Vertical" Spacing="4">
+                                    <TextBlock Text="Glucose Cs (mM)" FontSize="13"/>
+                                    <TextBox x:Name="S7GlucCsBox"
+                                             PlaceholderText="e.g. 5"
+                                             Width="100" FontSize="14"/>
+                                </utu:AutoLayout>
+                                <utu:AutoLayout Orientation="Vertical" Spacing="4">
+                                    <TextBlock Text="Lactate Cs (mM)" FontSize="13"/>
+                                    <TextBox x:Name="S7LactCsBox"
+                                             PlaceholderText="e.g. 5"
+                                             Width="100" FontSize="14"/>
+                                </utu:AutoLayout>
+                                <utu:AutoLayout Orientation="Vertical" Spacing="4">
+                                    <TextBlock Text="pH Cs" FontSize="13"/>
+                                    <TextBox x:Name="S7PhCsBox"
+                                             PlaceholderText="e.g. 7.4"
+                                             Width="100" FontSize="14"/>
+                                </utu:AutoLayout>
+                            </utu:AutoLayout>
+                        </utu:AutoLayout>
+                    </Border>
+
+                    <utu:AutoLayout Orientation="Horizontal" Spacing="10"
+                                    CounterAxisAlignment="Center">
+                        <Button x:Name="Step7StartButton" Background="#7B5EA7"
+                                CornerRadius="8" Click="Step7Start_Click">
+                            <TextBlock Text="Start Sample Measurement"
+                                       Foreground="White" FontSize="14"/>
+                        </Button>
+                        <Button x:Name="Step7StopButton" Background="#CC4444"
+                                CornerRadius="8" Click="Step7Stop_Click"
+                                IsEnabled="False">
+                            <TextBlock Text="Stop Early" Foreground="White" FontSize="14"/>
+                        </Button>
+                        <TextBlock x:Name="Step7TimerText" Text="0s / 60s"
+                                   FontSize="14" Foreground="#444"
+                                   VerticalAlignment="Center"/>
+                    </utu:AutoLayout>
+
+                    <TextBlock x:Name="Step7StatusText"
+                               Text="Swap to organ sample then press Start."
+                               TextWrapping="Wrap" FontSize="13" Foreground="Gray"/>
+
+                    <!-- I_final results per channel after recording -->
+                    <TextBlock x:Name="Step7ResultsText"
+                               Text="I_final values will appear here after measurement."
+                               TextWrapping="Wrap" FontSize="13"
+                               FontFamily="Courier New" Foreground="#333"/>
+
+                    <TextBlock Text="Live Current (nA) — Sample"
+                               FontSize="13" FontWeight="SemiBold" Margin="0,4,0,0"/>
+                    <Border Height="160" Background="White" CornerRadius="8" Padding="4">
+                        <ScottPlot:WinUIPlot x:Name="SamplePlot"/>
+                    </Border>
+                </utu:AutoLayout>
+            </Border>
+
+            <utu:AutoLayout Height="20"/>
+
+        </utu:AutoLayout>
+    </ScrollViewer>
+</Page>

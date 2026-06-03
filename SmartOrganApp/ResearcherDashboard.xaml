@@ -1,0 +1,177 @@
+﻿<Page
+    x:Class="SmartOrganApp.ResearcherDashboard"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SmartOrganApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:utu="using:Uno.Toolkit.UI"
+    xmlns:um="using:Uno.Material"
+    xmlns:ScottPlot="using:ScottPlot.WinUI"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    
+
+    <Page.Resources>
+        <x:String x:Key="Icon_Account_Circle">F1 M 3.8500001430511475 15.100000381469727 C 4.700000166893005 14.45000034570694 5.650000214576721 13.9375 6.700000286102295 13.5625 C 7.750000357627869 13.1875 8.850000023841858 13 10 13 C 11.149999976158142 13 12.25000011920929 13.1875 13.300000190734863 13.5625 C 14.350000262260437 13.9375 15.299999594688416 14.45000034570694 16.149999618530273 15.100000381469727 C 16.733332991600037 14.41666704416275 17.18750074505806 13.641667306423187 17.512500762939453 12.77500057220459 C 17.837500780820847 11.908333837985992 18 10.98333328962326 18 10 C 18 7.7833333015441895 17.220833659172058 5.895833373069763 15.662500381469727 4.337500095367432 C 14.104167103767395 2.7791668176651 12.21666669845581 2 10 2 C 7.7833333015441895 2 5.895833373069763 2.7791668176651 4.337500095367432 4.337500095367432 C 2.7791668176651 5.895833373069763 2 7.7833333015441895 2 10 C 2 10.98333328962326 2.1624999344348907 11.908333837985992 2.487499952316284 12.77500057220459 C 2.8124999701976776 13.641667306423187 3.2666667699813843 14.41666704416275 3.8500001430511475 15.100000381469727 Z M 10 11 C 9.01666671037674 11 8.187500298023224 10.662500202655792 7.512500286102295 9.987500190734863 C 6.837500274181366 9.312500178813934 6.5 8.48333328962326 6.5 7.5 C 6.5 6.5166667103767395 6.837500274181366 5.687500298023224 7.512500286102295 5.012500286102295 C 8.187500298023224 4.337500274181366 9.01666671037674 4 10 4 C 10.98333328962326 4 11.812500178813934 4.337500274181366 12.487500190734863 5.012500286102295 C 13.162500202655792 5.687500298023224 13.5 6.5166667103767395 13.5 7.5 C 13.5 8.48333328962326 13.162500202655792 9.312500178813934 12.487500190734863 9.987500190734863 C 11.812500178813934 10.662500202655792 10.98333328962326 11 10 11 Z M 10 20 C 8.616666674613953 20 7.316666603088379 19.73749965429306 6.099999904632568 19.212499618530273 C 4.883333206176758 18.687499582767487 3.824999988079071 17.97500079870224 2.924999952316284 17.075000762939453 C 2.0249999165534973 16.175000727176666 1.3125000596046448 15.1166672706604 0.7875000238418579 13.90000057220459 C 0.26249998807907104 12.68333387374878 0 11.383333325386047 0 10 C 0 8.616666674613953 0.26249998807907104 7.316666603088379 0.7875000238418579 6.099999904632568 C 1.3125000596046448 4.883333206176758 2.0249999165534973 3.824999988079071 2.924999952316284 2.924999952316284 C 3.824999988079071 2.0249999165534973 4.883333206176758 1.3125000596046448 6.099999904632568 0.7875000238418579 C 7.316666603088379 0.26249998807907104 8.616666674613953 0 10 0 C 11.383333325386047 0 12.68333387374878 0.26249998807907104 13.90000057220459 0.7875000238418579 C 15.1166672706604 1.3125000596046448 16.175000727176666 2.0249999165534973 17.075000762939453 2.924999952316284 C 17.97500079870224 3.824999988079071 18.687499582767487 4.883333206176758 19.212499618530273 6.099999904632568 C 19.73749965429306 7.316666603088379 20 8.616666674613953 20 10 C 20 11.383333325386047 19.73749965429306 12.68333387374878 19.212499618530273 13.90000057220459 C 18.687499582767487 15.1166672706604 17.97500079870224 16.175000727176666 17.075000762939453 17.075000762939453 C 16.175000727176666 17.97500079870224 15.1166672706604 18.687499582767487 13.90000057220459 19.212499618530273 C 12.68333387374878 19.73749965429306 11.383333325386047 20 10 20 Z</x:String>
+        <x:String x:Key="Icon_Arrow_Right">F1 M 0 10 L 0 0 L 5 5 L 0 10 Z</x:String>
+        <x:String x:Key="Icon_Icon_Tabler_Icon_Chevron_Down">F1 M 0 0 L 3.5 3.5 L 7 0</x:String>
+        <x:String x:Key="Icon_Size_48">F1 M 10.208333015441895 20.41666603088379 L 0 10.208333015441895 L 10.208333015441895 0 M 20.41666603088379 10.208333015441895 L 0 10.208333015441895</x:String>
+    </Page.Resources>
+
+    <ScrollViewer VerticalScrollMode="Auto" VerticalScrollBarVisibility="Auto">
+
+        <utu:AutoLayout Orientation="Vertical" Spacing="6" CornerRadius="21" Margin="4,22,4,4" CounterAxisAlignment="Stretch">
+            //Back button
+            <utu:AutoLayout Height="40" Orientation="Horizontal" CounterAxisAlignment="Center" Justify="SpaceBetween" Margin="4,0,4,0">
+                <Button Background="Transparent"  BorderThickness="0" Click="ExitButton_Click" >
+                    <PathIcon Data="{StaticResource Icon_Size_48}" Foreground="black"/>
+                </Button>
+                <TextBlock TextAlignment="End" Text="Researcher" FontSize="20"/>
+            </utu:AutoLayout>
+            //Device Scan part
+            <Grid Height="40" Margin="4,0,4,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <!-- Left Device Scan button -->
+                <Border Grid.Column="0" CornerRadius="12" Background="#42ABC2" Height="30">
+                    <Button Background="Transparent" Click="DeviceScanButton_Click" BorderThickness="0" HorizontalAlignment="Center">
+                        <TextBlock Text="Device Scan" FontSize="16" Foreground="#F6F6F6" TextAlignment="Center"/>
+                    </Button>
+                </Border>
+                <!-- Right text + underline (use remaining width) -->
+                <Border Grid.Column="1" BorderBrush="#42ABC2" BorderThickness="0,0,0,1" VerticalAlignment="Bottom" Margin="10,0,0,7">
+                    <TextBlock x:Name="ConnectedBLEName" Text="Not connected" FontSize="16" Foreground="Gray" HorizontalAlignment="Left" Margin="10,0,0,0"/>
+                </Border>
+            </Grid>
+            //Liver ID part
+            <utu:AutoLayout Height="30" Orientation="Horizontal" CounterAxisAlignment="Center" Justify="SpaceBetween" Margin="4,0,4,0">
+                <utu:AutoLayout Orientation="Horizontal" CounterAxisAlignment="Center" Spacing="10" Margin="20,0,0,0">
+                    <PathIcon Data="{StaticResource Icon_Account_Circle}" Foreground="Black"/>
+                    <TextBlock x:Name="LiverID" TextWrapping="Wrap" Text="Liver ID" Foreground="Black"/>
+                </utu:AutoLayout>
+                <Button x:Name="LiverIDButton" Background="Transparent"  BorderThickness="0" Click="LiverIDButton_Click" >
+                    <PathIcon Data="{StaticResource Icon_Arrow_Right}" Foreground="Black"/>
+                </Button>
+            </utu:AutoLayout>
+            <!-- Opens the Calibration screen (includes PBS rinse + all calibration steps) -->
+            <Button x:Name="CalibrationButton"
+                    Background="#C0D0D4"
+                    CornerRadius="0"
+                    Click="CalibrationButton_Click">
+                <utu:AutoLayout Orientation="Horizontal" Spacing="6"
+                                CounterAxisAlignment="Center" Justify="SpaceBetween">
+                    <TextBlock Text="Calibration" FontSize="16" Foreground="Black"/>
+                    <PathIcon Data="{StaticResource Icon_Arrow_Right}"
+                              Foreground="Black" Margin="0,0,4,0"/>
+                </utu:AutoLayout>
+            </Button>
+            <utu:Divider Foreground="#42ABC2"/>
+            //Start + Stop Pump part
+            <Button x:Name="StartPumpButton" Background="#C0D0D4" Click="StartPumpButton_Click" CornerRadius="0" >
+                <utu:AutoLayout Orientation="Horizontal" Spacing="6" CounterAxisAlignment="Center" Justify="SpaceBetween">
+                    <TextBlock x:Name="StartPumpText" Text="Start pump" FontSize="16" Foreground="Black"/>
+                    <PathIcon x:Name="StartPumpArrow" Data="{StaticResource Icon_Arrow_Right}" Foreground="Black" Margin="0,0,4,0"/>
+                </utu:AutoLayout>
+            </Button>
+            //Start + Stop Monitoring part
+            <Button x:Name="StartStopButton" Background="#C0D0D4" Click="StartStopButton_Click" CornerRadius="0" >
+                <utu:AutoLayout Orientation="Horizontal" Spacing="6" CounterAxisAlignment="Center" Justify="SpaceBetween">
+                    <TextBlock x:Name="StartStopText" Text="Start monitoring" FontSize="16" Foreground="Black"/>
+                    <PathIcon x:Name="StartStopArrow" Data="{StaticResource Icon_Arrow_Right}" Foreground="Black" Margin="0,0,4,0"/>
+                </utu:AutoLayout>
+            </Button>
+            //Glucose Lactate pH button part
+            <utu:AutoLayout Orientation="Horizontal" CounterAxisAlignment="Center" Justify="SpaceBetween" Spacing="10" Margin="10,0,10,0">
+                <Button x:Name="GlucoseButton" Background="#45B3CB" Click="GlucoseButton_Click" CornerRadius="10" Width="110" >
+                    <utu:AutoLayout Orientation="Vertical" PrimaryAxisAlignment="Center" CounterAxisAlignment="Start" Justify="SpaceBetween" Padding="0,15,0,15">
+                        <Image x:Name="GlucoseImage" Source="/Assets/Icons/GlucoseIcon.png" Width="50" Height="50" Stretch="UniformToFill"></Image>
+                        <TextBlock Text="Glucose" TextWrapping="Wrap" Foreground="White" Margin="0,5,0,0"/>
+                    </utu:AutoLayout>
+                </Button>
+                <Button x:Name="LactateButton" Background="#ED7390" Click="LactateButton_Click" CornerRadius="10" Width="110" >
+                    <utu:AutoLayout Orientation="Vertical" PrimaryAxisAlignment="Center" CounterAxisAlignment="Start" Justify="SpaceBetween" Padding="0,15,0,15">
+                        <Image x:Name="LactateImage" Source="/Assets/Icons/LactateIcon.png" Width="50" Height="50" Stretch="UniformToFill"></Image>
+                        <TextBlock Text="Lactate" TextWrapping="Wrap" Foreground="White" Margin="0,5,0,0"/>
+                    </utu:AutoLayout>
+                </Button>
+                <Button x:Name="pHButton" Background="#E59850" Click="pHButton_Click" CornerRadius="10" Width="110" >
+                    <utu:AutoLayout Orientation="Vertical" PrimaryAxisAlignment="Center" CounterAxisAlignment="Start" Justify="SpaceBetween" Padding="0,15,0,15">
+                        <Image x:Name="pHImage" Source="/Assets/Icons/pHIcon.png" Width="50" Height="50" Stretch="UniformToFill"></Image>
+                        <TextBlock Text="pH" TextWrapping="Wrap" Foreground="White" Margin="0,5,0,0"/>
+                    </utu:AutoLayout>
+                </Button>
+            </utu:AutoLayout>
+            //Raw data graph part
+            <utu:AutoLayout Orientation="Horizontal" Justify="SpaceBetween" CounterAxisAlignment="Center">
+                <TextBlock Text="Raw data" FontSize="18" FontWeight="SemiBold"/>
+                <!-- Time selection dropdown -->
+                <ComboBox x:Name="TimePointComboBox"
+              Width="100"
+              PlaceholderText="Select time"
+              SelectionChanged="TimePointComboBox_SelectionChanged" />
+            </utu:AutoLayout>
+            //Graph part
+            <Border Height="200" Background="#F6F6F6" CornerRadius="12" Padding="8">
+                <Grid>
+                    <ScottPlot:WinUIPlot x:Name="WinUIPlot1"/>
+                </Grid>
+            </Border>
+
+            <!-- ══ CONCENTRATION × TIME — 6 channel graphs ══════════════════ -->
+            <TextBlock Text="Channel Concentration × Time" FontSize="16"
+                       FontWeight="SemiBold" Margin="0,8,0,0"/>
+
+            <!-- Row 1: CH1 Glucose-P + CH5 Glucose-B -->
+            <Grid Margin="0,0,0,4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="8"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Border Grid.Column="0" Height="180" Background="#F6F6F6" CornerRadius="12" Padding="4">
+                    <ScottPlot:WinUIPlot x:Name="ChPlot1"/>
+                </Border>
+                <Border Grid.Column="2" Height="180" Background="#F6F6F6" CornerRadius="12" Padding="4">
+                    <ScottPlot:WinUIPlot x:Name="ChPlot4"/>
+                </Border>
+            </Grid>
+
+            <!-- Row 2: CH2 Lactate-P + CH6 Lactate-B -->
+            <Grid Margin="0,0,0,4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="8"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Border Grid.Column="0" Height="180" Background="#F6F6F6" CornerRadius="12" Padding="4">
+                    <ScottPlot:WinUIPlot x:Name="ChPlot2"/>
+                </Border>
+                <Border Grid.Column="2" Height="180" Background="#F6F6F6" CornerRadius="12" Padding="4">
+                    <ScottPlot:WinUIPlot x:Name="ChPlot5"/>
+                </Border>
+            </Grid>
+
+            <!-- Row 3: CH3 pH-P + CH7 pH-B -->
+            <Grid Margin="0,0,0,4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="8"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Border Grid.Column="0" Height="180" Background="#F6F6F6" CornerRadius="12" Padding="4">
+                    <ScottPlot:WinUIPlot x:Name="ChPlot3"/>
+                </Border>
+                <Border Grid.Column="2" Height="180" Background="#F6F6F6" CornerRadius="12" Padding="4">
+                    <ScottPlot:WinUIPlot x:Name="ChPlot6"/>
+                </Border>
+            </Grid>
+
+            <utu:AutoLayout>
+                <TextBlock x:Name="CurrentValueTextBlock" Text="No value" FontSize="14" Foreground="Gray"/>
+            </utu:AutoLayout>
+        </utu:AutoLayout>
+    </ScrollViewer>
+</Page>

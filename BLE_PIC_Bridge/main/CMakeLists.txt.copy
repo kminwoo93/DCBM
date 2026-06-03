@@ -1,0 +1,4 @@
+idf_component_register(SRCS "ble_task.c" "main.c" "gatts_table_creat_demo.c"
+                    PRIV_REQUIRES bt nvs_flash
+                    INCLUDE_DIRS ".")
+

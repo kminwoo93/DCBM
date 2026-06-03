@@ -1,0 +1,2448 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/debug\PICTest1.X.debug.o
+cinit CODE 0 1D 1D 1C 2 1
+text1 CODE 0 137C 137C 31 2 1
+text2 CODE 0 1136 1136 13 2 1
+text3 CODE 0 83C 83C DF 2 1
+text4 CODE 0 1194 1194 1D 2 1
+text5 CODE 0 10C8 10C8 A 2 1
+text6 CODE 0 15EE 15EE 7B 2 1
+text7 CODE 0 12EC 12EC 2F 2 1
+text8 CODE 0 6B7 6B7 135 2 1
+text9 CODE 0 1526 1526 59 2 1
+text10 CODE 0 3 3 1 2 1
+text11 CODE 0 13E3 13E3 49 2 1
+text12 CODE 0 14CD 14CD 59 2 1
+text13 CODE 0 11F5 11F5 24 2 1
+text14 CODE 0 12BE 12BE 2E 2 1
+text15 CODE 0 1114 1114 10 2 1
+text16 CODE 0 806 806 36 2 1
+text17 CODE 0 1219 1219 26 2 1
+text18 CODE 0 1267 1267 2A 2 1
+text19 CODE 0 1124 1124 12 2 1
+text20 CODE 0 1161 1161 19 2 1
+text21 CODE 0 1104 1104 10 2 1
+text22 CODE 0 131B 131B 30 2 1
+text23 CODE 0 109D 109D 7 2 1
+text24 CODE 0 16EB 16EB 8A 2 1
+text25 CODE 0 1669 1669 82 2 1
+text26 CODE 0 DC5 DC5 23B 2 1
+text27 CODE 0 11D1 11D1 24 2 1
+text28 CODE 0 134B 134B 31 2 1
+text29 CODE 0 91B 91B FA 2 1
+text30 CODE 0 157F 157F 6F 2 1
+text31 CODE 0 1775 1775 8B 2 1
+text32 CODE 0 A15 A15 1A4 2 1
+text33 CODE 0 BB9 BB9 20C 2 1
+text34 CODE 0 10DD 10DD B 2 1
+text35 CODE 0 1098 1098 5 2 1
+text36 CODE 0 142C 142C 4C 2 1
+text37 CODE 0 1478 1478 55 2 1
+text38 CODE 0 10D2 10D2 B 2 1
+text39 CODE 0 10A4 10A4 8 2 1
+text40 CODE 0 10B5 10B5 9 2 1
+text41 CODE 0 123F 123F 28 2 1
+text42 CODE 0 11B1 11B1 20 2 1
+text43 CODE 0 1149 1149 18 2 1
+text44 CODE 0 10E8 10E8 D 2 1
+text45 CODE 0 10F5 10F5 F 2 1
+text46 CODE 0 13AD 13AD 36 2 1
+text47 CODE 0 1095 1095 3 2 1
+text48 CODE 0 117A 117A 1A 2 1
+text50 CODE 0 7EC 7EC 14 2 1
+text51 CODE 0 10BE 10BE A 2 1
+text52 CODE 0 10AC 10AC 9 2 1
+text53 CODE 0 1291 1291 2D 2 1
+maintext CODE 0 39 39 67E 2 1
+cstackCOMMON COMMON 1 70 70 A 1 1
+cstackBANK0 BANK0 1 20 20 4B 1 1
+cstackBANK1 BANK1 1 A0 A0 2D 1 1
+stringtext1 STRCODE 0 1980 1980 4 2 1
+stringtext2 STRCODE 0 1984 1984 4 2 1
+stringtext3 STRCODE 0 1988 1988 4 2 1
+stringtext4 STRCODE 0 198C 198C 4 2 1
+stringtext5 STRCODE 0 1800 1800 16 2 1
+stringtext6 STRCODE 0 1816 1816 10 2 1
+stringtext7 STRCODE 0 1826 1826 F 2 1
+stringtext8 STRCODE 0 1835 1835 F 2 1
+stringtext9 STRCODE 0 1844 1844 F 2 1
+intentry CODE 0 4 4 17 2 1
+bssBANK0 BANK0 1 6B 6B 5 1 1
+bssBANK1 BANK1 1 CD CD B 1 1
+bssBANK2 BANK2 1 120 120 40 1 1
+clrtext CODE 0 800 800 6 2 1
+bssCOMMON COMMON 1 7A 7A 2 1 1
+stringtext10 STRCODE 0 1853 1853 F 2 1
+stringtext11 STRCODE 0 1862 1862 F 2 1
+stringtext12 STRCODE 0 1871 1871 F 2 1
+stringtext13 STRCODE 0 1880 1880 F 2 1
+stringtext14 STRCODE 0 188F 188F F 2 1
+stringtext15 STRCODE 0 189E 189E E 2 1
+stringtext16 STRCODE 0 18AC 18AC E 2 1
+stringtext17 STRCODE 0 18BA 18BA E 2 1
+stringtext18 STRCODE 0 18C8 18C8 E 2 1
+stringtext19 STRCODE 0 18D6 18D6 E 2 1
+stringtext20 STRCODE 0 18E4 18E4 D 2 1
+stringtext21 STRCODE 0 18F1 18F1 C 2 1
+stringtext22 STRCODE 0 18FD 18FD C 2 1
+stringtext23 STRCODE 0 1909 1909 C 2 1
+stringtext24 STRCODE 0 1915 1915 C 2 1
+stringtext25 STRCODE 0 1921 1921 C 2 1
+stringtext26 STRCODE 0 192D 192D C 2 1
+stringtext27 STRCODE 0 1939 1939 B 2 1
+stringtext28 STRCODE 0 1944 1944 9 2 1
+stringtext29 STRCODE 0 194D 194D 8 2 1
+stringtext30 STRCODE 0 1955 1955 7 2 1
+stringtext31 STRCODE 0 195C 195C 6 2 1
+stringtext32 STRCODE 0 1962 1962 5 2 1
+stringtext33 STRCODE 0 1967 1967 5 2 1
+stringtext34 STRCODE 0 196C 196C 5 2 1
+stringtext35 STRCODE 0 1971 1971 5 2 1
+stringtext36 STRCODE 0 1976 1976 5 2 1
+stringtext37 STRCODE 0 197B 197B 5 2 1
+config CONFIG 4 8007 8007 5 2 1
+$C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_17.o
+reset_vec CODE 0 0 0 3 2 1
+end_init CODE 0 1B 1B 2 2 1
+config CONFIG 4 8007 8007 5 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM D8-EF 1
+RAM 160-16F 1
+RAM 1A0-1EF 1
+RAM 220-26F 1
+RAM 2A0-2EF 1
+RAM 320-36F 1
+RAM 3A0-3EF 1
+RAM 420-46F 1
+RAM 4A0-4EF 1
+RAM 520-56F 1
+RAM 5A0-5EF 1
+RAM 620-66F 1
+RAM 6A0-6EF 1
+RAM 720-76F 1
+RAM 7A0-7EF 1
+RAM 820-86F 1
+RAM 8A0-8EF 1
+RAM 920-96F 1
+RAM 9A0-9EF 1
+RAM A20-A6F 1
+RAM AA0-AEF 1
+RAM B20-B6F 1
+RAM BA0-BEF 1
+RAM C20-C6F 1
+RAM CA0-CBF 1
+BANK1 D8-EF 1
+BANK2 160-16F 1
+BANK3 1A0-1EF 1
+BANK4 220-26F 1
+BANK5 2A0-2EF 1
+BANK6 320-36F 1
+BANK7 3A0-3EF 1
+BANK8 420-46F 1
+BANK9 4A0-4EF 1
+CONST 1000-1094 2
+CONST 1990-3FFF 2
+ENTRY 1000-1094 2
+ENTRY 1990-3FFF 2
+IDLOC 8000-8003 2
+SFR10 500-51F 1
+SFR11 580-59F 1
+SFR12 600-61F 1
+SFR13 680-69F 1
+SFR14 700-71F 1
+SFR15 780-79F 1
+SFR16 800-81F 1
+SFR17 880-89F 1
+SFR18 900-91F 1
+SFR19 980-99F 1
+SFR20 A00-A1F 1
+SFR21 A80-A9F 1
+SFR22 B00-B1F 1
+SFR23 B80-B9F 1
+SFR24 C00-C1F 1
+SFR25 C80-C9F 1
+SFR26 D00-D6F 1
+SFR27 D80-DEF 1
+SFR28 E00-E6F 1
+SFR29 E80-EEF 1
+SFR30 F00-F6F 1
+SFR31 F80-FEF 1
+SFR32 1000-106F 1
+SFR33 1080-10EF 1
+SFR34 1100-116F 1
+SFR35 1180-11EF 1
+SFR36 1200-126F 1
+SFR37 1280-12EF 1
+SFR38 1300-136F 1
+SFR39 1380-13EF 1
+SFR40 1400-146F 1
+SFR41 1480-14EF 1
+SFR42 1500-156F 1
+SFR43 1580-15EF 1
+SFR44 1600-166F 1
+SFR45 1680-16EF 1
+SFR46 1700-176F 1
+SFR47 1780-17EF 1
+SFR48 1800-186F 1
+SFR49 1880-18EF 1
+SFR50 1900-196F 1
+SFR51 1980-19EF 1
+SFR52 1A00-1A6F 1
+SFR53 1A80-1AEF 1
+SFR54 1B00-1B6F 1
+SFR55 1B80-1BEF 1
+SFR56 1C00-1C6F 1
+SFR57 1C80-1CEF 1
+SFR58 1D00-1D6F 1
+SFR59 1D80-1DEF 1
+SFR60 1E00-1E6F 1
+SFR61 1E80-1EEF 1
+SFR62 1F00-1F6F 1
+SFR63 1F80-1FEF 1
+CODE 1000-1094 2
+CODE 1990-3FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-11F 1
+SFR3 180-19F 1
+SFR4 200-21F 1
+SFR5 280-29F 1
+SFR6 300-31F 1
+SFR7 380-39F 1
+SFR8 400-41F 1
+SFR9 480-49F 1
+BANK10 520-56F 1
+BANK11 5A0-5EF 1
+BANK12 620-66F 1
+BANK13 6A0-6EF 1
+BANK14 720-76F 1
+BANK15 7A0-7EF 1
+BANK16 820-86F 1
+BANK17 8A0-8EF 1
+BANK18 920-96F 1
+BANK19 9A0-9EF 1
+BANK20 A20-A6F 1
+BANK21 AA0-AEF 1
+BANK22 B20-B6F 1
+BANK23 BA0-BEF 1
+BANK24 C20-C6F 1
+BANK25 CA0-CBF 1
+BIGRAM 2000-27EF 1
+COMMON 7C-7D 1
+STRCODE 1000-1094 2
+STRCODE 1990-3FFF 2
+STRING 1000-1094 2
+STRING 1990-3FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/debug\PICTest1.X.debug.o
+1D cinit CODE >4559:C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_1.s
+1D cinit CODE >4562:C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_1.s
+1D cinit CODE >4637:C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_1.s
+1E cinit CODE >4638:C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_1.s
+1F cinit CODE >4642:C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_1.s
+20 cinit CODE >4643:C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_1.s
+21 cinit CODE >4644:C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_1.s
+22 cinit CODE >4645:C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_1.s
+23 cinit CODE >4646:C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_1.s
+24 cinit CODE >4647:C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_1.s
+25 cinit CODE >4651:C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_1.s
+26 cinit CODE >4652:C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_1.s
+27 cinit CODE >4653:C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_1.s
+28 cinit CODE >4654:C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_1.s
+29 cinit CODE >4655:C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_1.s
+2A cinit CODE >4656:C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_1.s
+2D cinit CODE >4660:C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_1.s
+2E cinit CODE >4661:C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_1.s
+2F cinit CODE >4662:C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_1.s
+30 cinit CODE >4663:C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_1.s
+31 cinit CODE >4664:C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_1.s
+32 cinit CODE >4665:C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_1.s
+35 cinit CODE >4671:C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_1.s
+35 cinit CODE >4673:C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_1.s
+36 cinit CODE >4674:C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_1.s
+37 cinit CODE >4675:C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_1.s
+4 intentry CODE >35:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+A intentry CODE >38:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+13 intentry CODE >40:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+16 intentry CODE >41:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+16 intentry CODE >43:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+19 intentry CODE >44:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+1291 text53 CODE >84:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+1291 text53 CODE >86:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+129A text53 CODE >88:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+129B text53 CODE >90:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+129F text53 CODE >91:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+12A3 text53 CODE >93:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+12A9 text53 CODE >95:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+12B1 text53 CODE >96:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+12BA text53 CODE >97:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+12BB text53 CODE >100:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+12BC text53 CODE >101:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+12BD text53 CODE >104:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+10AC text52 CODE >58:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+10AC text52 CODE >60:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+10B1 text52 CODE >62:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+10B2 text52 CODE >63:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+10B3 text52 CODE >64:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+10B4 text52 CODE >66:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+10BE text51 CODE >129:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+10BF text51 CODE >131:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+10BF text51 CODE >134:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+10C4 text51 CODE >135:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+10C7 text51 CODE >136:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+7EC text50 CODE >216:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+7EC text50 CODE >218:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+7F0 text50 CODE >219:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+7F4 text50 CODE >221:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+7F7 text50 CODE >224:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+7FA text50 CODE >226:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+7FC text50 CODE >227:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+7FF text50 CODE >228:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+117A text48 CODE >97:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+117A text48 CODE >100:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+117C text48 CODE >101:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+117E text48 CODE >105:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+1180 text48 CODE >106:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+1182 text48 CODE >107:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+1186 text48 CODE >112:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+1188 text48 CODE >113:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+1189 text48 CODE >114:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+118B text48 CODE >116:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+118D text48 CODE >121:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+118E text48 CODE >122:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+1192 text48 CODE >123:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+1193 text48 CODE >124:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+1095 text47 CODE >54:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+1095 text47 CODE >56:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+1097 text47 CODE >57:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+13AD text46 CODE >69:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+13AD text46 CODE >72:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+13AE text46 CODE >73:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+13B1 text46 CODE >74:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+13B3 text46 CODE >75:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+13B4 text46 CODE >76:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+13B5 text46 CODE >80:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+13B7 text46 CODE >81:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+13B9 text46 CODE >82:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+13BC text46 CODE >83:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+13BE text46 CODE >87:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+13BF text46 CODE >88:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+13C0 text46 CODE >89:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+13C2 text46 CODE >90:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+13C3 text46 CODE >91:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+13C4 text46 CODE >92:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+13C5 text46 CODE >96:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+13C7 text46 CODE >97:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+13C8 text46 CODE >98:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+13CB text46 CODE >102:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+13CE text46 CODE >104:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+13D0 text46 CODE >105:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+13D2 text46 CODE >106:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+13D3 text46 CODE >107:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+13D4 text46 CODE >110:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+13D6 text46 CODE >111:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+13D8 text46 CODE >112:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+13D9 text46 CODE >113:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+13DA text46 CODE >117:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+13DB text46 CODE >118:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+13DE text46 CODE >119:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+13E0 text46 CODE >120:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+13E1 text46 CODE >121:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+13E2 text46 CODE >124:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+10F5 text45 CODE >59:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+10F5 text45 CODE >61:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+1100 text45 CODE >66:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+1103 text45 CODE >67:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+10E8 text44 CODE >208:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+10E8 text44 CODE >210:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+10EB text44 CODE >211:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+10ED text44 CODE >212:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+10ED text44 CODE >215:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+10F1 text44 CODE >216:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+10F4 text44 CODE >217:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+1149 text43 CODE >170:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+114A text43 CODE >172:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+114D text43 CODE >173:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+1150 text43 CODE >174:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+1150 text43 CODE >177:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+1154 text43 CODE >178:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+1157 text43 CODE >179:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+115A text43 CODE >180:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+115D text43 CODE >180:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+1160 text43 CODE >181:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+11B1 text42 CODE >128:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+11B2 text42 CODE >130:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+11B5 text42 CODE >132:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+11B8 text42 CODE >133:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+11BA text42 CODE >134:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+11BA text42 CODE >137:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+11BE text42 CODE >138:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+11C1 text42 CODE >140:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+11C6 text42 CODE >140:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+11CA text42 CODE >142:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+11CD text42 CODE >143:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+11CF text42 CODE >146:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+11D0 text42 CODE >147:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+123F text41 CODE >219:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+1240 text41 CODE >221:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+1246 text41 CODE >221:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+124A text41 CODE >223:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+124C text41 CODE >226:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+1251 text41 CODE >226:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+125A text41 CODE >226:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+125E text41 CODE >228:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+1262 text41 CODE >232:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+1265 text41 CODE >233:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+1266 text41 CODE >234:C:\Users\forga\MPLABXProjects\PICTest1.X\i2c.c
+10B5 text40 CODE >18:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+10B5 text40 CODE >20:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+10BD text40 CODE >21:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+10A4 text39 CODE >13:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+10A4 text39 CODE >15:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+10AB text39 CODE >16:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+10D2 text38 CODE >23:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+10D4 text38 CODE >25:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+10DC text38 CODE >26:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+1478 text37 CODE >88:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+1478 text37 CODE >90:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+147C text37 CODE >90:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+1481 text37 CODE >94:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+148A text37 CODE >96:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+1491 text37 CODE >96:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+1496 text37 CODE >100:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+149F text37 CODE >102:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+14A6 text37 CODE >102:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+14AB text37 CODE >106:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+14B4 text37 CODE >108:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+14BB text37 CODE >108:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+14C0 text37 CODE >112:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+14C9 text37 CODE >114:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+14CC text37 CODE >115:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+142C text36 CODE >116:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+142C text36 CODE >118:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+1430 text36 CODE >118:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+1435 text36 CODE >122:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+143E text36 CODE >124:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+1445 text36 CODE >124:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+144A text36 CODE >129:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+1451 text36 CODE >129:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+1456 text36 CODE >130:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+145F text36 CODE >133:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+1466 text36 CODE >133:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+146B text36 CODE >134:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+1474 text36 CODE >136:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+1477 text36 CODE >137:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+1098 text35 CODE >38:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+1099 text35 CODE >40:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+109C text35 CODE >41:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+10DD text34 CODE >106:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+10DE text34 CODE >108:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+10E7 text34 CODE >109:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+BB9 text33 CODE >10:D:\XC8\pic\sources\c99\common\sprcadd.c
+BB9 text33 CODE >21:D:\XC8\pic\sources\c99\common\sprcadd.c
+BBD text33 CODE >22:D:\XC8\pic\sources\c99\common\sprcadd.c
+BBF text33 CODE >23:D:\XC8\pic\sources\c99\common\sprcadd.c
+BC3 text33 CODE >24:D:\XC8\pic\sources\c99\common\sprcadd.c
+BC4 text33 CODE >28:D:\XC8\pic\sources\c99\common\sprcadd.c
+BC9 text33 CODE >30:D:\XC8\pic\sources\c99\common\sprcadd.c
+BCE text33 CODE >32:D:\XC8\pic\sources\c99\common\sprcadd.c
+BD6 text33 CODE >35:D:\XC8\pic\sources\c99\common\sprcadd.c
+BD7 text33 CODE >37:D:\XC8\pic\sources\c99\common\sprcadd.c
+BD8 text33 CODE >38:D:\XC8\pic\sources\c99\common\sprcadd.c
+BD9 text33 CODE >41:D:\XC8\pic\sources\c99\common\sprcadd.c
+BE1 text33 CODE >44:D:\XC8\pic\sources\c99\common\sprcadd.c
+BE4 text33 CODE >46:D:\XC8\pic\sources\c99\common\sprcadd.c
+BE6 text33 CODE >46:D:\XC8\pic\sources\c99\common\sprcadd.c
+BEA text33 CODE >47:D:\XC8\pic\sources\c99\common\sprcadd.c
+BEB text33 CODE >49:D:\XC8\pic\sources\c99\common\sprcadd.c
+BED text33 CODE >50:D:\XC8\pic\sources\c99\common\sprcadd.c
+BF1 text33 CODE >51:D:\XC8\pic\sources\c99\common\sprcadd.c
+BF2 text33 CODE >55:D:\XC8\pic\sources\c99\common\sprcadd.c
+BF7 text33 CODE >57:D:\XC8\pic\sources\c99\common\sprcadd.c
+BFC text33 CODE >59:D:\XC8\pic\sources\c99\common\sprcadd.c
+C04 text33 CODE >62:D:\XC8\pic\sources\c99\common\sprcadd.c
+C05 text33 CODE >64:D:\XC8\pic\sources\c99\common\sprcadd.c
+C06 text33 CODE >65:D:\XC8\pic\sources\c99\common\sprcadd.c
+C07 text33 CODE >68:D:\XC8\pic\sources\c99\common\sprcadd.c
+C0F text33 CODE >69:D:\XC8\pic\sources\c99\common\sprcadd.c
+C0F text33 CODE >75:D:\XC8\pic\sources\c99\common\sprcadd.c
+C11 text33 CODE >75:D:\XC8\pic\sources\c99\common\sprcadd.c
+C15 text33 CODE >77:D:\XC8\pic\sources\c99\common\sprcadd.c
+C19 text33 CODE >78:D:\XC8\pic\sources\c99\common\sprcadd.c
+C1B text33 CODE >81:D:\XC8\pic\sources\c99\common\sprcadd.c
+C1D text33 CODE >82:D:\XC8\pic\sources\c99\common\sprcadd.c
+C1F text33 CODE >83:D:\XC8\pic\sources\c99\common\sprcadd.c
+C21 text33 CODE >84:D:\XC8\pic\sources\c99\common\sprcadd.c
+C23 text33 CODE >85:D:\XC8\pic\sources\c99\common\sprcadd.c
+C25 text33 CODE >86:D:\XC8\pic\sources\c99\common\sprcadd.c
+C27 text33 CODE >87:D:\XC8\pic\sources\c99\common\sprcadd.c
+C29 text33 CODE >88:D:\XC8\pic\sources\c99\common\sprcadd.c
+C2B text33 CODE >89:D:\XC8\pic\sources\c99\common\sprcadd.c
+C2D text33 CODE >90:D:\XC8\pic\sources\c99\common\sprcadd.c
+C2F text33 CODE >91:D:\XC8\pic\sources\c99\common\sprcadd.c
+C31 text33 CODE >92:D:\XC8\pic\sources\c99\common\sprcadd.c
+C33 text33 CODE >93:D:\XC8\pic\sources\c99\common\sprcadd.c
+C35 text33 CODE >94:D:\XC8\pic\sources\c99\common\sprcadd.c
+C37 text33 CODE >95:D:\XC8\pic\sources\c99\common\sprcadd.c
+C39 text33 CODE >98:D:\XC8\pic\sources\c99\common\sprcadd.c
+C3A text33 CODE >100:D:\XC8\pic\sources\c99\common\sprcadd.c
+C42 text33 CODE >100:D:\XC8\pic\sources\c99\common\sprcadd.c
+C49 text33 CODE >100:D:\XC8\pic\sources\c99\common\sprcadd.c
+C4D text33 CODE >100:D:\XC8\pic\sources\c99\common\sprcadd.c
+C51 text33 CODE >101:D:\XC8\pic\sources\c99\common\sprcadd.c
+C55 text33 CODE >101:D:\XC8\pic\sources\c99\common\sprcadd.c
+C5D text33 CODE >102:D:\XC8\pic\sources\c99\common\sprcadd.c
+C65 text33 CODE >103:D:\XC8\pic\sources\c99\common\sprcadd.c
+C67 text33 CODE >104:D:\XC8\pic\sources\c99\common\sprcadd.c
+C68 text33 CODE >106:D:\XC8\pic\sources\c99\common\sprcadd.c
+C68 text33 CODE >109:D:\XC8\pic\sources\c99\common\sprcadd.c
+C6C text33 CODE >110:D:\XC8\pic\sources\c99\common\sprcadd.c
+C75 text33 CODE >111:D:\XC8\pic\sources\c99\common\sprcadd.c
+C76 text33 CODE >113:D:\XC8\pic\sources\c99\common\sprcadd.c
+C78 text33 CODE >115:D:\XC8\pic\sources\c99\common\sprcadd.c
+C7C text33 CODE >116:D:\XC8\pic\sources\c99\common\sprcadd.c
+C7D text33 CODE >118:D:\XC8\pic\sources\c99\common\sprcadd.c
+C85 text33 CODE >119:D:\XC8\pic\sources\c99\common\sprcadd.c
+C87 text33 CODE >106:D:\XC8\pic\sources\c99\common\sprcadd.c
+C8A text33 CODE >106:D:\XC8\pic\sources\c99\common\sprcadd.c
+C8E text33 CODE >121:D:\XC8\pic\sources\c99\common\sprcadd.c
+C8E text33 CODE >124:D:\XC8\pic\sources\c99\common\sprcadd.c
+C92 text33 CODE >127:D:\XC8\pic\sources\c99\common\sprcadd.c
+C97 text33 CODE >128:D:\XC8\pic\sources\c99\common\sprcadd.c
+CA0 text33 CODE >132:D:\XC8\pic\sources\c99\common\sprcadd.c
+CA8 text33 CODE >134:D:\XC8\pic\sources\c99\common\sprcadd.c
+CAC text33 CODE >135:D:\XC8\pic\sources\c99\common\sprcadd.c
+CB0 text33 CODE >136:D:\XC8\pic\sources\c99\common\sprcadd.c
+CB9 text33 CODE >137:D:\XC8\pic\sources\c99\common\sprcadd.c
+CBA text33 CODE >139:D:\XC8\pic\sources\c99\common\sprcadd.c
+CBC text33 CODE >141:D:\XC8\pic\sources\c99\common\sprcadd.c
+CC0 text33 CODE >142:D:\XC8\pic\sources\c99\common\sprcadd.c
+CC1 text33 CODE >144:D:\XC8\pic\sources\c99\common\sprcadd.c
+CC9 text33 CODE >145:D:\XC8\pic\sources\c99\common\sprcadd.c
+CCC text33 CODE >153:D:\XC8\pic\sources\c99\common\sprcadd.c
+CD2 text33 CODE >153:D:\XC8\pic\sources\c99\common\sprcadd.c
+CD6 text33 CODE >153:D:\XC8\pic\sources\c99\common\sprcadd.c
+CDA text33 CODE >153:D:\XC8\pic\sources\c99\common\sprcadd.c
+CDE text33 CODE >153:D:\XC8\pic\sources\c99\common\sprcadd.c
+CE2 text33 CODE >154:D:\XC8\pic\sources\c99\common\sprcadd.c
+D06 text33 CODE >155:D:\XC8\pic\sources\c99\common\sprcadd.c
+D08 text33 CODE >156:D:\XC8\pic\sources\c99\common\sprcadd.c
+D0B text33 CODE >157:D:\XC8\pic\sources\c99\common\sprcadd.c
+D10 text33 CODE >158:D:\XC8\pic\sources\c99\common\sprcadd.c
+D17 text33 CODE >162:D:\XC8\pic\sources\c99\common\sprcadd.c
+D1F text33 CODE >163:D:\XC8\pic\sources\c99\common\sprcadd.c
+D1F text33 CODE >166:D:\XC8\pic\sources\c99\common\sprcadd.c
+D23 text33 CODE >166:D:\XC8\pic\sources\c99\common\sprcadd.c
+D2C text33 CODE >167:D:\XC8\pic\sources\c99\common\sprcadd.c
+D35 text33 CODE >172:D:\XC8\pic\sources\c99\common\sprcadd.c
+D3C text33 CODE >173:D:\XC8\pic\sources\c99\common\sprcadd.c
+D40 text33 CODE >174:D:\XC8\pic\sources\c99\common\sprcadd.c
+D41 text33 CODE >175:D:\XC8\pic\sources\c99\common\sprcadd.c
+D41 text33 CODE >176:D:\XC8\pic\sources\c99\common\sprcadd.c
+D45 text33 CODE >177:D:\XC8\pic\sources\c99\common\sprcadd.c
+D48 text33 CODE >178:D:\XC8\pic\sources\c99\common\sprcadd.c
+D49 text33 CODE >180:D:\XC8\pic\sources\c99\common\sprcadd.c
+D4B text33 CODE >182:D:\XC8\pic\sources\c99\common\sprcadd.c
+D50 text33 CODE >183:D:\XC8\pic\sources\c99\common\sprcadd.c
+D52 text33 CODE >171:D:\XC8\pic\sources\c99\common\sprcadd.c
+D56 text33 CODE >192:D:\XC8\pic\sources\c99\common\sprcadd.c
+D57 text33 CODE >193:D:\XC8\pic\sources\c99\common\sprcadd.c
+D5B text33 CODE >194:D:\XC8\pic\sources\c99\common\sprcadd.c
+D61 text33 CODE >195:D:\XC8\pic\sources\c99\common\sprcadd.c
+D63 text33 CODE >196:D:\XC8\pic\sources\c99\common\sprcadd.c
+D64 text33 CODE >197:D:\XC8\pic\sources\c99\common\sprcadd.c
+D64 text33 CODE >198:D:\XC8\pic\sources\c99\common\sprcadd.c
+D69 text33 CODE >203:D:\XC8\pic\sources\c99\common\sprcadd.c
+D6E text33 CODE >204:D:\XC8\pic\sources\c99\common\sprcadd.c
+D74 text33 CODE >205:D:\XC8\pic\sources\c99\common\sprcadd.c
+D78 text33 CODE >206:D:\XC8\pic\sources\c99\common\sprcadd.c
+D90 text33 CODE >207:D:\XC8\pic\sources\c99\common\sprcadd.c
+D95 text33 CODE >208:D:\XC8\pic\sources\c99\common\sprcadd.c
+D97 text33 CODE >211:D:\XC8\pic\sources\c99\common\sprcadd.c
+D97 text33 CODE >215:D:\XC8\pic\sources\c99\common\sprcadd.c
+DA1 text33 CODE >216:D:\XC8\pic\sources\c99\common\sprcadd.c
+DA9 text33 CODE >218:D:\XC8\pic\sources\c99\common\sprcadd.c
+DAE text33 CODE >219:D:\XC8\pic\sources\c99\common\sprcadd.c
+DAF text33 CODE >225:D:\XC8\pic\sources\c99\common\sprcadd.c
+DB3 text33 CODE >226:D:\XC8\pic\sources\c99\common\sprcadd.c
+DB4 text33 CODE >227:D:\XC8\pic\sources\c99\common\sprcadd.c
+DB5 text33 CODE >230:D:\XC8\pic\sources\c99\common\sprcadd.c
+DB7 text33 CODE >231:D:\XC8\pic\sources\c99\common\sprcadd.c
+DB7 text33 CODE >232:D:\XC8\pic\sources\c99\common\sprcadd.c
+DBF text33 CODE >233:D:\XC8\pic\sources\c99\common\sprcadd.c
+DC3 text33 CODE >234:D:\XC8\pic\sources\c99\common\sprcadd.c
+DC4 text33 CODE >235:D:\XC8\pic\sources\c99\common\sprcadd.c
+DC4 text33 CODE >237:D:\XC8\pic\sources\c99\common\sprcadd.c
+A15 text32 CODE >8:D:\XC8\pic\sources\c99\common\sprcdiv.c
+A15 text32 CODE >26:D:\XC8\pic\sources\c99\common\sprcdiv.c
+A19 text32 CODE >27:D:\XC8\pic\sources\c99\common\sprcdiv.c
+A1B text32 CODE >28:D:\XC8\pic\sources\c99\common\sprcdiv.c
+A1F text32 CODE >29:D:\XC8\pic\sources\c99\common\sprcdiv.c
+A20 text32 CODE >33:D:\XC8\pic\sources\c99\common\sprcdiv.c
+A25 text32 CODE >35:D:\XC8\pic\sources\c99\common\sprcdiv.c
+A2A text32 CODE >37:D:\XC8\pic\sources\c99\common\sprcdiv.c
+A32 text32 CODE >40:D:\XC8\pic\sources\c99\common\sprcdiv.c
+A33 text32 CODE >42:D:\XC8\pic\sources\c99\common\sprcdiv.c
+A34 text32 CODE >43:D:\XC8\pic\sources\c99\common\sprcdiv.c
+A35 text32 CODE >46:D:\XC8\pic\sources\c99\common\sprcdiv.c
+A3D text32 CODE >49:D:\XC8\pic\sources\c99\common\sprcdiv.c
+A40 text32 CODE >50:D:\XC8\pic\sources\c99\common\sprcdiv.c
+A42 text32 CODE >51:D:\XC8\pic\sources\c99\common\sprcdiv.c
+A46 text32 CODE >52:D:\XC8\pic\sources\c99\common\sprcdiv.c
+A47 text32 CODE >56:D:\XC8\pic\sources\c99\common\sprcdiv.c
+A4C text32 CODE >58:D:\XC8\pic\sources\c99\common\sprcdiv.c
+A51 text32 CODE >60:D:\XC8\pic\sources\c99\common\sprcdiv.c
+A59 text32 CODE >63:D:\XC8\pic\sources\c99\common\sprcdiv.c
+A5A text32 CODE >65:D:\XC8\pic\sources\c99\common\sprcdiv.c
+A5B text32 CODE >66:D:\XC8\pic\sources\c99\common\sprcdiv.c
+A5C text32 CODE >69:D:\XC8\pic\sources\c99\common\sprcdiv.c
+A64 text32 CODE >70:D:\XC8\pic\sources\c99\common\sprcdiv.c
+A64 text32 CODE >75:D:\XC8\pic\sources\c99\common\sprcdiv.c
+A68 text32 CODE >75:D:\XC8\pic\sources\c99\common\sprcdiv.c
+A6C text32 CODE >76:D:\XC8\pic\sources\c99\common\sprcdiv.c
+A74 text32 CODE >77:D:\XC8\pic\sources\c99\common\sprcdiv.c
+A78 text32 CODE >78:D:\XC8\pic\sources\c99\common\sprcdiv.c
+A7A text32 CODE >79:D:\XC8\pic\sources\c99\common\sprcdiv.c
+A83 text32 CODE >83:D:\XC8\pic\sources\c99\common\sprcdiv.c
+A88 text32 CODE >84:D:\XC8\pic\sources\c99\common\sprcdiv.c
+A88 text32 CODE >85:D:\XC8\pic\sources\c99\common\sprcdiv.c
+A91 text32 CODE >89:D:\XC8\pic\sources\c99\common\sprcdiv.c
+A99 text32 CODE >89:D:\XC8\pic\sources\c99\common\sprcdiv.c
+AA1 text32 CODE >92:D:\XC8\pic\sources\c99\common\sprcdiv.c
+AA9 text32 CODE >93:D:\XC8\pic\sources\c99\common\sprcdiv.c
+AB1 text32 CODE >94:D:\XC8\pic\sources\c99\common\sprcdiv.c
+AB9 text32 CODE >96:D:\XC8\pic\sources\c99\common\sprcdiv.c
+ABA text32 CODE >97:D:\XC8\pic\sources\c99\common\sprcdiv.c
+ABB text32 CODE >100:D:\XC8\pic\sources\c99\common\sprcdiv.c
+AC0 text32 CODE >101:D:\XC8\pic\sources\c99\common\sprcdiv.c
+AC7 text32 CODE >102:D:\XC8\pic\sources\c99\common\sprcdiv.c
+ACE text32 CODE >103:D:\XC8\pic\sources\c99\common\sprcdiv.c
+AD2 text32 CODE >104:D:\XC8\pic\sources\c99\common\sprcdiv.c
+AD3 text32 CODE >106:D:\XC8\pic\sources\c99\common\sprcdiv.c
+ADA text32 CODE >112:D:\XC8\pic\sources\c99\common\sprcdiv.c
+ADC text32 CODE >112:D:\XC8\pic\sources\c99\common\sprcdiv.c
+AE0 text32 CODE >112:D:\XC8\pic\sources\c99\common\sprcdiv.c
+AE4 text32 CODE >112:D:\XC8\pic\sources\c99\common\sprcdiv.c
+AE8 text32 CODE >112:D:\XC8\pic\sources\c99\common\sprcdiv.c
+AEC text32 CODE >115:D:\XC8\pic\sources\c99\common\sprcdiv.c
+AED text32 CODE >116:D:\XC8\pic\sources\c99\common\sprcdiv.c
+AF5 text32 CODE >118:D:\XC8\pic\sources\c99\common\sprcdiv.c
+AF7 text32 CODE >97:D:\XC8\pic\sources\c99\common\sprcdiv.c
+AF9 text32 CODE >97:D:\XC8\pic\sources\c99\common\sprcdiv.c
+AFD text32 CODE >122:D:\XC8\pic\sources\c99\common\sprcdiv.c
+B01 text32 CODE >122:D:\XC8\pic\sources\c99\common\sprcdiv.c
+B05 text32 CODE >123:D:\XC8\pic\sources\c99\common\sprcdiv.c
+B07 text32 CODE >128:D:\XC8\pic\sources\c99\common\sprcdiv.c
+B0E text32 CODE >129:D:\XC8\pic\sources\c99\common\sprcdiv.c
+B12 text32 CODE >130:D:\XC8\pic\sources\c99\common\sprcdiv.c
+B13 text32 CODE >132:D:\XC8\pic\sources\c99\common\sprcdiv.c
+B1A text32 CODE >133:D:\XC8\pic\sources\c99\common\sprcdiv.c
+B1E text32 CODE >127:D:\XC8\pic\sources\c99\common\sprcdiv.c
+B22 text32 CODE >139:D:\XC8\pic\sources\c99\common\sprcdiv.c
+B23 text32 CODE >140:D:\XC8\pic\sources\c99\common\sprcdiv.c
+B27 text32 CODE >141:D:\XC8\pic\sources\c99\common\sprcdiv.c
+B37 text32 CODE >141:D:\XC8\pic\sources\c99\common\sprcdiv.c
+B3B text32 CODE >142:D:\XC8\pic\sources\c99\common\sprcdiv.c
+B3D text32 CODE >143:D:\XC8\pic\sources\c99\common\sprcdiv.c
+B3E text32 CODE >144:D:\XC8\pic\sources\c99\common\sprcdiv.c
+B3E text32 CODE >145:D:\XC8\pic\sources\c99\common\sprcdiv.c
+B43 text32 CODE >150:D:\XC8\pic\sources\c99\common\sprcdiv.c
+B48 text32 CODE >151:D:\XC8\pic\sources\c99\common\sprcdiv.c
+B4E text32 CODE >152:D:\XC8\pic\sources\c99\common\sprcdiv.c
+B52 text32 CODE >153:D:\XC8\pic\sources\c99\common\sprcdiv.c
+B6A text32 CODE >154:D:\XC8\pic\sources\c99\common\sprcdiv.c
+B6E text32 CODE >159:D:\XC8\pic\sources\c99\common\sprcdiv.c
+B73 text32 CODE >159:D:\XC8\pic\sources\c99\common\sprcdiv.c
+B77 text32 CODE >159:D:\XC8\pic\sources\c99\common\sprcdiv.c
+B7B text32 CODE >160:D:\XC8\pic\sources\c99\common\sprcdiv.c
+B80 text32 CODE >161:D:\XC8\pic\sources\c99\common\sprcdiv.c
+B88 text32 CODE >162:D:\XC8\pic\sources\c99\common\sprcdiv.c
+B88 text32 CODE >165:D:\XC8\pic\sources\c99\common\sprcdiv.c
+B8E text32 CODE >165:D:\XC8\pic\sources\c99\common\sprcdiv.c
+B92 text32 CODE >165:D:\XC8\pic\sources\c99\common\sprcdiv.c
+B96 text32 CODE >166:D:\XC8\pic\sources\c99\common\sprcdiv.c
+B99 text32 CODE >167:D:\XC8\pic\sources\c99\common\sprcdiv.c
+BA1 text32 CODE >169:D:\XC8\pic\sources\c99\common\sprcdiv.c
+BA2 text32 CODE >170:D:\XC8\pic\sources\c99\common\sprcdiv.c
+BA2 text32 CODE >173:D:\XC8\pic\sources\c99\common\sprcdiv.c
+BA5 text32 CODE >175:D:\XC8\pic\sources\c99\common\sprcdiv.c
+BA9 text32 CODE >176:D:\XC8\pic\sources\c99\common\sprcdiv.c
+BAA text32 CODE >177:D:\XC8\pic\sources\c99\common\sprcdiv.c
+BAB text32 CODE >180:D:\XC8\pic\sources\c99\common\sprcdiv.c
+BAD text32 CODE >181:D:\XC8\pic\sources\c99\common\sprcdiv.c
+BAD text32 CODE >182:D:\XC8\pic\sources\c99\common\sprcdiv.c
+BB5 text32 CODE >183:D:\XC8\pic\sources\c99\common\sprcdiv.c
+BB8 text32 CODE >185:D:\XC8\pic\sources\c99\common\sprcdiv.c
+1775 text31 CODE >4:D:\XC8\pic\sources\c99\common\flge.c
+1775 text31 CODE >7:D:\XC8\pic\sources\c99\common\flge.c
+1786 text31 CODE >7:D:\XC8\pic\sources\c99\common\flge.c
+178A text31 CODE >8:D:\XC8\pic\sources\c99\common\flge.c
+1792 text31 CODE >9:D:\XC8\pic\sources\c99\common\flge.c
+17A2 text31 CODE >9:D:\XC8\pic\sources\c99\common\flge.c
+17A6 text31 CODE >10:D:\XC8\pic\sources\c99\common\flge.c
+17AE text31 CODE >12:D:\XC8\pic\sources\c99\common\flge.c
+17B2 text31 CODE >13:D:\XC8\pic\sources\c99\common\flge.c
+17CA text31 CODE >14:D:\XC8\pic\sources\c99\common\flge.c
+17CE text31 CODE >15:D:\XC8\pic\sources\c99\common\flge.c
+17E6 text31 CODE >16:D:\XC8\pic\sources\c99\common\flge.c
+17E8 text31 CODE >17:D:\XC8\pic\sources\c99\common\flge.c
+17EA text31 CODE >18:D:\XC8\pic\sources\c99\common\flge.c
+17EC text31 CODE >18:D:\XC8\pic\sources\c99\common\flge.c
+17F0 text31 CODE >18:D:\XC8\pic\sources\c99\common\flge.c
+17F4 text31 CODE >18:D:\XC8\pic\sources\c99\common\flge.c
+17F8 text31 CODE >18:D:\XC8\pic\sources\c99\common\flge.c
+17FC text31 CODE >18:D:\XC8\pic\sources\c99\common\flge.c
+17FE text31 CODE >18:D:\XC8\pic\sources\c99\common\flge.c
+17FF text31 CODE >19:D:\XC8\pic\sources\c99\common\flge.c
+157F text30 CODE >43:D:\XC8\pic\sources\c99\common\fltol.c
+157F text30 CODE >47:D:\XC8\pic\sources\c99\common\fltol.c
+1589 text30 CODE >48:D:\XC8\pic\sources\c99\common\fltol.c
+1592 text30 CODE >49:D:\XC8\pic\sources\c99\common\fltol.c
+15A3 text30 CODE >50:D:\XC8\pic\sources\c99\common\fltol.c
+15A4 text30 CODE >51:D:\XC8\pic\sources\c99\common\fltol.c
+15AC text30 CODE >52:D:\XC8\pic\sources\c99\common\fltol.c
+15AE text30 CODE >53:D:\XC8\pic\sources\c99\common\fltol.c
+15B2 text30 CODE >54:D:\XC8\pic\sources\c99\common\fltol.c
+15B5 text30 CODE >54:D:\XC8\pic\sources\c99\common\fltol.c
+15BA text30 CODE >57:D:\XC8\pic\sources\c99\common\fltol.c
+15C8 text30 CODE >60:D:\XC8\pic\sources\c99\common\fltol.c
+15CA text30 CODE >60:D:\XC8\pic\sources\c99\common\fltol.c
+15CF text30 CODE >63:D:\XC8\pic\sources\c99\common\fltol.c
+15D6 text30 CODE >64:D:\XC8\pic\sources\c99\common\fltol.c
+15D8 text30 CODE >62:D:\XC8\pic\sources\c99\common\fltol.c
+15D8 text30 CODE >65:D:\XC8\pic\sources\c99\common\fltol.c
+15DD text30 CODE >67:D:\XC8\pic\sources\c99\common\fltol.c
+15E2 text30 CODE >68:D:\XC8\pic\sources\c99\common\fltol.c
+15E7 text30 CODE >68:D:\XC8\pic\sources\c99\common\fltol.c
+15E9 text30 CODE >68:D:\XC8\pic\sources\c99\common\fltol.c
+15EB text30 CODE >68:D:\XC8\pic\sources\c99\common\fltol.c
+15ED text30 CODE >70:D:\XC8\pic\sources\c99\common\fltol.c
+91B text29 CODE >28:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+91B text29 CODE >30:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+924 text29 CODE >32:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+93B text29 CODE >34:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+944 text29 CODE >36:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+970 text29 CODE >38:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+98D text29 CODE >39:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+98D text29 CODE >41:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+9AA text29 CODE >43:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+9C1 text29 CODE >45:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+9CA text29 CODE >47:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+9E2 text29 CODE >49:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+9EB text29 CODE >52:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+A14 text29 CODE >53:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+134B text28 CODE >55:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+134B text28 CODE >57:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+134D text28 CODE >58:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+134E text28 CODE >60:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+1350 text28 CODE >61:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+1351 text28 CODE >63:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+1352 text28 CODE >64:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+1353 text28 CODE >66:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+1357 text28 CODE >68:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+135A text28 CODE >70:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+135C text28 CODE >71:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+135D text28 CODE >72:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+135E text28 CODE >74:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+136F text28 CODE >75:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+1372 text28 CODE >76:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+1376 text28 CODE >78:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+1378 text28 CODE >79:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+1379 text28 CODE >81:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+137B text28 CODE >82:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+11D1 text27 CODE >4:D:\XC8\pic\sources\c99\common\Umul8_16.c
+11D3 text27 CODE >5:D:\XC8\pic\sources\c99\common\Umul8_16.c
+11D5 text27 CODE >6:D:\XC8\pic\sources\c99\common\Umul8_16.c
+11DC text27 CODE >51:D:\XC8\pic\sources\c99\common\Umul8_16.c
+11E0 text27 CODE >52:D:\XC8\pic\sources\c99\common\Umul8_16.c
+11E4 text27 CODE >53:D:\XC8\pic\sources\c99\common\Umul8_16.c
+11E4 text27 CODE >54:D:\XC8\pic\sources\c99\common\Umul8_16.c
+11E9 text27 CODE >55:D:\XC8\pic\sources\c99\common\Umul8_16.c
+11EB text27 CODE >56:D:\XC8\pic\sources\c99\common\Umul8_16.c
+11F0 text27 CODE >59:D:\XC8\pic\sources\c99\common\Umul8_16.c
+11F4 text27 CODE >60:D:\XC8\pic\sources\c99\common\Umul8_16.c
+DC5 text26 CODE >8:D:\XC8\pic\sources\c99\common\sprcmul.c
+DC5 text26 CODE >17:D:\XC8\pic\sources\c99\common\sprcmul.c
+DC9 text26 CODE >18:D:\XC8\pic\sources\c99\common\sprcmul.c
+DCB text26 CODE >19:D:\XC8\pic\sources\c99\common\sprcmul.c
+DCF text26 CODE >20:D:\XC8\pic\sources\c99\common\sprcmul.c
+DD0 text26 CODE >24:D:\XC8\pic\sources\c99\common\sprcmul.c
+DD5 text26 CODE >26:D:\XC8\pic\sources\c99\common\sprcmul.c
+DDA text26 CODE >28:D:\XC8\pic\sources\c99\common\sprcmul.c
+DE2 text26 CODE >31:D:\XC8\pic\sources\c99\common\sprcmul.c
+DE3 text26 CODE >33:D:\XC8\pic\sources\c99\common\sprcmul.c
+DE4 text26 CODE >36:D:\XC8\pic\sources\c99\common\sprcmul.c
+DEC text26 CODE >39:D:\XC8\pic\sources\c99\common\sprcmul.c
+DEF text26 CODE >40:D:\XC8\pic\sources\c99\common\sprcmul.c
+DF1 text26 CODE >41:D:\XC8\pic\sources\c99\common\sprcmul.c
+DF5 text26 CODE >42:D:\XC8\pic\sources\c99\common\sprcmul.c
+DF6 text26 CODE >45:D:\XC8\pic\sources\c99\common\sprcmul.c
+DFB text26 CODE >48:D:\XC8\pic\sources\c99\common\sprcmul.c
+E00 text26 CODE >50:D:\XC8\pic\sources\c99\common\sprcmul.c
+E08 text26 CODE >53:D:\XC8\pic\sources\c99\common\sprcmul.c
+E09 text26 CODE >54:D:\XC8\pic\sources\c99\common\sprcmul.c
+E0A text26 CODE >57:D:\XC8\pic\sources\c99\common\sprcmul.c
+E12 text26 CODE >65:D:\XC8\pic\sources\c99\common\sprcmul.c
+E1C text26 CODE >66:D:\XC8\pic\sources\c99\common\sprcmul.c
+E25 text26 CODE >119:D:\XC8\pic\sources\c99\common\sprcmul.c
+E30 text26 CODE >120:D:\XC8\pic\sources\c99\common\sprcmul.c
+E3D text26 CODE >121:D:\XC8\pic\sources\c99\common\sprcmul.c
+E4A text26 CODE >122:D:\XC8\pic\sources\c99\common\sprcmul.c
+E55 text26 CODE >123:D:\XC8\pic\sources\c99\common\sprcmul.c
+E62 text26 CODE >124:D:\XC8\pic\sources\c99\common\sprcmul.c
+E6F text26 CODE >125:D:\XC8\pic\sources\c99\common\sprcmul.c
+E7A text26 CODE >126:D:\XC8\pic\sources\c99\common\sprcmul.c
+E87 text26 CODE >127:D:\XC8\pic\sources\c99\common\sprcmul.c
+E94 text26 CODE >128:D:\XC8\pic\sources\c99\common\sprcmul.c
+E9B text26 CODE >129:D:\XC8\pic\sources\c99\common\sprcmul.c
+EA6 text26 CODE >130:D:\XC8\pic\sources\c99\common\sprcmul.c
+EAD text26 CODE >131:D:\XC8\pic\sources\c99\common\sprcmul.c
+EB8 text26 CODE >132:D:\XC8\pic\sources\c99\common\sprcmul.c
+EBF text26 CODE >133:D:\XC8\pic\sources\c99\common\sprcmul.c
+EC6 text26 CODE >134:D:\XC8\pic\sources\c99\common\sprcmul.c
+ED1 text26 CODE >135:D:\XC8\pic\sources\c99\common\sprcmul.c
+ED8 text26 CODE >136:D:\XC8\pic\sources\c99\common\sprcmul.c
+EE3 text26 CODE >137:D:\XC8\pic\sources\c99\common\sprcmul.c
+EEA text26 CODE >138:D:\XC8\pic\sources\c99\common\sprcmul.c
+EF5 text26 CODE >139:D:\XC8\pic\sources\c99\common\sprcmul.c
+EFC text26 CODE >140:D:\XC8\pic\sources\c99\common\sprcmul.c
+F07 text26 CODE >141:D:\XC8\pic\sources\c99\common\sprcmul.c
+F1C text26 CODE >145:D:\XC8\pic\sources\c99\common\sprcmul.c
+F33 text26 CODE >146:D:\XC8\pic\sources\c99\common\sprcmul.c
+F3A text26 CODE >149:D:\XC8\pic\sources\c99\common\sprcmul.c
+F45 text26 CODE >152:D:\XC8\pic\sources\c99\common\sprcmul.c
+F46 text26 CODE >153:D:\XC8\pic\sources\c99\common\sprcmul.c
+F4D text26 CODE >154:D:\XC8\pic\sources\c99\common\sprcmul.c
+F51 text26 CODE >155:D:\XC8\pic\sources\c99\common\sprcmul.c
+F52 text26 CODE >157:D:\XC8\pic\sources\c99\common\sprcmul.c
+F59 text26 CODE >158:D:\XC8\pic\sources\c99\common\sprcmul.c
+F5D text26 CODE >152:D:\XC8\pic\sources\c99\common\sprcmul.c
+F61 text26 CODE >163:D:\XC8\pic\sources\c99\common\sprcmul.c
+F62 text26 CODE >164:D:\XC8\pic\sources\c99\common\sprcmul.c
+F66 text26 CODE >165:D:\XC8\pic\sources\c99\common\sprcmul.c
+F76 text26 CODE >165:D:\XC8\pic\sources\c99\common\sprcmul.c
+F7A text26 CODE >166:D:\XC8\pic\sources\c99\common\sprcmul.c
+F7C text26 CODE >167:D:\XC8\pic\sources\c99\common\sprcmul.c
+F7D text26 CODE >168:D:\XC8\pic\sources\c99\common\sprcmul.c
+F7D text26 CODE >169:D:\XC8\pic\sources\c99\common\sprcmul.c
+F82 text26 CODE >174:D:\XC8\pic\sources\c99\common\sprcmul.c
+F87 text26 CODE >175:D:\XC8\pic\sources\c99\common\sprcmul.c
+F8D text26 CODE >176:D:\XC8\pic\sources\c99\common\sprcmul.c
+F91 text26 CODE >177:D:\XC8\pic\sources\c99\common\sprcmul.c
+FA9 text26 CODE >178:D:\XC8\pic\sources\c99\common\sprcmul.c
+FAD text26 CODE >183:D:\XC8\pic\sources\c99\common\sprcmul.c
+FB2 text26 CODE >183:D:\XC8\pic\sources\c99\common\sprcmul.c
+FB6 text26 CODE >183:D:\XC8\pic\sources\c99\common\sprcmul.c
+FBA text26 CODE >184:D:\XC8\pic\sources\c99\common\sprcmul.c
+FC3 text26 CODE >185:D:\XC8\pic\sources\c99\common\sprcmul.c
+FC4 text26 CODE >187:D:\XC8\pic\sources\c99\common\sprcmul.c
+FCA text26 CODE >187:D:\XC8\pic\sources\c99\common\sprcmul.c
+FCE text26 CODE >187:D:\XC8\pic\sources\c99\common\sprcmul.c
+FD2 text26 CODE >188:D:\XC8\pic\sources\c99\common\sprcmul.c
+FDB text26 CODE >190:D:\XC8\pic\sources\c99\common\sprcmul.c
+FDC text26 CODE >191:D:\XC8\pic\sources\c99\common\sprcmul.c
+FDD text26 CODE >194:D:\XC8\pic\sources\c99\common\sprcmul.c
+FE0 text26 CODE >195:D:\XC8\pic\sources\c99\common\sprcmul.c
+FE8 text26 CODE >196:D:\XC8\pic\sources\c99\common\sprcmul.c
+FEC text26 CODE >197:D:\XC8\pic\sources\c99\common\sprcmul.c
+FED text26 CODE >199:D:\XC8\pic\sources\c99\common\sprcmul.c
+FF5 text26 CODE >200:D:\XC8\pic\sources\c99\common\sprcmul.c
+FF5 text26 CODE >201:D:\XC8\pic\sources\c99\common\sprcmul.c
+FF7 text26 CODE >203:D:\XC8\pic\sources\c99\common\sprcmul.c
+FFF text26 CODE >205:D:\XC8\pic\sources\c99\common\sprcmul.c
+1669 text25 CODE >111:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+1669 text25 CODE >113:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+1681 text25 CODE >115:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+168A text25 CODE >117:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+16A2 text25 CODE >119:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+16AB text25 CODE >122:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+16C8 text25 CODE >123:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+16D8 text25 CODE >125:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+16D9 text25 CODE >126:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+16DD text25 CODE >127:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+16E0 text25 CODE >128:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+16E4 text25 CODE >129:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+16E6 text25 CODE >130:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+16E7 text25 CODE >131:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+16E9 text25 CODE >132:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+16EA text25 CODE >133:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+16EB text24 CODE >135:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+16EB text24 CODE >137:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+16F4 text24 CODE >139:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+170B text24 CODE >141:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+1714 text24 CODE >144:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+1731 text24 CODE >145:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+174D text24 CODE >146:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+1769 text24 CODE >148:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+1774 text24 CODE >149:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+109D text23 CODE >151:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+109D text23 CODE >153:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+109E text23 CODE >154:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+10A0 text23 CODE >155:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+10A1 text23 CODE >156:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+10A2 text23 CODE >157:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+10A3 text23 CODE >158:C:\Users\forga\MPLABXProjects\PICTest1.X\motor.c
+131B text22 CODE >62:C:\Users\forga\MPLABXProjects\PICTest1.X\mux.c
+131C text22 CODE >64:C:\Users\forga\MPLABXProjects\PICTest1.X\mux.c
+131F text22 CODE >66:C:\Users\forga\MPLABXProjects\PICTest1.X\mux.c
+132A text22 CODE >67:C:\Users\forga\MPLABXProjects\PICTest1.X\mux.c
+133B text22 CODE >68:C:\Users\forga\MPLABXProjects\PICTest1.X\mux.c
+134A text22 CODE >69:C:\Users\forga\MPLABXProjects\PICTest1.X\mux.c
+1104 text21 CODE >75:C:\Users\forga\MPLABXProjects\PICTest1.X\mux.c
+1104 text21 CODE >78:C:\Users\forga\MPLABXProjects\PICTest1.X\mux.c
+1106 text21 CODE >79:C:\Users\forga\MPLABXProjects\PICTest1.X\mux.c
+1107 text21 CODE >80:C:\Users\forga\MPLABXProjects\PICTest1.X\mux.c
+1108 text21 CODE >81:C:\Users\forga\MPLABXProjects\PICTest1.X\mux.c
+1109 text21 CODE >84:C:\Users\forga\MPLABXProjects\PICTest1.X\mux.c
+110D text21 CODE >85:C:\Users\forga\MPLABXProjects\PICTest1.X\mux.c
+110F text21 CODE >88:C:\Users\forga\MPLABXProjects\PICTest1.X\mux.c
+1110 text21 CODE >89:C:\Users\forga\MPLABXProjects\PICTest1.X\mux.c
+1111 text21 CODE >90:C:\Users\forga\MPLABXProjects\PICTest1.X\mux.c
+1112 text21 CODE >91:C:\Users\forga\MPLABXProjects\PICTest1.X\mux.c
+1113 text21 CODE >92:C:\Users\forga\MPLABXProjects\PICTest1.X\mux.c
+1161 text20 CODE >94:C:\Users\forga\MPLABXProjects\PICTest1.X\mux.c
+1162 text20 CODE >96:C:\Users\forga\MPLABXProjects\PICTest1.X\mux.c
+1169 text20 CODE >96:C:\Users\forga\MPLABXProjects\PICTest1.X\mux.c
+116E text20 CODE >102:C:\Users\forga\MPLABXProjects\PICTest1.X\mux.c
+1171 text20 CODE >104:C:\Users\forga\MPLABXProjects\PICTest1.X\mux.c
+1173 text20 CODE >105:C:\Users\forga\MPLABXProjects\PICTest1.X\mux.c
+1177 text20 CODE >106:C:\Users\forga\MPLABXProjects\PICTest1.X\mux.c
+1179 text20 CODE >107:C:\Users\forga\MPLABXProjects\PICTest1.X\mux.c
+1124 text19 CODE >92:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+1124 text19 CODE >94:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+112E text19 CODE >94:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+1135 text19 CODE >95:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+1267 text18 CODE >148:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+1267 text18 CODE >151:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+1269 text18 CODE >152:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+126B text18 CODE >155:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+1270 text18 CODE >158:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+1277 text18 CODE >161:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+1279 text18 CODE >162:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+127D text18 CODE >163:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+127F text18 CODE >166:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+1286 text18 CODE >167:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+1288 text18 CODE >168:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+128C text18 CODE >170:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+1290 text18 CODE >171:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+1219 text17 CODE >126:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+1219 text17 CODE >129:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+121E text17 CODE >133:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+1225 text17 CODE >136:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+1227 text17 CODE >137:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+122B text17 CODE >138:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+122D text17 CODE >141:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+1234 text17 CODE >142:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+1236 text17 CODE >143:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+123A text17 CODE >145:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+123E text17 CODE >146:C:\Users\forga\MPLABXProjects\PICTest1.X\ADC.c
+806 text16 CODE >15:D:\XC8\pic\sources\c99\common\Umul32.c
+806 text16 CODE >119:D:\XC8\pic\sources\c99\common\Umul32.c
+80F text16 CODE >121:D:\XC8\pic\sources\c99\common\Umul32.c
+813 text16 CODE >122:D:\XC8\pic\sources\c99\common\Umul32.c
+81C text16 CODE >123:D:\XC8\pic\sources\c99\common\Umul32.c
+823 text16 CODE >124:D:\XC8\pic\sources\c99\common\Umul32.c
+82A text16 CODE >125:D:\XC8\pic\sources\c99\common\Umul32.c
+82E text16 CODE >125:D:\XC8\pic\sources\c99\common\Umul32.c
+832 text16 CODE >128:D:\XC8\pic\sources\c99\common\Umul32.c
+83B text16 CODE >129:D:\XC8\pic\sources\c99\common\Umul32.c
+1114 text15 CODE >231:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+1114 text15 CODE >234:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+111A text15 CODE >236:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+111B text15 CODE >237:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+1120 text15 CODE >238:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+1122 text15 CODE >240:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+1123 text15 CODE >241:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+12BE text14 CODE >50:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+12BE text14 CODE >52:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+12BF text14 CODE >53:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+12C2 text14 CODE >55:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+12CA text14 CODE >57:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+12D0 text14 CODE >57:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+12D9 text14 CODE >59:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+12DC text14 CODE >60:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+12DD text14 CODE >62:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+12E3 text14 CODE >62:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+12E7 text14 CODE >62:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+12EB text14 CODE >63:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+11F5 text13 CODE >138:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+11F5 text13 CODE >140:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+11F9 text13 CODE >140:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+11FE text13 CODE >145:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+1205 text13 CODE >145:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+120A text13 CODE >150:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+1210 text13 CODE >150:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+1215 text13 CODE >155:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+1218 text13 CODE >156:C:\Users\forga\MPLABXProjects\PICTest1.X\lmp91000.c
+14CD text12 CODE >5:D:\XC8\pic\sources\c99\common\__lldiv.c
+14CD text12 CODE >13:D:\XC8\pic\sources\c99\common\__lldiv.c
+14D6 text12 CODE >14:D:\XC8\pic\sources\c99\common\__lldiv.c
+14DA text12 CODE >14:D:\XC8\pic\sources\c99\common\__lldiv.c
+14DE text12 CODE >15:D:\XC8\pic\sources\c99\common\__lldiv.c
+14E0 text12 CODE >16:D:\XC8\pic\sources\c99\common\__lldiv.c
+14E1 text12 CODE >17:D:\XC8\pic\sources\c99\common\__lldiv.c
+14E8 text12 CODE >18:D:\XC8\pic\sources\c99\common\__lldiv.c
+14EA text12 CODE >16:D:\XC8\pic\sources\c99\common\__lldiv.c
+14EE text12 CODE >21:D:\XC8\pic\sources\c99\common\__lldiv.c
+14F5 text12 CODE >22:D:\XC8\pic\sources\c99\common\__lldiv.c
+14F7 text12 CODE >22:D:\XC8\pic\sources\c99\common\__lldiv.c
+14FB text12 CODE >22:D:\XC8\pic\sources\c99\common\__lldiv.c
+14FF text12 CODE >22:D:\XC8\pic\sources\c99\common\__lldiv.c
+1503 text12 CODE >22:D:\XC8\pic\sources\c99\common\__lldiv.c
+1507 text12 CODE >23:D:\XC8\pic\sources\c99\common\__lldiv.c
+150F text12 CODE >24:D:\XC8\pic\sources\c99\common\__lldiv.c
+1510 text12 CODE >26:D:\XC8\pic\sources\c99\common\__lldiv.c
+1517 text12 CODE >27:D:\XC8\pic\sources\c99\common\__lldiv.c
+151D text12 CODE >29:D:\XC8\pic\sources\c99\common\__lldiv.c
+1525 text12 CODE >30:D:\XC8\pic\sources\c99\common\__lldiv.c
+13E3 text11 CODE >5:D:\XC8\pic\sources\c99\common\llmod.c
+13E3 text11 CODE >12:D:\XC8\pic\sources\c99\common\llmod.c
+13E7 text11 CODE >12:D:\XC8\pic\sources\c99\common\llmod.c
+13EB text11 CODE >13:D:\XC8\pic\sources\c99\common\llmod.c
+13EE text11 CODE >14:D:\XC8\pic\sources\c99\common\llmod.c
+13EF text11 CODE >15:D:\XC8\pic\sources\c99\common\llmod.c
+13F6 text11 CODE >16:D:\XC8\pic\sources\c99\common\llmod.c
+13F8 text11 CODE >14:D:\XC8\pic\sources\c99\common\llmod.c
+13FC text11 CODE >19:D:\XC8\pic\sources\c99\common\llmod.c
+13FE text11 CODE >19:D:\XC8\pic\sources\c99\common\llmod.c
+1402 text11 CODE >19:D:\XC8\pic\sources\c99\common\llmod.c
+1406 text11 CODE >19:D:\XC8\pic\sources\c99\common\llmod.c
+140A text11 CODE >19:D:\XC8\pic\sources\c99\common\llmod.c
+140E text11 CODE >20:D:\XC8\pic\sources\c99\common\llmod.c
+1416 text11 CODE >21:D:\XC8\pic\sources\c99\common\llmod.c
+141D text11 CODE >22:D:\XC8\pic\sources\c99\common\llmod.c
+1423 text11 CODE >24:D:\XC8\pic\sources\c99\common\llmod.c
+142B text11 CODE >25:D:\XC8\pic\sources\c99\common\llmod.c
+3 text10 CODE >7:D:\XC8\pic\sources\c99\common\putch.c
+3 text10 CODE >9:D:\XC8\pic\sources\c99\common\putch.c
+1526 text9 CODE >8:D:\XC8\pic\sources\c99\common\nf_fputc.c
+1526 text9 CODE >12:D:\XC8\pic\sources\c99\common\nf_fputc.c
+1532 text9 CODE >13:D:\XC8\pic\sources\c99\common\nf_fputc.c
+1536 text9 CODE >14:D:\XC8\pic\sources\c99\common\nf_fputc.c
+1537 text9 CODE >15:D:\XC8\pic\sources\c99\common\nf_fputc.c
+1558 text9 CODE >15:D:\XC8\pic\sources\c99\common\nf_fputc.c
+155C text9 CODE >15:D:\XC8\pic\sources\c99\common\nf_fputc.c
+1560 text9 CODE >18:D:\XC8\pic\sources\c99\common\nf_fputc.c
+1575 text9 CODE >20:D:\XC8\pic\sources\c99\common\nf_fputc.c
+157C text9 CODE >20:D:\XC8\pic\sources\c99\common\nf_fputc.c
+157E text9 CODE >24:D:\XC8\pic\sources\c99\common\nf_fputc.c
+6B7 text8 CODE >1177:D:\XC8\pic\sources\c99\common\doprnt.c
+6B7 text8 CODE >1191:D:\XC8\pic\sources\c99\common\doprnt.c
+6BA text8 CODE >1201:D:\XC8\pic\sources\c99\common\doprnt.c
+6CB text8 CODE >1202:D:\XC8\pic\sources\c99\common\doprnt.c
+6D1 text8 CODE >1202:D:\XC8\pic\sources\c99\common\doprnt.c
+6D3 text8 CODE >1204:D:\XC8\pic\sources\c99\common\doprnt.c
+6D8 text8 CODE >1205:D:\XC8\pic\sources\c99\common\doprnt.c
+6DC text8 CODE >1291:D:\XC8\pic\sources\c99\common\doprnt.c
+6E4 text8 CODE >1293:D:\XC8\pic\sources\c99\common\doprnt.c
+6EA text8 CODE >1294:D:\XC8\pic\sources\c99\common\doprnt.c
+6EB text8 CODE >1309:D:\XC8\pic\sources\c99\common\doprnt.c
+6EF text8 CODE >1316:D:\XC8\pic\sources\c99\common\doprnt.c
+6F0 text8 CODE >1335:D:\XC8\pic\sources\c99\common\doprnt.c
+6F0 text8 CODE >1350:D:\XC8\pic\sources\c99\common\doprnt.c
+6F2 text8 CODE >1351:D:\XC8\pic\sources\c99\common\doprnt.c
+6F3 text8 CODE >1353:D:\XC8\pic\sources\c99\common\doprnt.c
+6F4 text8 CODE >1354:D:\XC8\pic\sources\c99\common\doprnt.c
+6F5 text8 CODE >1355:D:\XC8\pic\sources\c99\common\doprnt.c
+6F7 text8 CODE >1355:D:\XC8\pic\sources\c99\common\doprnt.c
+6FA text8 CODE >1355:D:\XC8\pic\sources\c99\common\doprnt.c
+6FD text8 CODE >1439:D:\XC8\pic\sources\c99\common\doprnt.c
+708 text8 CODE >1456:D:\XC8\pic\sources\c99\common\doprnt.c
+71A text8 CODE >1457:D:\XC8\pic\sources\c99\common\doprnt.c
+71B text8 CODE >1470:D:\XC8\pic\sources\c99\common\doprnt.c
+72B text8 CODE >1471:D:\XC8\pic\sources\c99\common\doprnt.c
+72C text8 CODE >1493:D:\XC8\pic\sources\c99\common\doprnt.c
+72E text8 CODE >1493:D:\XC8\pic\sources\c99\common\doprnt.c
+731 text8 CODE >1493:D:\XC8\pic\sources\c99\common\doprnt.c
+734 text8 CODE >1497:D:\XC8\pic\sources\c99\common\doprnt.c
+741 text8 CODE >1498:D:\XC8\pic\sources\c99\common\doprnt.c
+742 text8 CODE >1523:D:\XC8\pic\sources\c99\common\doprnt.c
+742 text8 CODE >1525:D:\XC8\pic\sources\c99\common\doprnt.c
+744 text8 CODE >1527:D:\XC8\pic\sources\c99\common\doprnt.c
+761 text8 CODE >1528:D:\XC8\pic\sources\c99\common\doprnt.c
+77E text8 CODE >1530:D:\XC8\pic\sources\c99\common\doprnt.c
+782 text8 CODE >1532:D:\XC8\pic\sources\c99\common\doprnt.c
+786 text8 CODE >1532:D:\XC8\pic\sources\c99\common\doprnt.c
+790 text8 CODE >1534:D:\XC8\pic\sources\c99\common\doprnt.c
+7A6 text8 CODE >1533:D:\XC8\pic\sources\c99\common\doprnt.c
+7AC text8 CODE >1537:D:\XC8\pic\sources\c99\common\doprnt.c
+7B1 text8 CODE >1589:D:\XC8\pic\sources\c99\common\doprnt.c
+7B7 text8 CODE >1589:D:\XC8\pic\sources\c99\common\doprnt.c
+7BA text8 CODE >1806:D:\XC8\pic\sources\c99\common\doprnt.c
+7C0 text8 CODE >1806:D:\XC8\pic\sources\c99\common\doprnt.c
+7C2 text8 CODE >1807:D:\XC8\pic\sources\c99\common\doprnt.c
+7C5 text8 CODE >1811:D:\XC8\pic\sources\c99\common\doprnt.c
+7DE text8 CODE >1812:D:\XC8\pic\sources\c99\common\doprnt.c
+7E5 text8 CODE >1812:D:\XC8\pic\sources\c99\common\doprnt.c
+7E7 text8 CODE >1813:D:\XC8\pic\sources\c99\common\doprnt.c
+7EB text8 CODE >1814:D:\XC8\pic\sources\c99\common\doprnt.c
+12EC text7 CODE >1817:D:\XC8\pic\sources\c99\common\doprnt.c
+12EC text7 CODE >1822:D:\XC8\pic\sources\c99\common\doprnt.c
+12F1 text7 CODE >1824:D:\XC8\pic\sources\c99\common\doprnt.c
+12F4 text7 CODE >1826:D:\XC8\pic\sources\c99\common\doprnt.c
+12F5 text7 CODE >1828:D:\XC8\pic\sources\c99\common\doprnt.c
+1308 text7 CODE >1826:D:\XC8\pic\sources\c99\common\doprnt.c
+1312 text7 CODE >1833:D:\XC8\pic\sources\c99\common\doprnt.c
+131A text7 CODE >1840:D:\XC8\pic\sources\c99\common\doprnt.c
+15EE text6 CODE >13:D:\XC8\pic\sources\c99\common\nf_snprintf.c
+15EE text6 CODE >19:D:\XC8\pic\sources\c99\common\nf_snprintf.c
+15F2 text6 CODE >19:D:\XC8\pic\sources\c99\common\nf_snprintf.c
+15F4 text6 CODE >19:D:\XC8\pic\sources\c99\common\nf_snprintf.c
+15F8 text6 CODE >20:D:\XC8\pic\sources\c99\common\nf_snprintf.c
+15FD text6 CODE >21:D:\XC8\pic\sources\c99\common\nf_snprintf.c
+1603 text6 CODE >23:D:\XC8\pic\sources\c99\common\nf_snprintf.c
+1605 text6 CODE >24:D:\XC8\pic\sources\c99\common\nf_snprintf.c
+1608 text6 CODE >25:D:\XC8\pic\sources\c99\common\nf_snprintf.c
+160B text6 CODE >25:D:\XC8\pic\sources\c99\common\nf_snprintf.c
+160D text6 CODE >25:D:\XC8\pic\sources\c99\common\nf_snprintf.c
+1611 text6 CODE >26:D:\XC8\pic\sources\c99\common\nf_snprintf.c
+1617 text6 CODE >27:D:\XC8\pic\sources\c99\common\nf_snprintf.c
+1619 text6 CODE >28:D:\XC8\pic\sources\c99\common\nf_snprintf.c
+161A text6 CODE >30:D:\XC8\pic\sources\c99\common\nf_snprintf.c
+161E text6 CODE >31:D:\XC8\pic\sources\c99\common\nf_snprintf.c
+1622 text6 CODE >33:D:\XC8\pic\sources\c99\common\nf_snprintf.c
+1634 text6 CODE >34:D:\XC8\pic\sources\c99\common\nf_snprintf.c
+163E text6 CODE >35:D:\XC8\pic\sources\c99\common\nf_snprintf.c
+164A text6 CODE >35:D:\XC8\pic\sources\c99\common\nf_snprintf.c
+164E text6 CODE >35:D:\XC8\pic\sources\c99\common\nf_snprintf.c
+1664 text6 CODE >38:D:\XC8\pic\sources\c99\common\nf_snprintf.c
+1668 text6 CODE >39:D:\XC8\pic\sources\c99\common\nf_snprintf.c
+10C8 text5 CODE >129:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+10C9 text5 CODE >131:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+10C9 text5 CODE >134:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+10CE text5 CODE >135:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+10D1 text5 CODE >136:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+1194 text4 CODE >138:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+1194 text4 CODE >140:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+1195 text4 CODE >142:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+11A1 text4 CODE >140:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+11B0 text4 CODE >144:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+83C text3 CODE >77:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+83C text3 CODE >79:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+83E text3 CODE >82:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+83F text3 CODE >84:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+842 text3 CODE >87:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+848 text3 CODE >87:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+852 text3 CODE >88:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+854 text3 CODE >91:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+85A text3 CODE >93:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+85D text3 CODE >94:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+865 text3 CODE >99:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+87E text3 CODE >100:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+894 text3 CODE >106:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+8C2 text3 CODE >109:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+8C5 text3 CODE >110:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+8DC text3 CODE >110:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+8E1 text3 CODE >110:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+8E5 text3 CODE >113:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+8ED text3 CODE >116:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+8F3 text3 CODE >118:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+8F6 text3 CODE >119:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+8FE text3 CODE >122:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+906 text3 CODE >122:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+90C text3 CODE >122:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+910 text3 CODE >125:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+917 text3 CODE >126:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+91A text3 CODE >127:C:\Users\forga\MPLABXProjects\PICTest1.X\measurement.c
+1136 text2 CODE >47:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+1136 text2 CODE >49:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+113E text2 CODE >53:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+1144 text2 CODE >55:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+1148 text2 CODE >56:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+137C text1 CODE >68:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+137C text1 CODE >71:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+137D text1 CODE >72:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+1380 text1 CODE >73:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+1382 text1 CODE >74:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+1383 text1 CODE >75:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+1384 text1 CODE >78:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+1386 text1 CODE >79:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+1389 text1 CODE >82:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+138A text1 CODE >83:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+138D text1 CODE >84:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+138F text1 CODE >85:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+1390 text1 CODE >86:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+1391 text1 CODE >89:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+1393 text1 CODE >90:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+1394 text1 CODE >91:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+1396 text1 CODE >92:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+1397 text1 CODE >96:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+139E text1 CODE >98:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+13A0 text1 CODE >99:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+13A1 text1 CODE >100:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+13A2 text1 CODE >102:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+13A4 text1 CODE >103:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+13A6 text1 CODE >105:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+13A7 text1 CODE >106:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+13A8 text1 CODE >107:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+13A9 text1 CODE >109:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+13AB text1 CODE >111:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+13AC text1 CODE >112:C:\Users\forga\MPLABXProjects\PICTest1.X\uart.c
+39 maintext CODE >67:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+39 maintext CODE >69:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+3C maintext CODE >70:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+40 maintext CODE >72:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+43 maintext CODE >73:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+46 maintext CODE >74:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+49 maintext CODE >75:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+4C maintext CODE >76:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+4D maintext CODE >77:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+4E maintext CODE >84:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+54 maintext CODE >84:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+58 maintext CODE >86:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+5F maintext CODE >87:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+60 maintext CODE >90:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+64 maintext CODE >91:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+6B maintext CODE >92:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+6E maintext CODE >93:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+72 maintext CODE >94:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+79 maintext CODE >95:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+85 maintext CODE >96:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+86 maintext CODE >98:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+8A maintext CODE >99:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+91 maintext CODE >101:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+94 maintext CODE >102:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+98 maintext CODE >103:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+A0 maintext CODE >107:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+A4 maintext CODE >108:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+AB maintext CODE >110:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+AE maintext CODE >111:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+B2 maintext CODE >112:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+BA maintext CODE >116:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+BE maintext CODE >117:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+C5 maintext CODE >119:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+C8 maintext CODE >120:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+CC maintext CODE >121:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+D3 maintext CODE >122:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+DF maintext CODE >123:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+E0 maintext CODE >125:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+E4 maintext CODE >126:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+EB maintext CODE >128:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+EE maintext CODE >129:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+F2 maintext CODE >130:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+FA maintext CODE >134:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+FE maintext CODE >135:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+105 maintext CODE >137:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+108 maintext CODE >138:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+10C maintext CODE >139:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+114 maintext CODE >143:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+118 maintext CODE >144:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+11F maintext CODE >146:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+122 maintext CODE >147:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+126 maintext CODE >148:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+12E maintext CODE >152:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+132 maintext CODE >153:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+139 maintext CODE >155:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+13C maintext CODE >156:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+140 maintext CODE >157:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+148 maintext CODE >162:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+14F maintext CODE >163:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+150 maintext CODE >165:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+150 maintext CODE >166:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+153 maintext CODE >167:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+156 maintext CODE >168:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+159 maintext CODE >169:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+160 maintext CODE >170:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+161 maintext CODE >172:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+16C maintext CODE >173:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+173 maintext CODE >174:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+174 maintext CODE >176:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+177 maintext CODE >177:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+17E maintext CODE >178:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+17F maintext CODE >198:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+18A maintext CODE >199:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+191 maintext CODE >200:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+192 maintext CODE >203:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+19D maintext CODE >204:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+1A4 maintext CODE >206:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+1A8 maintext CODE >207:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+1AB maintext CODE >208:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+1AF maintext CODE >209:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+1B6 maintext CODE >210:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+1C2 maintext CODE >211:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+1C8 maintext CODE >212:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+1CB maintext CODE >213:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+1CC maintext CODE >216:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+1D0 maintext CODE >217:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+1D3 maintext CODE >218:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+1D7 maintext CODE >219:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+1DE maintext CODE >220:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+1EA maintext CODE >221:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+1F1 maintext CODE >226:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+1F5 maintext CODE >227:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+1F8 maintext CODE >228:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+1FC maintext CODE >229:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+203 maintext CODE >230:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+20F maintext CODE >231:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+216 maintext CODE >236:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+21A maintext CODE >237:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+21D maintext CODE >238:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+221 maintext CODE >239:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+228 maintext CODE >240:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+234 maintext CODE >241:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+23B maintext CODE >246:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+23F maintext CODE >247:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+242 maintext CODE >248:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+246 maintext CODE >249:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+24D maintext CODE >250:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+259 maintext CODE >251:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+260 maintext CODE >256:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+264 maintext CODE >257:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+267 maintext CODE >258:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+26B maintext CODE >259:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+272 maintext CODE >260:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+27E maintext CODE >261:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+285 maintext CODE >266:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+288 maintext CODE >267:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+28F maintext CODE >268:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+290 maintext CODE >271:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+29B maintext CODE >272:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+2A2 maintext CODE >274:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+2A6 maintext CODE >275:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+2A9 maintext CODE >276:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+2AD maintext CODE >277:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+2B4 maintext CODE >278:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+2C0 maintext CODE >279:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+2C7 maintext CODE >284:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+2CB maintext CODE >285:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+2CE maintext CODE >286:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+2D2 maintext CODE >287:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+2D9 maintext CODE >288:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+2E5 maintext CODE >289:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+2EC maintext CODE >294:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+2F0 maintext CODE >295:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+2F3 maintext CODE >296:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+2F7 maintext CODE >297:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+2FE maintext CODE >298:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+30A maintext CODE >299:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+311 maintext CODE >304:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+315 maintext CODE >305:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+318 maintext CODE >306:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+31C maintext CODE >307:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+323 maintext CODE >308:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+32F maintext CODE >309:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+336 maintext CODE >314:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+33A maintext CODE >315:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+33D maintext CODE >316:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+341 maintext CODE >317:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+348 maintext CODE >318:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+354 maintext CODE >319:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+35B maintext CODE >324:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+35F maintext CODE >325:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+362 maintext CODE >326:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+366 maintext CODE >327:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+36D maintext CODE >328:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+379 maintext CODE >329:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+380 maintext CODE >334:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+383 maintext CODE >335:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+38A maintext CODE >336:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+38B maintext CODE >339:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+396 maintext CODE >340:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+39D maintext CODE >342:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+3A1 maintext CODE >343:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+3A4 maintext CODE >344:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+3A8 maintext CODE >345:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+3AF maintext CODE >346:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+3BB maintext CODE >347:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+3C2 maintext CODE >349:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+3C6 maintext CODE >350:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+3C9 maintext CODE >351:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+3CD maintext CODE >352:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+3D4 maintext CODE >353:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+3E0 maintext CODE >354:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+3E7 maintext CODE >356:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+3EB maintext CODE >357:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+3EE maintext CODE >358:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+3F2 maintext CODE >359:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+3F9 maintext CODE >360:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+405 maintext CODE >361:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+40C maintext CODE >363:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+410 maintext CODE >364:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+413 maintext CODE >365:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+417 maintext CODE >366:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+41E maintext CODE >367:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+42A maintext CODE >368:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+431 maintext CODE >370:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+435 maintext CODE >371:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+438 maintext CODE >372:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+43C maintext CODE >373:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+443 maintext CODE >374:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+44F maintext CODE >375:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+456 maintext CODE >377:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+45A maintext CODE >378:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+45D maintext CODE >379:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+461 maintext CODE >380:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+468 maintext CODE >381:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+474 maintext CODE >382:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+47B maintext CODE >384:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+47E maintext CODE >385:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+485 maintext CODE >386:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+486 maintext CODE >389:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+491 maintext CODE >390:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+498 maintext CODE >392:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+49C maintext CODE >393:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+49F maintext CODE >394:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+4A3 maintext CODE >395:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+4AA maintext CODE >396:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+4B6 maintext CODE >397:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+4BD maintext CODE >399:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+4C1 maintext CODE >400:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+4C4 maintext CODE >401:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+4C8 maintext CODE >402:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+4CF maintext CODE >403:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+4DB maintext CODE >404:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+4E2 maintext CODE >406:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+4E6 maintext CODE >407:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+4E9 maintext CODE >408:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+4ED maintext CODE >409:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+4F4 maintext CODE >410:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+500 maintext CODE >411:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+507 maintext CODE >413:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+50B maintext CODE >414:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+50E maintext CODE >415:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+512 maintext CODE >416:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+519 maintext CODE >417:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+525 maintext CODE >418:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+52C maintext CODE >420:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+530 maintext CODE >421:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+533 maintext CODE >422:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+537 maintext CODE >423:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+53E maintext CODE >424:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+54A maintext CODE >425:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+551 maintext CODE >427:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+555 maintext CODE >428:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+558 maintext CODE >429:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+55C maintext CODE >430:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+563 maintext CODE >431:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+56F maintext CODE >432:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+576 maintext CODE >434:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+579 maintext CODE >435:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+580 maintext CODE >436:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+581 maintext CODE >439:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+58C maintext CODE >440:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+593 maintext CODE >442:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+597 maintext CODE >443:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+59A maintext CODE >444:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+59E maintext CODE >445:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+5A5 maintext CODE >446:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+5B1 maintext CODE >447:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+5B8 maintext CODE >449:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+5BC maintext CODE >450:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+5BF maintext CODE >451:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+5C3 maintext CODE >452:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+5CA maintext CODE >453:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+5D6 maintext CODE >454:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+5DD maintext CODE >456:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+5E1 maintext CODE >457:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+5E4 maintext CODE >458:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+5E8 maintext CODE >459:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+5EF maintext CODE >460:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+5FB maintext CODE >461:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+602 maintext CODE >463:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+606 maintext CODE >464:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+609 maintext CODE >465:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+60D maintext CODE >466:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+614 maintext CODE >467:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+620 maintext CODE >468:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+627 maintext CODE >470:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+62B maintext CODE >471:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+62E maintext CODE >472:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+632 maintext CODE >473:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+639 maintext CODE >474:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+645 maintext CODE >475:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+64C maintext CODE >477:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+650 maintext CODE >478:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+653 maintext CODE >479:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+657 maintext CODE >480:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+65E maintext CODE >481:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+66A maintext CODE >482:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+671 maintext CODE >484:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+674 maintext CODE >485:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+67B maintext CODE >486:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+67C maintext CODE >487:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+67F maintext CODE >487:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+682 maintext CODE >487:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+685 maintext CODE >487:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+688 maintext CODE >487:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+68B maintext CODE >487:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+68E maintext CODE >487:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+691 maintext CODE >487:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+694 maintext CODE >487:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+697 maintext CODE >487:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+69A maintext CODE >487:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+69D maintext CODE >487:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+6A0 maintext CODE >487:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+6A3 maintext CODE >487:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+6A6 maintext CODE >487:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+6A9 maintext CODE >487:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+6AC maintext CODE >487:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+6AF maintext CODE >487:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+6B2 maintext CODE >487:C:\Users\forga\MPLABXProjects\PICTest1.X\main.c
+800 clrtext CODE >4626:C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_1.s
+800 clrtext CODE >4627:C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_1.s
+801 clrtext CODE >4628:C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_1.s
+801 clrtext CODE >4629:C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_1.s
+802 clrtext CODE >4630:C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_1.s
+803 clrtext CODE >4631:C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_1.s
+804 clrtext CODE >4632:C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_1.s
+805 clrtext CODE >4633:C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_1.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 3 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+_motor_set_direction 21BA 0 CODE 0 text34 dist/default/debug\PICTest1.X.debug.o
+uart_try_read_byte@b 72 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+__Hspace_0 1990 0 ABS 0 - -
+__Hspace_1 160 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 10013 0 ABS 0 - -
+_T1CLKbits 211 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+_g_tmr1_reload 6B 0 BANK0 1 bssBANK0 dist/default/debug\PICTest1.X.debug.o
+measurement_set_adc_source@source 72 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+_lmp91000_write_register 21A4 0 CODE 0 text38 dist/default/debug\PICTest1.X.debug.o
+_SSP1STATbits 18F 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+_measurement_set_adc_source 2130 0 CODE 0 text35 dist/default/debug\PICTest1.X.debug.o
+__end_of_lmp91000_write_register 21BA 0 CODE 0 text38 dist/default/debug\PICTest1.X.debug.o
+_run_measurement_loop 1078 0 CODE 0 text3 dist/default/debug\PICTest1.X.debug.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+_i2c_init 275A 0 CODE 0 text46 dist/default/debug\PICTest1.X.debug.o
+_i2c_stop 21D0 0 CODE 0 text44 dist/default/debug\PICTest1.X.debug.o
+_T1CONbits 20E 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+run_measurement_loop@line A0 0 BANK1 1 cstackBANK1 dist/default/debug\PICTest1.X.debug.o
+_g_uart_rx_byte 7B 0 COMMON 1 bssCOMMON dist/default/debug\PICTest1.X.debug.o
+__end_of_motor_timer1_reload_from_interrupt_hz 142A 0 CODE 0 text29 dist/default/debug\PICTest1.X.debug.o
+_g_step_pin_state 6E 0 BANK0 1 bssBANK0 dist/default/debug\PICTest1.X.debug.o
+__L__absolute__ 0 0 ABS 0 __absolute__ -
+__end_ofi1_uart_write_byte 2190 0 CODE 0 text51 dist/default/debug\PICTest1.X.debug.o
+main@b 6A 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+__Hstrings 0 0 ABS 0 strings -
+?_vfprintf 36 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+_uart_handle_overrun 2158 0 CODE 0 text52 dist/default/debug\PICTest1.X.debug.o
+___sp 0 0 STACK 2 stack C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_17.o
+_dbuf 120 0 BANK2 1 bssBANK2 dist/default/debug\PICTest1.X.debug.o
+_main 72 0 CODE 0 maintext dist/default/debug\PICTest1.X.debug.o
+_nout CD 0 BANK1 1 bssBANK1 dist/default/debug\PICTest1.X.debug.o
+_prec D1 0 BANK1 1 bssBANK1 dist/default/debug\PICTest1.X.debug.o
+btemp 7E 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+___stack_hi 0 0 STACK 2 stack C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_17.o
+___stack_lo 0 0 STACK 2 stack C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_17.o
+start 36 0 CODE 0 init C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_17.o
+___flmul@aexp 33 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+___flmul@bexp 38 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+___flmul@prod 39 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+___flmul@sign 32 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+___flmul@temp 3D 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+__end_of_i2c_init 27C6 0 CODE 0 text46 dist/default/debug\PICTest1.X.debug.o
+__end_of_i2c_stop 21EA 0 CODE 0 text44 dist/default/debug\PICTest1.X.debug.o
+__end_ofADC_CodeToMilliVolts@vref_mV 3320 0 STRCODE 0 stringtext4 dist/default/debug\PICTest1.X.debug.o
+_mux_init 2208 0 CODE 0 text21 dist/default/debug\PICTest1.X.debug.o
+__Hstringtext10 0 0 ABS 0 stringtext10 -
+__Hstringtext11 0 0 ABS 0 stringtext11 -
+__Hstringtext12 0 0 ABS 0 stringtext12 -
+__Hstringtext13 0 0 ABS 0 stringtext13 -
+__Hstringtext14 0 0 ABS 0 stringtext14 -
+__Hstringtext15 0 0 ABS 0 stringtext15 -
+__Hstringtext16 0 0 ABS 0 stringtext16 -
+__Hstringtext17 0 0 ABS 0 stringtext17 -
+__Hstringtext18 0 0 ABS 0 stringtext18 -
+__Hstringtext19 0 0 ABS 0 stringtext19 -
+__Hstringtext20 0 0 ABS 0 stringtext20 -
+__Hstringtext21 0 0 ABS 0 stringtext21 -
+__Hstringtext22 0 0 ABS 0 stringtext22 -
+__Hstringtext23 0 0 ABS 0 stringtext23 -
+__Hstringtext24 0 0 ABS 0 stringtext24 -
+__Hstringtext25 0 0 ABS 0 stringtext25 -
+__Hstringtext26 0 0 ABS 0 stringtext26 -
+__Hstringtext27 0 0 ABS 0 stringtext27 -
+__Hstringtext28 0 0 ABS 0 stringtext28 -
+__Hstringtext29 0 0 ABS 0 stringtext29 -
+__Hstringtext30 0 0 ABS 0 stringtext30 -
+__Hstringtext31 0 0 ABS 0 stringtext31 -
+__Hstringtext32 0 0 ABS 0 stringtext32 -
+__Hstringtext33 0 0 ABS 0 stringtext33 -
+__Hstringtext34 0 0 ABS 0 stringtext34 -
+__Hstringtext35 0 0 ABS 0 stringtext35 -
+__Hstringtext36 0 0 ABS 0 stringtext36 -
+__Hstringtext37 0 0 ABS 0 stringtext37 -
+__Hstringtext38 0 0 ABS 0 stringtext38 -
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+motor_start_for_flow_ul_min@rev_per_min 5E 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+_g_motor_running 6F 0 BANK0 1 bssBANK0 dist/default/debug\PICTest1.X.debug.o
+?___lmul 72 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+_lmp91000_unlock 2148 0 CODE 0 text39 dist/default/debug\PICTest1.X.debug.o
+?_ADC_Read_RA1_Code 74 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+__end_of_mux_init 2228 0 CODE 0 text21 dist/default/debug\PICTest1.X.debug.o
+__end_of_uart_try_read_byte 2248 0 CODE 0 text15 dist/default/debug\PICTest1.X.debug.o
+_lmp91000_lock 216A 0 CODE 0 text40 dist/default/debug\PICTest1.X.debug.o
+__Hpowerup 0 0 CODE 0 powerup -
+__end_of_vfpfcnvrt FD8 0 CODE 0 text8 dist/default/debug\PICTest1.X.debug.o
+__end_of_mux_write_address 2696 0 CODE 0 text22 dist/default/debug\PICTest1.X.debug.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_17.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_17.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_17.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_17.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_17.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_17.o
+_motor_init 2696 0 CODE 0 text28 dist/default/debug\PICTest1.X.debug.o
+_motor_stop 213A 0 CODE 0 text23 dist/default/debug\PICTest1.X.debug.o
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+i2c_start@control_byte 75 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+wtemp0 7E 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+___llmod@divisor 72 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+__Hfunctab 0 0 ENTRY 0 functab -
+_RC1STAbits 11D 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+__end_of_i2c_write_register 24CE 0 CODE 0 text41 dist/default/debug\PICTest1.X.debug.o
+__Hclrtext 0 0 ABS 0 clrtext -
+_vfpfcnvrt D6E 0 CODE 0 text8 dist/default/debug\PICTest1.X.debug.o
+run_measurement_loop@sampling_rate 5E 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+_uart_try_read_byte 2228 0 CODE 0 text15 dist/default/debug\PICTest1.X.debug.o
+__end_of_adc_acquire_delay_us 226C 0 CODE 0 text19 dist/default/debug\PICTest1.X.debug.o
+_motor_start_for_flow_ul_min 2DD6 0 CODE 0 text24 dist/default/debug\PICTest1.X.debug.o
+__end_of_delay_ms_interruptible 25D8 0 CODE 0 text14 dist/default/debug\PICTest1.X.debug.o
+_ADCON0 9D 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+_ADCON1 9E 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+_ADRESH 9C 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+_ADRESL 9B 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+_motor_timer1_reload_from_interrupt_hz 1236 0 CODE 0 text29 dist/default/debug\PICTest1.X.debug.o
+__end_of__Umul8_16 23EA 0 CODE 0 text27 dist/default/debug\PICTest1.X.debug.o
+__end_of_motor_set_direction 21D0 0 CODE 0 text34 dist/default/debug\PICTest1.X.debug.o
+_FVRCONbits 90C 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+__end_of_ADC_Read_RC7_Code 247E 0 CODE 0 text17 dist/default/debug\PICTest1.X.debug.o
+__end_of_i2c_clear_interrupt_flag 2130 0 CODE 0 text47 dist/default/debug\PICTest1.X.debug.o
+__end_of___flge 3000 0 CODE 0 text31 dist/default/debug\PICTest1.X.debug.o
+__end_of___lmul 1078 0 CODE 0 text16 dist/default/debug\PICTest1.X.debug.o
+__end_ofuart_calculate_brg_value@divisor 3008 0 STRCODE 0 stringtext5 dist/default/debug\PICTest1.X.debug.o
+mux_write_address@address 74 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+delay_ms_interruptible@ms 73 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+i1_uart_write_byte 217C 0 CODE 0 text51 dist/default/debug\PICTest1.X.debug.o
+__Lmaintext 0 0 ABS 0 maintext -
+_i2c_write_register 247E 0 CODE 0 text41 dist/default/debug\PICTest1.X.debug.o
+motor_start_with_step_hz@step_hz 4C 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+__end_of_i2c_start 23A2 0 CODE 0 text42 dist/default/debug\PICTest1.X.debug.o
+___fldiv@aexp 31 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+___fldiv@bexp 30 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+__end_of_i2c_write 22C2 0 CODE 0 text43 dist/default/debug\PICTest1.X.debug.o
+___fldiv@sign 29 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+__Umul8_16 23A2 0 CODE 0 text27 dist/default/debug\PICTest1.X.debug.o
+__end_of___fladd 1B8A 0 CODE 0 text33 dist/default/debug\PICTest1.X.debug.o
+__end_of___fldiv 1772 0 CODE 0 text32 dist/default/debug\PICTest1.X.debug.o
+__end_of___flmul 2000 0 CODE 0 text26 dist/default/debug\PICTest1.X.debug.o
+__end_of___fltol 2BDC 0 CODE 0 text30 dist/default/debug\PICTest1.X.debug.o
+__end_of_uart_handle_overrun 216A 0 CODE 0 text52 dist/default/debug\PICTest1.X.debug.o
+__end_of___lldiv 2A4C 0 CODE 0 text12 dist/default/debug\PICTest1.X.debug.o
+__end_of___llmod 2858 0 CODE 0 text11 dist/default/debug\PICTest1.X.debug.o
+_motor_start_with_step_hz 2CD2 0 CODE 0 text25 dist/default/debug\PICTest1.X.debug.o
+__end_of_motor_init 26F8 0 CODE 0 text28 dist/default/debug\PICTest1.X.debug.o
+__end_of_motor_stop 2148 0 CODE 0 text23 dist/default/debug\PICTest1.X.debug.o
+__Umul8_16@multiplicand 72 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+uart_write_byte@data 72 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+_g_stop_requested D7 0 BANK1 1 bssBANK1 dist/default/debug\PICTest1.X.debug.o
+___stackhi 0 0 ABS 0 - C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_17.o
+___stacklo 0 0 ABS 0 - C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_17.o
+?_motor_timer1_reload_from_interrupt_hz 3E 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+run_measurement_loop@TotalSamplingNumber 5C 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+__end_of_lmp91000_stop_measurement 2432 0 CODE 0 text13 dist/default/debug\PICTest1.X.debug.o
+___fladd@a 76 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+___fladd@b 72 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+___fldiv@a 72 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+___fldiv@b 76 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+___flmul@a 29 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+___flmul@b 25 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+_i2c_start 2362 0 CODE 0 text42 dist/default/debug\PICTest1.X.debug.o
+_i2c_write 2292 0 CODE 0 text43 dist/default/debug\PICTest1.X.debug.o
+___lldiv@counter 24 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+__Lstringtext10 0 0 ABS 0 stringtext10 -
+__Lstringtext11 0 0 ABS 0 stringtext11 -
+__Lstringtext12 0 0 ABS 0 stringtext12 -
+__Lstringtext13 0 0 ABS 0 stringtext13 -
+__Lstringtext14 0 0 ABS 0 stringtext14 -
+__Lstringtext15 0 0 ABS 0 stringtext15 -
+__Lstringtext16 0 0 ABS 0 stringtext16 -
+__Lstringtext17 0 0 ABS 0 stringtext17 -
+__Lstringtext18 0 0 ABS 0 stringtext18 -
+__Lstringtext19 0 0 ABS 0 stringtext19 -
+__Lstringtext20 0 0 ABS 0 stringtext20 -
+__Lstringtext21 0 0 ABS 0 stringtext21 -
+__Lstringtext22 0 0 ABS 0 stringtext22 -
+__Lstringtext23 0 0 ABS 0 stringtext23 -
+__Lstringtext24 0 0 ABS 0 stringtext24 -
+__Lstringtext25 0 0 ABS 0 stringtext25 -
+__Lstringtext26 0 0 ABS 0 stringtext26 -
+__Lstringtext27 0 0 ABS 0 stringtext27 -
+__Lstringtext28 0 0 ABS 0 stringtext28 -
+__Lstringtext29 0 0 ABS 0 stringtext29 -
+__Lstringtext30 0 0 ABS 0 stringtext30 -
+__Lstringtext31 0 0 ABS 0 stringtext31 -
+__Lstringtext32 0 0 ABS 0 stringtext32 -
+__Lstringtext33 0 0 ABS 0 stringtext33 -
+__Lstringtext34 0 0 ABS 0 stringtext34 -
+__Lstringtext35 0 0 ABS 0 stringtext35 -
+__Lstringtext36 0 0 ABS 0 stringtext36 -
+__Lstringtext37 0 0 ABS 0 stringtext37 -
+__Lstringtext38 0 0 ABS 0 stringtext38 -
+_mux_write_address 2636 0 CODE 0 text22 dist/default/debug\PICTest1.X.debug.o
+start_initialization 3A 0 CODE 0 cinit dist/default/debug\PICTest1.X.debug.o
+motor_timer1_reload_from_interrupt_hz@tick_hz 44 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+_TRISAbits 12 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+_TRISBbits 13 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+_TRISCbits 14 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+i2c_start@address 74 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+___lldiv@dividend 76 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+uart_calculate_brg_value@value 74 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+snprintf@ap 4E 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+snprintf@cnt 4F 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+snprintf@fmt 41 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+_RC1REG 119 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+_RC3PPS 1F23 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+_RC4PPS 1F24 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+_RC6PPS 1F26 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+_RX1PPS 1ECB 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+uart_init@brg_value 78 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+clear_ram0 1000 0 CODE 0 clrtext dist/default/debug\PICTest1.X.debug.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+__pcstackBANK1 A0 0 BANK1 1 cstackBANK1 dist/default/debug\PICTest1.X.debug.o
+_TX1REG 11A 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+uart_write_string@text 73 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+__end_of_lmp91000_lock 217C 0 CODE 0 text40 dist/default/debug\PICTest1.X.debug.o
+fputc@fp 74 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+_ADC_Read_RC7_Code 2432 0 CODE 0 text17 dist/default/debug\PICTest1.X.debug.o
+run_measurement_loop@second C8 0 BANK1 1 cstackBANK1 dist/default/debug\PICTest1.X.debug.o
+___int_sp 0 0 STACK 2 stack C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_17.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hbank4 0 0 ABS 0 bank4 -
+__Hbank5 0 0 ABS 0 bank5 -
+__Hbank6 0 0 ABS 0 bank6 -
+__Hbank7 0 0 ABS 0 bank7 -
+__Hbank8 0 0 ABS 0 bank8 -
+__Hbank9 0 0 ABS 0 bank9 -
+__Hcinit 72 0 CODE 0 cinit -
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__Hsfr32 0 0 ABS 0 sfr32 -
+__Hsfr33 0 0 ABS 0 sfr33 -
+__Hsfr34 0 0 ABS 0 sfr34 -
+__Hsfr35 0 0 ABS 0 sfr35 -
+__Hsfr36 0 0 ABS 0 sfr36 -
+__Hsfr37 0 0 ABS 0 sfr37 -
+__Hsfr38 0 0 ABS 0 sfr38 -
+__Hsfr39 0 0 ABS 0 sfr39 -
+__Hsfr40 0 0 ABS 0 sfr40 -
+__Hsfr41 0 0 ABS 0 sfr41 -
+__Hsfr42 0 0 ABS 0 sfr42 -
+__Hsfr43 0 0 ABS 0 sfr43 -
+__Hsfr44 0 0 ABS 0 sfr44 -
+__Hsfr45 0 0 ABS 0 sfr45 -
+__Hsfr46 0 0 ABS 0 sfr46 -
+__Hsfr47 0 0 ABS 0 sfr47 -
+__Hsfr48 0 0 ABS 0 sfr48 -
+__Hsfr49 0 0 ABS 0 sfr49 -
+__Hsfr50 0 0 ABS 0 sfr50 -
+__Hsfr51 0 0 ABS 0 sfr51 -
+__Hsfr52 0 0 ABS 0 sfr52 -
+__Hsfr53 0 0 ABS 0 sfr53 -
+__Hsfr54 0 0 ABS 0 sfr54 -
+__Hsfr55 0 0 ABS 0 sfr55 -
+__Hsfr56 0 0 ABS 0 sfr56 -
+__Hsfr57 0 0 ABS 0 sfr57 -
+__Hsfr58 0 0 ABS 0 sfr58 -
+__Hsfr59 0 0 ABS 0 sfr59 -
+__Hsfr60 0 0 ABS 0 sfr60 -
+__Hsfr61 0 0 ABS 0 sfr61 -
+__Hsfr62 0 0 ABS 0 sfr62 -
+__Hsfr63 0 0 ABS 0 sfr63 -
+__Hstack 0 0 STACK 2 stack -
+_g_uart_rx_ready 6D 0 BANK0 1 bssBANK0 dist/default/debug\PICTest1.X.debug.o
+__Hbank10 0 0 ABS 0 bank10 -
+__Hbank11 0 0 ABS 0 bank11 -
+__Hbank12 0 0 ABS 0 bank12 -
+__Hbank13 0 0 ABS 0 bank13 -
+__Hbank14 0 0 ABS 0 bank14 -
+__Hbank15 0 0 ABS 0 bank15 -
+__Hbank16 0 0 ABS 0 bank16 -
+__Hbank17 0 0 ABS 0 bank17 -
+__Hbank18 0 0 ABS 0 bank18 -
+__Hbank19 0 0 ABS 0 bank19 -
+__Hbank20 0 0 ABS 0 bank20 -
+__Hbank21 0 0 ABS 0 bank21 -
+__Hbank22 0 0 ABS 0 bank22 -
+__Hbank23 0 0 ABS 0 bank23 -
+__Hbank24 0 0 ABS 0 bank24 -
+__Hbank25 0 0 ABS 0 bank25 -
+__Hbank26 0 0 BANK26 1 bank26 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Hbank28 0 0 BANK28 1 bank28 -
+__Hbank29 0 0 BANK29 1 bank29 -
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank31 0 0 BANK31 1 bank31 -
+__Hbank32 0 0 BANK32 1 bank32 -
+__Hbank33 0 0 BANK33 1 bank33 -
+__Hbank34 0 0 BANK34 1 bank34 -
+__Hbank35 0 0 BANK35 1 bank35 -
+__Hbank36 0 0 BANK36 1 bank36 -
+__Hbank37 0 0 BANK37 1 bank37 -
+__Hbank38 0 0 BANK38 1 bank38 -
+__Hbank39 0 0 BANK39 1 bank39 -
+__Hbank40 0 0 BANK40 1 bank40 -
+__Hbank41 0 0 BANK41 1 bank41 -
+__Hbank42 0 0 BANK42 1 bank42 -
+__Hbank43 0 0 BANK43 1 bank43 -
+__Hbank44 0 0 BANK44 1 bank44 -
+__Hbank45 0 0 BANK45 1 bank45 -
+__Hbank46 0 0 BANK46 1 bank46 -
+__Hbank47 0 0 BANK47 1 bank47 -
+__Hbank48 0 0 BANK48 1 bank48 -
+__Hbank49 0 0 BANK49 1 bank49 -
+__Hbank50 0 0 BANK50 1 bank50 -
+__Hbank51 0 0 BANK51 1 bank51 -
+__Hbank52 0 0 BANK52 1 bank52 -
+__Hbank53 0 0 BANK53 1 bank53 -
+__Hbank54 0 0 BANK54 1 bank54 -
+__Hbank55 0 0 BANK55 1 bank55 -
+__Hbank56 0 0 BANK56 1 bank56 -
+__Hbank57 0 0 BANK57 1 bank57 -
+__Hbank58 0 0 BANK58 1 bank58 -
+__Hbank59 0 0 BANK59 1 bank59 -
+__Hbank60 0 0 BANK60 1 bank60 -
+__Hbank61 0 0 BANK61 1 bank61 -
+__Hbank62 0 0 BANK62 1 bank62 -
+__Hbank63 0 0 BANK63 1 bank63 -
+__Hbigram 0 0 ABS 0 bigram -
+__Hmaintext 0 0 ABS 0 maintext -
+i2c_write_register@reg 76 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 10018 0 CONFIG 4 config -
+__end_ofADC_CodeToCurrent_uA@vzero_mV 3310 0 STRCODE 0 stringtext2 dist/default/debug\PICTest1.X.debug.o
+_snprintf 2BDC 0 CODE 0 text6 dist/default/debug\PICTest1.X.debug.o
+motor_start_for_flow_ul_min@step_frequency_hz 66 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+lmp91000_write_register@value 79 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lbank4 0 0 ABS 0 bank4 -
+__Lbank5 0 0 ABS 0 bank5 -
+__Lbank6 0 0 ABS 0 bank6 -
+__Lbank7 0 0 ABS 0 bank7 -
+__Lbank8 0 0 ABS 0 bank8 -
+__Lbank9 0 0 ABS 0 bank9 -
+__Lcinit 3A 0 CODE 0 cinit -
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lsfr32 0 0 ABS 0 sfr32 -
+__Lsfr33 0 0 ABS 0 sfr33 -
+__Lsfr34 0 0 ABS 0 sfr34 -
+__Lsfr35 0 0 ABS 0 sfr35 -
+__Lsfr36 0 0 ABS 0 sfr36 -
+__Lsfr37 0 0 ABS 0 sfr37 -
+__Lsfr38 0 0 ABS 0 sfr38 -
+__Lsfr39 0 0 ABS 0 sfr39 -
+__Lsfr40 0 0 ABS 0 sfr40 -
+__Lsfr41 0 0 ABS 0 sfr41 -
+__Lsfr42 0 0 ABS 0 sfr42 -
+__Lsfr43 0 0 ABS 0 sfr43 -
+__Lsfr44 0 0 ABS 0 sfr44 -
+__Lsfr45 0 0 ABS 0 sfr45 -
+__Lsfr46 0 0 ABS 0 sfr46 -
+__Lsfr47 0 0 ABS 0 sfr47 -
+__Lsfr48 0 0 ABS 0 sfr48 -
+__Lsfr49 0 0 ABS 0 sfr49 -
+__Lsfr50 0 0 ABS 0 sfr50 -
+__Lsfr51 0 0 ABS 0 sfr51 -
+__Lsfr52 0 0 ABS 0 sfr52 -
+__Lsfr53 0 0 ABS 0 sfr53 -
+__Lsfr54 0 0 ABS 0 sfr54 -
+__Lsfr55 0 0 ABS 0 sfr55 -
+__Lsfr56 0 0 ABS 0 sfr56 -
+__Lsfr57 0 0 ABS 0 sfr57 -
+__Lsfr58 0 0 ABS 0 sfr58 -
+__Lsfr59 0 0 ABS 0 sfr59 -
+__Lsfr60 0 0 ABS 0 sfr60 -
+__Lsfr61 0 0 ABS 0 sfr61 -
+__Lsfr62 0 0 ABS 0 sfr62 -
+__Lsfr63 0 0 ABS 0 sfr63 -
+__Lstack 0 0 STACK 2 stack -
+_ADC_Init_RC7 22F4 0 CODE 0 text48 dist/default/debug\PICTest1.X.debug.o
+___flmul@grs 34 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+__end_of_snprintf 2CD2 0 CODE 0 text6 dist/default/debug\PICTest1.X.debug.o
+_INTCONbits B 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hheap 0 0 HEAP 7 heap -
+__Hinit 36 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Hsivt 36 0 CODE 0 sivt -
+__Htext 0 0 ABS 0 text -
+mux_write_address@masked_address 75 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Lheap 0 0 HEAP 7 heap -
+__Linit 36 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+__Lsivt 36 0 CODE 0 sivt -
+__Ltext 0 0 ABS 0 text -
+__pstringtext1 3300 0 STRCODE 0 stringtext1 dist/default/debug\PICTest1.X.debug.o
+__pstringtext2 3308 0 STRCODE 0 stringtext2 dist/default/debug\PICTest1.X.debug.o
+__pstringtext3 3310 0 STRCODE 0 stringtext3 dist/default/debug\PICTest1.X.debug.o
+__pstringtext4 3318 0 STRCODE 0 stringtext4 dist/default/debug\PICTest1.X.debug.o
+__pstringtext5 3000 0 STRCODE 0 stringtext5 dist/default/debug\PICTest1.X.debug.o
+__pstringtext6 302C 0 STRCODE 0 stringtext6 dist/default/debug\PICTest1.X.debug.o
+__pstringtext7 304C 0 STRCODE 0 stringtext7 dist/default/debug\PICTest1.X.debug.o
+__pstringtext8 306A 0 STRCODE 0 stringtext8 dist/default/debug\PICTest1.X.debug.o
+__pstringtext9 3088 0 STRCODE 0 stringtext9 dist/default/debug\PICTest1.X.debug.o
+_SSP1CON1 190 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+_SSP1CON2 191 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+_SSP1CON3 192 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+_SSP1STAT 18F 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+__pstringtext10 30A6 0 STRCODE 0 stringtext10 dist/default/debug\PICTest1.X.debug.o
+__pstringtext11 30C4 0 STRCODE 0 stringtext11 dist/default/debug\PICTest1.X.debug.o
+__pstringtext12 30E2 0 STRCODE 0 stringtext12 dist/default/debug\PICTest1.X.debug.o
+__pstringtext13 3100 0 STRCODE 0 stringtext13 dist/default/debug\PICTest1.X.debug.o
+__pstringtext14 311E 0 STRCODE 0 stringtext14 dist/default/debug\PICTest1.X.debug.o
+__pstringtext15 313C 0 STRCODE 0 stringtext15 dist/default/debug\PICTest1.X.debug.o
+__pstringtext16 3158 0 STRCODE 0 stringtext16 dist/default/debug\PICTest1.X.debug.o
+__pstringtext17 3174 0 STRCODE 0 stringtext17 dist/default/debug\PICTest1.X.debug.o
+__pstringtext18 3190 0 STRCODE 0 stringtext18 dist/default/debug\PICTest1.X.debug.o
+__pstringtext19 31AC 0 STRCODE 0 stringtext19 dist/default/debug\PICTest1.X.debug.o
+__pstringtext20 31C8 0 STRCODE 0 stringtext20 dist/default/debug\PICTest1.X.debug.o
+__pstringtext21 31E2 0 STRCODE 0 stringtext21 dist/default/debug\PICTest1.X.debug.o
+__pstringtext22 31FA 0 STRCODE 0 stringtext22 dist/default/debug\PICTest1.X.debug.o
+__pstringtext23 3212 0 STRCODE 0 stringtext23 dist/default/debug\PICTest1.X.debug.o
+__pstringtext24 322A 0 STRCODE 0 stringtext24 dist/default/debug\PICTest1.X.debug.o
+__pstringtext25 3242 0 STRCODE 0 stringtext25 dist/default/debug\PICTest1.X.debug.o
+__pstringtext26 325A 0 STRCODE 0 stringtext26 dist/default/debug\PICTest1.X.debug.o
+__pstringtext27 3272 0 STRCODE 0 stringtext27 dist/default/debug\PICTest1.X.debug.o
+__pstringtext28 3288 0 STRCODE 0 stringtext28 dist/default/debug\PICTest1.X.debug.o
+__pstringtext29 329A 0 STRCODE 0 stringtext29 dist/default/debug\PICTest1.X.debug.o
+__pstringtext30 32AA 0 STRCODE 0 stringtext30 dist/default/debug\PICTest1.X.debug.o
+__pstringtext31 32B8 0 STRCODE 0 stringtext31 dist/default/debug\PICTest1.X.debug.o
+__pstringtext32 32C4 0 STRCODE 0 stringtext32 dist/default/debug\PICTest1.X.debug.o
+__pstringtext33 32CE 0 STRCODE 0 stringtext33 dist/default/debug\PICTest1.X.debug.o
+__pstringtext34 32D8 0 STRCODE 0 stringtext34 dist/default/debug\PICTest1.X.debug.o
+__pstringtext35 32E2 0 STRCODE 0 stringtext35 dist/default/debug\PICTest1.X.debug.o
+__pstringtext36 32EC 0 STRCODE 0 stringtext36 dist/default/debug\PICTest1.X.debug.o
+__pstringtext37 32F6 0 STRCODE 0 stringtext37 dist/default/debug\PICTest1.X.debug.o
+__pstringtext38 0 0 STRCODE 0 stringtext38 dist/default/debug\PICTest1.X.debug.o
+___flge 2EEA 0 CODE 0 text31 dist/default/debug\PICTest1.X.debug.o
+___lmul 100C 0 CODE 0 text16 dist/default/debug\PICTest1.X.debug.o
+motor_start_for_flow_ul_min@steps_per_min 62 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 -
+int$flags 7E 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+i1uart_write_byte@data 70 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+__S0 1990 0 ABS 0 - -
+__S1 160 0 ABS 0 - -
+_isr 8 0 CODE 0 intentry dist/default/debug\PICTest1.X.debug.o
+_receive_buffer 140 0 BANK2 1 bssBANK2 dist/default/debug\PICTest1.X.debug.o
+run_measurement_loop@time_ms C0 0 BANK1 1 cstackBANK1 dist/default/debug\PICTest1.X.debug.o
+_g_measurement_adc_source D6 0 BANK1 1 bssBANK1 dist/default/debug\PICTest1.X.debug.o
+mux_select@channel 77 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+motor_set_direction@forward 72 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+__end_of_isr 36 0 CODE 0 intentry dist/default/debug\PICTest1.X.debug.o
+_uart_calculate_brg_value 226C 0 CODE 0 text2 dist/default/debug\PICTest1.X.debug.o
+__Lintentry 8 0 CODE 0 intentry -
+___lldiv@divisor 72 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+__end_of_ADC_Read_RA1_Code 2522 0 CODE 0 text18 dist/default/debug\PICTest1.X.debug.o
+_uart_rx_isr FD8 0 CODE 0 text50 dist/default/debug\PICTest1.X.debug.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_17.o
+_lmp91000_start_ca_measurement 28F0 0 CODE 0 text37 dist/default/debug\PICTest1.X.debug.o
+ltemp0a 80 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+i2c_write_register@address 78 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+motor_timer1_reload_from_interrupt_hz@interrupt_hz 3E 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK1 0 0 ABS 0 bssBANK1 -
+__LbssBANK2 0 0 ABS 0 bssBANK2 -
+__Lstringtext1 0 0 ABS 0 stringtext1 -
+__Lstringtext2 0 0 ABS 0 stringtext2 -
+__Lstringtext3 0 0 ABS 0 stringtext3 -
+__Lstringtext4 0 0 ABS 0 stringtext4 -
+__Lstringtext5 0 0 ABS 0 stringtext5 -
+__Lstringtext6 0 0 ABS 0 stringtext6 -
+__Lstringtext7 0 0 ABS 0 stringtext7 -
+__Lstringtext8 0 0 ABS 0 stringtext8 -
+__Lstringtext9 0 0 ABS 0 stringtext9 -
+vfpfcnvrt@cnt 2D 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+vfpfcnvrt@fmt 27 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+lmp91000_write_register@reg 20 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+_PIE1bits 717 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+__end_of_run_measurement_loop 1236 0 CODE 0 text3 dist/default/debug\PICTest1.X.debug.o
+___fladd@signs 28 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+__ptext10 6 0 CODE 0 text10 dist/default/debug\PICTest1.X.debug.o
+__ptext11 27C6 0 CODE 0 text11 dist/default/debug\PICTest1.X.debug.o
+__ptext12 299A 0 CODE 0 text12 dist/default/debug\PICTest1.X.debug.o
+__ptext13 23EA 0 CODE 0 text13 dist/default/debug\PICTest1.X.debug.o
+__ptext14 257C 0 CODE 0 text14 dist/default/debug\PICTest1.X.debug.o
+__ptext15 2228 0 CODE 0 text15 dist/default/debug\PICTest1.X.debug.o
+__ptext16 100C 0 CODE 0 text16 dist/default/debug\PICTest1.X.debug.o
+__ptext17 2432 0 CODE 0 text17 dist/default/debug\PICTest1.X.debug.o
+__ptext18 24CE 0 CODE 0 text18 dist/default/debug\PICTest1.X.debug.o
+__ptext19 2248 0 CODE 0 text19 dist/default/debug\PICTest1.X.debug.o
+__ptext20 22C2 0 CODE 0 text20 dist/default/debug\PICTest1.X.debug.o
+__ptext21 2208 0 CODE 0 text21 dist/default/debug\PICTest1.X.debug.o
+__ptext22 2636 0 CODE 0 text22 dist/default/debug\PICTest1.X.debug.o
+__ptext23 213A 0 CODE 0 text23 dist/default/debug\PICTest1.X.debug.o
+__ptext24 2DD6 0 CODE 0 text24 dist/default/debug\PICTest1.X.debug.o
+__ptext25 2CD2 0 CODE 0 text25 dist/default/debug\PICTest1.X.debug.o
+__ptext26 1B8A 0 CODE 0 text26 dist/default/debug\PICTest1.X.debug.o
+__ptext27 23A2 0 CODE 0 text27 dist/default/debug\PICTest1.X.debug.o
+__ptext28 2696 0 CODE 0 text28 dist/default/debug\PICTest1.X.debug.o
+__ptext29 1236 0 CODE 0 text29 dist/default/debug\PICTest1.X.debug.o
+__ptext30 2AFE 0 CODE 0 text30 dist/default/debug\PICTest1.X.debug.o
+__ptext31 2EEA 0 CODE 0 text31 dist/default/debug\PICTest1.X.debug.o
+__ptext32 142A 0 CODE 0 text32 dist/default/debug\PICTest1.X.debug.o
+__ptext33 1772 0 CODE 0 text33 dist/default/debug\PICTest1.X.debug.o
+__ptext34 21BA 0 CODE 0 text34 dist/default/debug\PICTest1.X.debug.o
+__ptext35 2130 0 CODE 0 text35 dist/default/debug\PICTest1.X.debug.o
+__ptext36 2858 0 CODE 0 text36 dist/default/debug\PICTest1.X.debug.o
+__ptext37 28F0 0 CODE 0 text37 dist/default/debug\PICTest1.X.debug.o
+__ptext38 21A4 0 CODE 0 text38 dist/default/debug\PICTest1.X.debug.o
+__ptext39 2148 0 CODE 0 text39 dist/default/debug\PICTest1.X.debug.o
+__ptext40 216A 0 CODE 0 text40 dist/default/debug\PICTest1.X.debug.o
+__ptext41 247E 0 CODE 0 text41 dist/default/debug\PICTest1.X.debug.o
+__ptext42 2362 0 CODE 0 text42 dist/default/debug\PICTest1.X.debug.o
+__ptext43 2292 0 CODE 0 text43 dist/default/debug\PICTest1.X.debug.o
+__ptext44 21D0 0 CODE 0 text44 dist/default/debug\PICTest1.X.debug.o
+__ptext45 21EA 0 CODE 0 text45 dist/default/debug\PICTest1.X.debug.o
+__ptext46 275A 0 CODE 0 text46 dist/default/debug\PICTest1.X.debug.o
+__ptext47 212A 0 CODE 0 text47 dist/default/debug\PICTest1.X.debug.o
+__ptext48 22F4 0 CODE 0 text48 dist/default/debug\PICTest1.X.debug.o
+__ptext50 FD8 0 CODE 0 text50 dist/default/debug\PICTest1.X.debug.o
+__ptext51 217C 0 CODE 0 text51 dist/default/debug\PICTest1.X.debug.o
+__ptext52 2158 0 CODE 0 text52 dist/default/debug\PICTest1.X.debug.o
+__ptext53 2522 0 CODE 0 text53 dist/default/debug\PICTest1.X.debug.o
+_adc_acquire_delay_us 2248 0 CODE 0 text19 dist/default/debug\PICTest1.X.debug.o
+delay_ms_interruptible@b 78 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+delay_ms_interruptible@i 76 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+__end_of_ADC_Init_RC7 2328 0 CODE 0 text48 dist/default/debug\PICTest1.X.debug.o
+__end_of_motor_isr 257C 0 CODE 0 text53 dist/default/debug\PICTest1.X.debug.o
+___fladd 1772 0 CODE 0 text33 dist/default/debug\PICTest1.X.debug.o
+___fldiv 142A 0 CODE 0 text32 dist/default/debug\PICTest1.X.debug.o
+___flmul 1B8A 0 CODE 0 text26 dist/default/debug\PICTest1.X.debug.o
+___fltol 2AFE 0 CODE 0 text30 dist/default/debug\PICTest1.X.debug.o
+___lldiv 299A 0 CODE 0 text12 dist/default/debug\PICTest1.X.debug.o
+___llmod 27C6 0 CODE 0 text11 dist/default/debug\PICTest1.X.debug.o
+__Lbank10 0 0 ABS 0 bank10 -
+__Lbank11 0 0 ABS 0 bank11 -
+__Lbank12 0 0 ABS 0 bank12 -
+__Lbank13 0 0 ABS 0 bank13 -
+__Lbank14 0 0 ABS 0 bank14 -
+__Lbank15 0 0 ABS 0 bank15 -
+__Lbank16 0 0 ABS 0 bank16 -
+__Lbank17 0 0 ABS 0 bank17 -
+__Lbank18 0 0 ABS 0 bank18 -
+__Lbank19 0 0 ABS 0 bank19 -
+__Lbank20 0 0 ABS 0 bank20 -
+__Lbank21 0 0 ABS 0 bank21 -
+__Lbank22 0 0 ABS 0 bank22 -
+__Lbank23 0 0 ABS 0 bank23 -
+__Lbank24 0 0 ABS 0 bank24 -
+__Lbank25 0 0 ABS 0 bank25 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__Lbank28 0 0 BANK28 1 bank28 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__Lbank32 0 0 BANK32 1 bank32 -
+__Lbank33 0 0 BANK33 1 bank33 -
+__Lbank34 0 0 BANK34 1 bank34 -
+__Lbank35 0 0 BANK35 1 bank35 -
+__Lbank36 0 0 BANK36 1 bank36 -
+__Lbank37 0 0 BANK37 1 bank37 -
+__Lbank38 0 0 BANK38 1 bank38 -
+__Lbank39 0 0 BANK39 1 bank39 -
+__Lbank40 0 0 BANK40 1 bank40 -
+__Lbank41 0 0 BANK41 1 bank41 -
+__Lbank42 0 0 BANK42 1 bank42 -
+__Lbank43 0 0 BANK43 1 bank43 -
+__Lbank44 0 0 BANK44 1 bank44 -
+__Lbank45 0 0 BANK45 1 bank45 -
+__Lbank46 0 0 BANK46 1 bank46 -
+__Lbank47 0 0 BANK47 1 bank47 -
+__Lbank48 0 0 BANK48 1 bank48 -
+__Lbank49 0 0 BANK49 1 bank49 -
+__Lbank50 0 0 BANK50 1 bank50 -
+__Lbank51 0 0 BANK51 1 bank51 -
+__Lbank52 0 0 BANK52 1 bank52 -
+__Lbank53 0 0 BANK53 1 bank53 -
+__Lbank54 0 0 BANK54 1 bank54 -
+__Lbank55 0 0 BANK55 1 bank55 -
+__Lbank56 0 0 BANK56 1 bank56 -
+__Lbank57 0 0 BANK57 1 bank57 -
+__Lbank58 0 0 BANK58 1 bank58 -
+__Lbank59 0 0 BANK59 1 bank59 -
+__Lbank60 0 0 BANK60 1 bank60 -
+__Lbank61 0 0 BANK61 1 bank61 -
+__Lbank62 0 0 BANK62 1 bank62 -
+__Lbank63 0 0 BANK63 1 bank63 -
+__pmaintext 72 0 CODE 0 maintext dist/default/debug\PICTest1.X.debug.o
+__Lbigram 0 0 ABS 0 bigram -
+___lmul@multiplier 72 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+__Umul8_16@multiplier 24 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+_LATBbits 19 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+_LATCbits 1A 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+___fldiv@grs 2C 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+___fldiv@rem 25 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+__end_of_measurement_set_adc_source 213A 0 CODE 0 text35 dist/default/debug\PICTest1.X.debug.o
+__end_of_lmp91000_start_ocp_measurement 28F0 0 CODE 0 text36 dist/default/debug\PICTest1.X.debug.o
+_lmp91000_stop_measurement 23EA 0 CODE 0 text13 dist/default/debug\PICTest1.X.debug.o
+___fldiv@new_exp 2A 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+_motor_isr 2522 0 CODE 0 text53 dist/default/debug\PICTest1.X.debug.o
+__end_of_motor_start_with_step_hz 2DD6 0 CODE 0 text25 dist/default/debug\PICTest1.X.debug.o
+_SSP1CLKPPS 1EC5 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+_SSP1DATPPS 1EC6 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+_ADCON0bits 9D 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+_ADCON1bits 9E 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+___fladd@grs 2B 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+?_snprintf 3E 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+?_uart_calculate_brg_value 72 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+?_vfpfcnvrt 25 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+i2c_start@direction 73 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__pbssCOMMON 7A 0 COMMON 1 bssCOMMON dist/default/debug\PICTest1.X.debug.o
+snprintf@f 51 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+snprintf@n 3F 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+snprintf@s 3E 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 -
+__Umul8_16@product 20 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+___flge@ff1 32 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+___flge@ff2 36 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+_i2c_idle_wait 21EA 0 CODE 0 text45 dist/default/debug\PICTest1.X.debug.o
+_PIR1bits 70D 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+__Lend_init 36 0 CODE 0 end_init -
+vfpfcnvrt@convarg 2F 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+___fltol@exp1 35 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+__end_of_uart_write_byte 21A4 0 CODE 0 text5 dist/default/debug\PICTest1.X.debug.o
+__end_ofADC_CodeToCurrent_uA@vref_mV 3318 0 STRCODE 0 stringtext3 dist/default/debug\PICTest1.X.debug.o
+end_of_initialization 6A 0 CODE 0 cinit dist/default/debug\PICTest1.X.debug.o
+__end_of_uart_write_string 2362 0 CODE 0 text4 dist/default/debug\PICTest1.X.debug.o
+__Hintentry 36 0 CODE 0 intentry -
+fputc@c 72 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+_ADC_Read_RA1_Code 24CE 0 CODE 0 text18 dist/default/debug\PICTest1.X.debug.o
+_TX1STAbits 11E 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+_PPSLOCKbits 1E8F 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+__Lstrings 0 0 ABS 0 strings -
+__end_of_motor_start_for_flow_ul_min 2EEA 0 CODE 0 text24 dist/default/debug\PICTest1.X.debug.o
+i2c_write@data 72 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+?___fladd 72 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+?___fldiv 72 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+?___flmul 25 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+?___fltol 2C 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+?___lldiv 72 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+?___llmod 72 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+?_ADC_Read_RC7_Code 74 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+vfprintf@fmt 38 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+motor_start_with_step_hz@reload 54 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+__Hreset_vec 6 0 CODE 0 reset_vec -
+_BAUD1CONbits 11F 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+_mux_select 22C2 0 CODE 0 text20 dist/default/debug\PICTest1.X.debug.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__HbssBANK1 0 0 ABS 0 bssBANK1 -
+__HbssBANK2 0 0 ABS 0 bssBANK2 -
+__end_of_uart_init 275A 0 CODE 0 text1 dist/default/debug\PICTest1.X.debug.o
+vfpfcnvrt@ap 28 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+vfpfcnvrt@cp 33 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+vfpfcnvrt@fp 25 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+__ptext1 26F8 0 CODE 0 text1 dist/default/debug\PICTest1.X.debug.o
+__ptext2 226C 0 CODE 0 text2 dist/default/debug\PICTest1.X.debug.o
+__ptext3 1078 0 CODE 0 text3 dist/default/debug\PICTest1.X.debug.o
+__ptext4 2328 0 CODE 0 text4 dist/default/debug\PICTest1.X.debug.o
+__ptext5 2190 0 CODE 0 text5 dist/default/debug\PICTest1.X.debug.o
+__ptext6 2BDC 0 CODE 0 text6 dist/default/debug\PICTest1.X.debug.o
+__ptext7 25D8 0 CODE 0 text7 dist/default/debug\PICTest1.X.debug.o
+__ptext8 D6E 0 CODE 0 text8 dist/default/debug\PICTest1.X.debug.o
+__ptext9 2A4C 0 CODE 0 text9 dist/default/debug\PICTest1.X.debug.o
+vfprintf@ap 3A 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+vfprintf@fp 36 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+vfprintf@cfmt 3C 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+?__Umul8_16 72 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+_vfprintf 25D8 0 CODE 0 text7 dist/default/debug\PICTest1.X.debug.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+_i2c_clear_interrupt_flag 212A 0 CODE 0 text47 dist/default/debug\PICTest1.X.debug.o
+_receive_index 7A 0 COMMON 1 bssCOMMON dist/default/debug\PICTest1.X.debug.o
+__H__absolute__ 0 0 ABS 0 __absolute__ -
+i2c_write_register@value 77 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+___fladd@aexp 29 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+___fladd@bexp 2A 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+motor_start_for_flow_ul_min@motor_steps_per_rev_effective 5A 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+motor_start_with_step_hz@interrupt_hz 50 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+__Umul8_16@word_mpld 22 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+___fltol@sign1 34 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__Hstringtext1 0 0 ABS 0 stringtext1 -
+__Hstringtext2 0 0 ABS 0 stringtext2 -
+__Hstringtext3 0 0 ABS 0 stringtext3 -
+__Hstringtext4 0 0 ABS 0 stringtext4 -
+__Hstringtext5 0 0 ABS 0 stringtext5 -
+__Hstringtext6 0 0 ABS 0 stringtext6 -
+__Hstringtext7 0 0 ABS 0 stringtext7 -
+__Hstringtext8 0 0 ABS 0 stringtext8 -
+__Hstringtext9 0 0 ABS 0 stringtext9 -
+__end_of_vfprintf 2636 0 CODE 0 text7 dist/default/debug\PICTest1.X.debug.o
+_uart_init 26F8 0 CODE 0 text1 dist/default/debug\PICTest1.X.debug.o
+___heap_hi 0 0 ABS 0 - C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_17.o
+___heap_lo 0 0 ABS 0 - C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_17.o
+___fltol@f1 2C 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+run_measurement_loop@ADCread C6 0 BANK1 1 cstackBANK1 dist/default/debug\PICTest1.X.debug.o
+__end_of__initialization 6A 0 CODE 0 cinit dist/default/debug\PICTest1.X.debug.o
+_uart_write_byte 2190 0 CODE 0 text5 dist/default/debug\PICTest1.X.debug.o
+__Lfunctab 0 0 ENTRY 0 functab -
+motor_timer1_reload_from_interrupt_hz@counts_f 48 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+run_measurement_loop@b CC 0 BANK1 1 cstackBANK1 dist/default/debug\PICTest1.X.debug.o
+run_measurement_loop@i CA 0 BANK1 1 cstackBANK1 dist/default/debug\PICTest1.X.debug.o
+run_measurement_loop@n C4 0 BANK1 1 cstackBANK1 dist/default/debug\PICTest1.X.debug.o
+_SP1BRGH 11C 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+_SP1BRGL 11B 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+__Lclrtext 0 0 ABS 0 clrtext -
+_SSP1CON1bits 190 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+_SSP1CON2bits 191 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+___lmul@product 20 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+___lmul@multiplicand 76 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+___lldiv@quotient 20 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+_lmp91000_start_ocp_measurement 2858 0 CODE 0 text36 dist/default/debug\PICTest1.X.debug.o
+uart_rx_isr@c 71 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+wtemp0a 7F 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+mux_select@address 76 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+_delay_ms_interruptible 257C 0 CODE 0 text14 dist/default/debug\PICTest1.X.debug.o
+__end_of_mux_select 22F4 0 CODE 0 text20 dist/default/debug\PICTest1.X.debug.o
+_SSP1ADD 18D 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+_SSP1BUF 18C 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+__Hend_init 3A 0 CODE 0 end_init -
+___llmod@dividend 76 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+___llmod@counter 20 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+vfpfcnvrt@c 35 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+adc_acquire_delay_us@us 72 0 COMMON 1 cstackCOMMON dist/default/debug\PICTest1.X.debug.o
+__end_of_main D6E 0 CODE 0 maintext dist/default/debug\PICTest1.X.debug.o
+_uart_write_string 2328 0 CODE 0 text4 dist/default/debug\PICTest1.X.debug.o
+__end_of_fputc 2AFE 0 CODE 0 text9 dist/default/debug\PICTest1.X.debug.o
+_TMR1H 20D 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+_TMR1L 20C 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+__end_of_putch 8 0 CODE 0 text10 dist/default/debug\PICTest1.X.debug.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_errno D3 0 BANK1 1 bssBANK1 dist/default/debug\PICTest1.X.debug.o
+_flags D5 0 BANK1 1 bssBANK1 dist/default/debug\PICTest1.X.debug.o
+_fputc 2A4C 0 CODE 0 text9 dist/default/debug\PICTest1.X.debug.o
+_putch 6 0 CODE 0 text10 dist/default/debug\PICTest1.X.debug.o
+__end_ofADC_CodeToCurrent_uA@rtia_ohms 3308 0 STRCODE 0 stringtext1 dist/default/debug\PICTest1.X.debug.o
+_width CF 0 BANK1 1 bssBANK1 dist/default/debug\PICTest1.X.debug.o
+motor_start_for_flow_ul_min@flow_ul_min 56 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+__end_of_lmp91000_start_ca_measurement 299A 0 CODE 0 text37 dist/default/debug\PICTest1.X.debug.o
+__pintentry 8 0 CODE 0 intentry dist/default/debug\PICTest1.X.debug.o
+__initialization 3A 0 CODE 0 cinit dist/default/debug\PICTest1.X.debug.o
+btemp0 7E 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+btemp1 7F 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+__end_of_uart_rx_isr 1000 0 CODE 0 text50 dist/default/debug\PICTest1.X.debug.o
+__pbssBANK0 6B 0 BANK0 1 bssBANK0 dist/default/debug\PICTest1.X.debug.o
+__pbssBANK1 CD 0 BANK1 1 bssBANK1 dist/default/debug\PICTest1.X.debug.o
+__pbssBANK2 120 0 BANK2 1 bssBANK2 dist/default/debug\PICTest1.X.debug.o
+__end_of_uart_calculate_brg_value 2292 0 CODE 0 text2 dist/default/debug\PICTest1.X.debug.o
+_PPSLOCK 1E8F 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+__end_of_lmp91000_unlock 2158 0 CODE 0 text39 dist/default/debug\PICTest1.X.debug.o
+ttemp0a 7F 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+_snprintf$1887 4C 0 BANK0 1 cstackBANK0 dist/default/debug\PICTest1.X.debug.o
+_ANSELAbits 1F38 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+_ANSELBbits 1F43 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+_ANSELCbits 1F4E 0 ABS 0 - dist/default/debug\PICTest1.X.debug.o
+__end_of_i2c_idle_wait 2208 0 CODE 0 text45 dist/default/debug\PICTest1.X.debug.o
+___int_stack_hi 0 0 STACK 2 stack C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_17.o
+___int_stack_lo 0 0 STACK 2 stack C:\Users\forga\AppData\Local\Temp\xcAsea0.0\driver_tmp_17.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text1 0 137C 26F8 31 2
+text2 0 1136 226C 13 2
+text3 0 83C 1078 DF 2
+text4 0 1194 2328 1D 2
+text5 0 10C8 2190 A 2
+text6 0 15EE 2BDC 7B 2
+text7 0 12EC 25D8 2F 2
+text9 0 1526 2A4C 59 2
+text11 0 13E3 27C6 49 2
+text12 0 14CD 299A 59 2
+text13 0 11F5 23EA 24 2
+text14 0 12BE 257C 2E 2
+text15 0 1114 2228 10 2
+text16 0 806 100C 36 2
+text17 0 1219 2432 26 2
+text18 0 1267 24CE 2A 2
+text19 0 1124 2248 12 2
+text20 0 1161 22C2 19 2
+text21 0 1104 2208 10 2
+text22 0 131B 2636 30 2
+text23 0 109D 213A 7 2
+text24 0 16EB 2DD6 8A 2
+text25 0 1669 2CD2 82 2
+text26 0 DC5 1B8A 23B 2
+text27 0 11D1 23A2 24 2
+text28 0 134B 2696 31 2
+text29 0 91B 1236 FA 2
+text30 0 157F 2AFE 6F 2
+text31 0 1775 2EEA 8B 2
+text32 0 A15 142A 1A4 2
+text33 0 BB9 1772 20C 2
+text34 0 10DD 21BA B 2
+text35 0 1098 2130 5 2
+text36 0 142C 2858 4C 2
+text37 0 1478 28F0 55 2
+text38 0 10D2 21A4 B 2
+text39 0 10A4 2148 8 2
+text40 0 10B5 216A 9 2
+text41 0 123F 247E 28 2
+text42 0 11B1 2362 20 2
+text43 0 1149 2292 18 2
+text44 0 10E8 21D0 D 2
+text45 0 10F5 21EA F 2
+text46 0 13AD 275A 36 2
+text47 0 1095 212A 3 2
+text48 0 117A 22F4 1A 2
+text51 0 10BE 217C A 2
+text52 0 10AC 2158 9 2
+text53 0 1291 2522 2D 2
+cstackCOMMON 1 70 70 C 1
+cstackBANK0 1 20 20 50 1
+cstackBANK1 1 A0 A0 38 1
+stringtext5 0 1800 3000 190 2
+intentry 0 4 8 802 2
+reset_vec 0 0 0 4 2
+bssBANK2 1 120 120 40 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

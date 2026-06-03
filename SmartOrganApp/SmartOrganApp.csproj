@@ -1,0 +1,70 @@
+<Project Sdk="Uno.Sdk">
+    <PropertyGroup>
+        <TargetFrameworks>net10.0-android</TargetFrameworks>
+
+        <OutputType>Exe</OutputType>
+        <UnoSingleProject>true</UnoSingleProject>
+
+        <!-- Display name -->
+        <ApplicationTitle>SmartOrganApp</ApplicationTitle>
+        <!-- App Identifier -->
+        <ApplicationId>com.minwoo.smartorgan1</ApplicationId>
+        <!-- Versions -->
+        <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+        <ApplicationVersion>1</ApplicationVersion>
+        <!-- Package Publisher -->
+        <ApplicationPublisher>klabc</ApplicationPublisher>
+        <!-- Package Description -->
+        <Description>SmartOrganApp powered by Uno Platform.</Description>
+
+        <!--
+      UnoFeatures are used to quickly add and manage features enabled for your app.
+      https://aka.platform.uno/singleproject-features
+    -->
+        <UnoFeatures>
+            Material;
+            Dsp;
+            Hosting;
+            Toolkit;
+            Logging;
+            MVUX;
+            Configuration;
+            Http;
+            Serialization;
+            ThemeService;
+            SkiaRenderer;
+        </UnoFeatures>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Maui.Essentials" />
+        <PackageReference Include="Plugin.BLE" />
+        <PackageReference Include="ScottPlot" />
+        <PackageReference Include="ScottPlot.WinUI" />
+    </ItemGroup>
+    <ItemGroup>
+        <Page Update="ResearcherDashboard.xaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+    </ItemGroup>
+    <ItemGroup>
+        <Content Update="Assets\Data\RawDataTest.csv">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
+    <ItemGroup>
+        <Page Update="DeviceScanPage.xaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+    </ItemGroup>
+    <ItemGroup>
+        <Page Update="LiverIDPage.xaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+    </ItemGroup>
+    <ItemGroup>
+        <Page Update="CalibrationPage.xaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+    </ItemGroup>
+
+</Project>

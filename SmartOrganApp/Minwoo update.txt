@@ -1,0 +1,21 @@
+- Liver ID for LiverIDPage is passed to CalibrationPage.
+
+- _chProg value was always showing 0. The code wanted to receive a BLE packet with the ch value. But the original 7 byte packet data does not have that value in it.
+So I added "_chProg = chIdx + 1;" in RunStepAsync(), because this loop already knows which channel it is running, so it looked safer to update _chProg value here.
+
+-  private const double VrefMv  = 3300.0;
+
+- all nA has been changed to uA.
+
+- When processed_dataset.csv was saved, the first data was in same row as the titles. Added \n.
+
+- Rawdata filename rule has been changed. "LiverID_DateTime_Step_Channel.csv"
+
+- Processed_dataset.csv filename rule has been changed. "LiverID_Processed_dataset.csv"
+
+-----------------
+Need to work on....
+
+- The raw data is not saving whole data, last few seconds are missing. It looks like its because the app is collecting by time(for 60sec). But data collection should be continued until the PIC sends END signal (first byte of packet=2).
+
+- 

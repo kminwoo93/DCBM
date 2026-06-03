@@ -1,0 +1,104 @@
+Command: C:\Users\MinwooKim\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Users\MinwooKim\esp\v5.5.1\esp-idf\tools/idf_monitor.py -p com29 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32h2 --revision 0 --decode-panic backtrace C:\Multiplexer_coding\wm-potentiostat-pic16f15256.X\BLE_PIC_Bridge\build\BLE_PIC_Bridge.elf C:\Multiplexer_coding\wm-potentiostat-pic16f15256.X\BLE_PIC_Bridge\build\bootloader\bootloader.elf --force-color -m 'C:\Users\MinwooKim\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Users\MinwooKim\esp\v5.5.1\esp-idf\tools\idf.py'
+ESP-ROM:esp32h2-20221101
+Build:Nov  1 2022
+rst:0x15 (USB_UART_HPSYS),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40808396
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x408460f0,len:0x1700
+load:0x4083c2d0,len:0xf78
+load:0x4083efd0,len:0x2fdc
+entry 0x4083c2da
+[0;32mI (23) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Nov 14 2025 15:02:57[0m
+[0;32mI (24) boot: chip revision: v0.1[0m
+[0;32mI (25) boot: efuse block revision: v0.3[0m
+[0;32mI (26) boot.esp32h2: SPI Speed      : 64MHz[0m
+[0;32mI (30) boot.esp32h2: SPI Mode       : DIO[0m
+[0;32mI (34) boot.esp32h2: SPI Flash Size : 2MB[0m
+[0;32mI (38) boot: Enabling RNG early entropy source...[0m
+[0;32mI (42) boot: Partition Table:[0m
+[0;32mI (45) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (51) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (64) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (71) boot: End of partition table[0m
+[0;32mI (74) esp_image: segment 0: paddr=00010020 vaddr=420c0020 size=20748h (132936) map[0m
+[0;32mI (116) esp_image: segment 1: paddr=00030770 vaddr=40800000 size=078a8h ( 30888) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=00038020 vaddr=42000020 size=b93c4h (758724) map[0m
+[0;32mI (322) esp_image: segment 3: paddr=000f13ec vaddr=408078a8 size=0ba20h ( 47648) load[0m
+[0;32mI (337) esp_image: segment 4: paddr=000fce14 vaddr=408132d0 size=02064h (  8292) load[0m
+[0;32mI (346) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (347) boot: Disabling RNG early entropy source...[0m
+[0;32mI (357) cpu_start: Unicore app[0m
+[0;32mI (366) cpu_start: Pro cpu start user code[0m
+[0;32mI (366) cpu_start: cpu freq: 96000000 Hz[0m
+[0;32mI (366) app_init: Application information:[0m
+[0;32mI (367) app_init: Project name:     BLE_PIC_Bridge[0m
+[0;32mI (370) app_init: App version:      13c48c9-dirty[0m
+[0;32mI (375) app_init: Compile time:     Nov 14 2025 16:35:32[0m
+[0;32mI (380) app_init: ELF file SHA256:  9011170ae...[0m
+[0;32mI (384) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (388) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (392) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (396) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (400) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (406) heap_init: At 40819950 len 00033A30 (206 KiB): RAM[0m
+[0;32mI (411) heap_init: At 4084D380 len 00002B60 (10 KiB): RAM[0m
+[0;32mI (416) heap_init: At 50000000 len 00000FE8 (3 KiB): RTCRAM[0m
+[0;32mI (422) spi_flash: detected chip: generic[0m
+[0;32mI (425) spi_flash: flash io: dio[0m
+[0;32mI (429) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (434) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (441) main_task: Started on CPU0[0m
+[0;32mI (441) main_task: Calling app_main()[0m
+[0;32mI (451) UART_APP: Initialized UART1 TX=24 RX=23 115200 baud[0m
+[0;32mI (451) UART_APP: UART RX task started[0m
+[0;32mI (451) BLE_INIT: Using main XTAL as clock source[0m
+[0;32mI (451) BLE_INIT: ble controller commit:[898f73c][0m
+[0;32mI (471) BLE_INIT: Bluetooth MAC: 48:31:b7:c9:31:83[0m
+[0;32mI (481) phy: phy_version: 323,2, a8ef10c, Aug  1 2025, 17:46:10[0m
+[0;32mI (501) phy: libbtbb version: 4515421, Aug  1 2025, 17:46:22[0m
+[0;32mI (521) GATTS_TABLE_DEMO: GATTS_REG_EVT: gatts_if=3 stored for notify[0m
+[0;32mI (531) GATTS_TABLE_DEMO: create attribute table successfully, the number handle = 6[0m
+[0;32mI (541) GATTS_TABLE_DEMO: SERVICE_START_EVT, status 0, service_handle 40[0m
+[0;32mI (541) GATTS_TABLE_DEMO: advertising start successfully[0m
+[0;32mI (541) main_task: Returned from app_main()[0m
+[0;32mI (35121) GATTS_TABLE_DEMO: ESP_GATTS_CONNECT_EVT, conn_id = 0[0m
+[0;32mI (35121) GATTS_TABLE_DEMO: 75 09 3a 17 f5 a3[0m
+[0;32mI (35631) GATTS_TABLE_DEMO: update connection params status = 0, conn_int = 32, latency = 0, timeout = 400[0m
+[0;32mI (35991) GATTS_TABLE_DEMO: update connection params status = 0, conn_int = 6, latency = 0, timeout = 500[0m
+[0;32mI (36301) GATTS_TABLE_DEMO: update connection params status = 0, conn_int = 32, latency = 0, timeout = 400[0m
+[0;32mI (44061) GATTS_TABLE_DEMO: WRITE EVT: handle=45 len=2[0m
+[0;32mI (44061) GATTS_TABLE_DEMO: 01 00[0m
+[0;32mI (44061) GATTS_TABLE_DEMO: notify enable (conn 0)[0m
+[0;32mI (44141) GATTS_TABLE_DEMO: WRITE EVT: handle=42 len=2[0m
+[0;32mI (44141) GATTS_TABLE_DEMO: 31 31[0m
+[0;32mI (44141) GATTS_TABLE_DEMO: BLE cmd '11' received. Forwarding via UART[0m
+[0;32mI (44141) UART_APP: Sent 2 bytes[0m
+[0;32mI (46661) GATTS_TABLE_DEMO: WRITE EVT: handle=42 len=2[0m
+[0;32mI (46661) GATTS_TABLE_DEMO: 30 30[0m
+[0;32mI (46661) GATTS_TABLE_DEMO: BLE cmd '00' received. Forwarding via UART[0m
+[0;32mI (46661) UART_APP: Sent 2 bytes[0m
+[0;32mI (49061) GATTS_TABLE_DEMO: WRITE EVT: handle=45 len=2[0m
+[0;32mI (49061) GATTS_TABLE_DEMO: 01 00[0m
+[0;32mI (49061) GATTS_TABLE_DEMO: notify enable (conn 0)[0m
+[0;32mI (49141) GATTS_TABLE_DEMO: WRITE EVT: handle=42 len=2[0m
+[0;32mI (49141) GATTS_TABLE_DEMO: 31 31[0m
+[0;32mI (49141) GATTS_TABLE_DEMO: BLE cmd '11' received. Forwarding via UART[0m
+[0;32mI (49141) UART_APP: Sent 2 bytes[0m
+[0;32mI (50101) GATTS_TABLE_DEMO: WRITE EVT: handle=42 len=2[0m
+[0;32mI (50101) GATTS_TABLE_DEMO: 30 30[0m
+[0;32mI (50101) GATTS_TABLE_DEMO: BLE cmd '00' received. Forwarding via UART[0m
+[0;32mI (50101) UART_APP: Sent 2 bytes[0m
+[0;32mI (75061) GATTS_TABLE_DEMO: WRITE EVT: handle=45 len=2[0m
+[0;32mI (75061) GATTS_TABLE_DEMO: 01 00[0m
+[0;32mI (75061) GATTS_TABLE_DEMO: notify enable (conn 0)[0m
+[0;32mI (75141) GATTS_TABLE_DEMO: WRITE EVT: handle=42 len=2[0m
+[0;32mI (75141) GATTS_TABLE_DEMO: 31 31[0m
+[0;32mI (75141) GATTS_TABLE_DEMO: BLE cmd '11' received. Forwarding via UART[0m
+[0;32mI (75151) UART_APP: Sent 2 bytes[0m
+[0;32mI (75661) GATTS_TABLE_DEMO: WRITE EVT: handle=42 len=2[0m
+[0;32mI (75661) GATTS_TABLE_DEMO: 30 30[0m
+[0;32mI (75661) GATTS_TABLE_DEMO: BLE cmd '00' received. Forwarding via UART[0m
+[0;32mI (75671) UART_APP: Sent 2 bytes[0m

@@ -1,0 +1,10 @@
+Command: C:\Users\MinwooKim\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Users\MinwooKim\esp\v5.5.1\esp-idf\tools/idf_monitor.py -p COM12 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32h2 --revision 0 --decode-panic backtrace C:\Multiplexer_coding\wm-potentiostat-pic16f15256.X\BLE_PIC_Bridge\build\BLE_PIC_Bridge.elf C:\Multiplexer_coding\wm-potentiostat-pic16f15256.X\BLE_PIC_Bridge\build\bootloader\bootloader.elf --force-color -m 'C:\Users\MinwooKim\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Users\MinwooKim\esp\v5.5.1\esp-idf\tools\idf.py'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM12 instead...[0m
+[0;33m--- esp-idf-monitor 1.8.0 on \\.\COM12 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x40017bac: [0;33m__riscv_save_1[0m[0m in [0;32mROM[0m
+[0m--- 0x4083c2d0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mC:/Users/MinwooKim/esp/v5.5.1/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m39[0m
+[0m--- 0x4083efd0: [0;33mesp_flash_encryption_enabled[0m[0m at [0;32mC:/Users/MinwooKim/esp/v5.5.1/esp-idf/components/bootloader_support/src/flash_encrypt.c[0m[0m:[1;31m89[0m
+[0m--- 0x4083c2da: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/Users/MinwooKim/esp/v5.5.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m

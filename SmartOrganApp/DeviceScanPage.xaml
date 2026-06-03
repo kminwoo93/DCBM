@@ -1,0 +1,98 @@
+﻿<Page
+    x:Class="SmartOrganApp.DeviceScanPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SmartOrganApp"
+    xmlns:models="using:SmartOrganApp.Models"
+    xmlns:utu="using:Uno.Toolkit.UI"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <ScrollViewer VerticalScrollMode="Auto" VerticalScrollBarVisibility="Auto">
+            <utu:AutoLayout Orientation="Vertical"
+                            Spacing="8"
+                            CornerRadius="21"
+                            Margin="4,22,4,4"
+                            CounterAxisAlignment="Stretch">
+
+                <!-- 상단 바 (뒤로가기 + 타이틀) -->
+                <utu:AutoLayout Height="40"
+                                Orientation="Horizontal"
+                                CounterAxisAlignment="Center"
+                                Justify="SpaceBetween"
+                                Margin="4,0,4,0">
+                    <Button Background="Transparent"
+                            BorderThickness="0"
+                            Click="BackButton_Click">
+                        <SymbolIcon Symbol="Back" Foreground="Black" />
+                    </Button>
+                    <TextBlock Text="Device Scan"
+                               FontSize="20"
+                               VerticalAlignment="Center"/>
+                </utu:AutoLayout>
+
+                <utu:Divider/>
+
+                <!-- 스캔 컨트롤 영역 -->
+                <utu:AutoLayout Orientation="Horizontal"
+                                Justify="SpaceBetween"
+                                CounterAxisAlignment="Center"
+                                Margin="4,0,4,0">
+                    <TextBlock Text="Available devices"
+                               FontSize="18"
+                               FontWeight="SemiBold"/>
+
+                    <utu:AutoLayout Orientation="Horizontal"
+                                    Spacing="6"
+                                    CounterAxisAlignment="Center">
+                        <ProgressRing x:Name="ScanProgress"
+                                      Width="20"
+                                      Height="20"
+                                      IsActive="False"
+                                      Visibility="Collapsed"/>
+                        <Button x:Name="ScanButton"
+                                Content="Scan"
+                                Click="ScanButton_Click"
+                                Padding="12,4"
+                                CornerRadius="8"
+                                Background="#42ABC2"
+                                Foreground="White"/>
+                    </utu:AutoLayout>
+                </utu:AutoLayout>
+
+                <!-- 디바이스 리스트 -->
+                <Border CornerRadius="12"
+                        Background="#F6F6F6"
+                        Margin="4,4,4,0"
+                        Padding="4">
+                    <ListView x:Name="DevicesListView" IsItemClickEnabled="True" SelectionMode="None">
+                        <ListView.ItemTemplate>
+                            <DataTemplate x:DataType="models:BleDeviceInfo">
+                                <Border Margin="0,2" Padding="8" CornerRadius="8" Background="White">
+                                    <utu:AutoLayout Orientation="Horizontal" Justify="SpaceBetween" CounterAxisAlignment="Center">
+                                        <!-- 왼쪽 내용 -->
+                                        <utu:AutoLayout Orientation="Vertical" CounterAxisAlignment="Start">
+                                            <TextBlock Text="{Binding Name}" FontSize="16" FontWeight="SemiBold"/>
+                                            <TextBlock Text="{Binding Id}" FontSize="12" Foreground="Gray"/>
+                                            <!-- ★ 수정된 RSSI 표시 (StringFormat 삭제 + Run 3개로 구성) -->
+                                            <TextBlock FontSize="12" Foreground="Gray">
+                                                <Run Text="RSSI: " />
+                                                <Run Text="{Binding Rssi}" />
+                                                <Run Text=" dBm" />
+                                            </TextBlock>
+                                        </utu:AutoLayout>
+                                        <!-- 오른쪽 Connect 버튼 -->
+                                        <Button Content="Connect" Tag="{Binding Id}" Click="ConnectButton_Click" Padding="8,4" CornerRadius="8"/>
+                                    </utu:AutoLayout>
+                                </Border>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Border>
+            </utu:AutoLayout>
+        </ScrollViewer>
+    </Grid>
+</Page>

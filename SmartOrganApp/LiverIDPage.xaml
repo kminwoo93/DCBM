@@ -1,0 +1,61 @@
+﻿<Page
+    x:Class="SmartOrganApp.LiverIDPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SmartOrganApp"
+    xmlns:models="using:SmartOrganApp.Models"
+    xmlns:utu="using:Uno.Toolkit.UI"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <ScrollViewer VerticalScrollMode="Auto" VerticalScrollBarVisibility="Auto">
+            <utu:AutoLayout Orientation="Vertical"
+                        Spacing="8"
+                        CornerRadius="21"
+                        Margin="4,22,4,4"
+                        CounterAxisAlignment="Stretch">
+                <!-- 상단 바 (뒤로가기 + 타이틀) -->
+                <utu:AutoLayout Height="40"
+                            Orientation="Horizontal"
+                            CounterAxisAlignment="Center"
+                            Justify="SpaceBetween"
+                            Margin="4,0,4,0">
+                    <Button Background="Transparent"
+                        BorderThickness="0"
+                        Click="BackButton_Click">
+                        <SymbolIcon Symbol="Back" Foreground="Black" />
+                    </Button>
+                    <TextBlock Text="Liver ID"
+                           FontSize="20"
+                           VerticalAlignment="Center"/>
+                </utu:AutoLayout>
+                <utu:Divider/>
+
+                <!-- 기존 LiverID 리스트 -->
+                <ListView Grid.Row="1"
+                  x:Name="LiverIdListView"
+                  ItemsSource="{Binding LiverIds}"
+                  IsItemClickEnabled="True"
+                  ItemClick="LiverIdListView_ItemClick">
+                    <ListView.ItemTemplate>
+                        <DataTemplate x:DataType="x:String">
+                            <TextBlock Text="{Binding}" FontSize="16" Margin="4"/>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <!-- 새 LiverID 추가 영역 -->
+                <StackPanel Grid.Row="2" Orientation="Horizontal" Spacing="8" Margin="0,12,0,0">
+                    <TextBox x:Name="NewLiverIdTextBox"
+                     Width="200"
+                     PlaceholderText="New Liver ID"/>
+                    <Button x:Name="AddLiverIdButton"
+                     Content="Add and Select"
+                    Click="AddLiverIdButton_Click"/>
+                </StackPanel>
+            </utu:AutoLayout>
+        </ScrollViewer>
+    </Grid>
+</Page>

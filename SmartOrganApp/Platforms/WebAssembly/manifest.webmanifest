@@ -1,0 +1,10 @@
+{
+  "background_color": "#ffffff",
+  "description": "SmartOrganApp",
+  "display": "standalone",
+  "name": "SmartOrganApp",
+  "short_name": "SmartOrganApp",
+  "start_url": "/index.html",
+  "theme_color": "#ffffff",
+  "scope": "/"
+}

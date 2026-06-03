@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Multiplexer_coding/wm-potentiostat-pic16f15256.X/BLE_PIC_Bridge/build/CMakeFiles/bootloader"
+		},
+		{
+			"file" : "C:/Multiplexer_coding/wm-potentiostat-pic16f15256.X/BLE_PIC_Bridge/build/CMakeFiles/bootloader.rule"
+		},
+		{
+			"file" : "C:/Multiplexer_coding/wm-potentiostat-pic16f15256.X/BLE_PIC_Bridge/build/CMakeFiles/bootloader-complete.rule"
+		},
+		{
+			"file" : "C:/Multiplexer_coding/wm-potentiostat-pic16f15256.X/BLE_PIC_Bridge/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+		},
+		{
+			"file" : "C:/Multiplexer_coding/wm-potentiostat-pic16f15256.X/BLE_PIC_Bridge/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+		},
+		{
+			"file" : "C:/Multiplexer_coding/wm-potentiostat-pic16f15256.X/BLE_PIC_Bridge/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+		},
+		{
+			"file" : "C:/Multiplexer_coding/wm-potentiostat-pic16f15256.X/BLE_PIC_Bridge/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+		},
+		{
+			"file" : "C:/Multiplexer_coding/wm-potentiostat-pic16f15256.X/BLE_PIC_Bridge/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+		},
+		{
+			"file" : "C:/Multiplexer_coding/wm-potentiostat-pic16f15256.X/BLE_PIC_Bridge/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+		},
+		{
+			"file" : "C:/Multiplexer_coding/wm-potentiostat-pic16f15256.X/BLE_PIC_Bridge/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"bootloader"
+		],
+		"name" : "bootloader"
+	}
+}
